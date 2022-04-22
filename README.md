@@ -1,0 +1,1 @@
+# maven-hybrid-framework-nopcommerce
