@@ -1,0 +1,86 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "NopCommerce.User",
+    "children" : [ {
+      "name" : "Run on chrome",
+      "children" : [ {
+        "name" : "com.facebook.TC_AssertAndVerify",
+        "children" : [ {
+          "name" : "TC_01_Assert_True",
+          "uid" : "3b3e65e933bf7089",
+          "parentUid" : "59aca641f94809a54019d6be66db7424",
+          "status" : "passed",
+          "time" : {
+            "start" : 1645889345667,
+            "stop" : 1645889345725,
+            "duration" : 58
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chrome", "https://www.facebook.com/login" ]
+        }, {
+          "name" : "TC_02_Assert_False",
+          "uid" : "caf20c3ba8092d3a",
+          "parentUid" : "59aca641f94809a54019d6be66db7424",
+          "status" : "passed",
+          "time" : {
+            "start" : 1645889345779,
+            "stop" : 1645889345796,
+            "duration" : 17
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chrome", "https://www.facebook.com/login" ]
+        }, {
+          "name" : "TC_03_Fail",
+          "uid" : "179ab3144cd11055",
+          "parentUid" : "59aca641f94809a54019d6be66db7424",
+          "status" : "failed",
+          "time" : {
+            "start" : 1645889345800,
+            "stop" : 1645889350841,
+            "duration" : 5041
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chrome", "https://www.facebook.com/login" ]
+        } ],
+        "uid" : "59aca641f94809a54019d6be66db7424"
+      }, {
+        "name" : "com.nopcommerce.user.TC_Register_Allure",
+        "children" : [ {
+          "name" : "TC_01_Register_Empty_Data",
+          "uid" : "69fa0684d9f1d630",
+          "parentUid" : "0c0738de0565621d23c01409c5285c60",
+          "status" : "passed",
+          "time" : {
+            "start" : 1645896294107,
+            "stop" : 1645896294818,
+            "duration" : 711
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chrome" ]
+        }, {
+          "name" : "TC_02_Register_Invalid_Email",
+          "uid" : "b82a233e17cca771",
+          "parentUid" : "0c0738de0565621d23c01409c5285c60",
+          "status" : "passed",
+          "time" : {
+            "start" : 1645896294850,
+            "stop" : 1645896295380,
+            "duration" : 530
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chrome" ]
+        } ],
+        "uid" : "0c0738de0565621d23c01409c5285c60"
+      } ],
+      "uid" : "9d140ba95ab3b48323c73cb82ca4dbb2"
+    } ],
+    "uid" : "161f354aa6e6766be77f0c7382bd86c4"
+  } ]
+}

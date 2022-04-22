@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Sat Feb 26 22:29:05 ICT 2022","Sat Feb 26 22:29:10 ICT 2022","5041","NopCommerce.User","Run on chrome","com.facebook.TC_AssertAndVerify","com.facebook.TC_AssertAndVerify","TC_03_Fail","TC_03_Fail",""
+"passed","Sat Feb 26 22:29:05 ICT 2022","Sat Feb 26 22:29:05 ICT 2022","58","NopCommerce.User","Run on chrome","com.facebook.TC_AssertAndVerify","com.facebook.TC_AssertAndVerify","TC_01_Assert_True","TC_01_Assert_True",""
+"passed","Sun Feb 27 00:24:54 ICT 2022","Sun Feb 27 00:24:54 ICT 2022","711","NopCommerce.User","Run on chrome","com.nopcommerce.user.TC_Register_Allure","com.nopcommerce.user.TC_Register_Allure","TC_01_Register_Empty_Data","TC_01_Register_Empty_Data","Register with empty data"
+"passed","Sun Feb 27 00:24:54 ICT 2022","Sun Feb 27 00:24:55 ICT 2022","530","NopCommerce.User","Run on chrome","com.nopcommerce.user.TC_Register_Allure","com.nopcommerce.user.TC_Register_Allure","TC_02_Register_Invalid_Email","TC_02_Register_Invalid_Email","Register with invalid email"
+"passed","Sat Feb 26 22:29:05 ICT 2022","Sat Feb 26 22:29:05 ICT 2022","17","NopCommerce.User","Run on chrome","com.facebook.TC_AssertAndVerify","com.facebook.TC_AssertAndVerify","TC_02_Assert_False","TC_02_Assert_False",""

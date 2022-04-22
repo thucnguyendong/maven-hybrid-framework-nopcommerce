@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel = "tests" name="NopCommerce.User" thread-count = "3">
+  <listeners>
+  	<listener class-name= "listenerConfig.MethodListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name= "listenerConfig.ReportNGListener"/>
+  </listeners>
+  <test name="Run on chrome">
+  	<parameter name = "browser" value ="chrome"></parameter>
+    <classes>
+      <class name="com.nopcommerce.user.TC_Register_Log4J"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Run on firefox">
+  	<parameter name = "browser" value ="firefox"></parameter>
+    <classes>
+      <class name="com.nopcommerce.user.TC_Register_Log4J"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Run on Edge">
+  	<parameter name = "browser" value ="edge"></parameter>
+    <classes>
+      <class name="com.nopcommerce.user.TC_Register_Log4J"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,16 @@
+{
+	"firstname": "Thuc Dong",
+	"lastname": "Nguyen",
+	"dob": "11/05/1995",
+	"email": "automation@gmail.com",
+	"address": "220 NTL",
+	"cc": {
+		"number":"123-456-789",
+		"billing": "220 NTL"
+	},
+	
+	
+	"product": {
+		"searchCriteria" : "criteria"
+	}
+}

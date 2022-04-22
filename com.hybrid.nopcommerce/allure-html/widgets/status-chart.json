@@ -1,0 +1,51 @@
+[ {
+  "uid" : "179ab3144cd11055",
+  "name" : "TC_03_Fail",
+  "time" : {
+    "start" : 1645889345800,
+    "stop" : 1645889350841,
+    "duration" : 5041
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "3b3e65e933bf7089",
+  "name" : "TC_01_Assert_True",
+  "time" : {
+    "start" : 1645889345667,
+    "stop" : 1645889345725,
+    "duration" : 58
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "69fa0684d9f1d630",
+  "name" : "TC_01_Register_Empty_Data",
+  "time" : {
+    "start" : 1645896294107,
+    "stop" : 1645896294818,
+    "duration" : 711
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "b82a233e17cca771",
+  "name" : "TC_02_Register_Invalid_Email",
+  "time" : {
+    "start" : 1645896294850,
+    "stop" : 1645896295380,
+    "duration" : 530
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "caf20c3ba8092d3a",
+  "name" : "TC_02_Assert_False",
+  "time" : {
+    "start" : 1645889345779,
+    "stop" : 1645889345796,
+    "duration" : 17
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

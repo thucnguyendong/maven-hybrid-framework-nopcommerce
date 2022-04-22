@@ -1,0 +1,11 @@
+{
+	"firstname": "Thuc",
+	"lastname": "Nguyen",
+	"company": "Livegroup",
+	"password": "123456",
+	"dob": {
+		"day":"5",
+		"month": "May",
+		"year": "1995"
+	}
+}

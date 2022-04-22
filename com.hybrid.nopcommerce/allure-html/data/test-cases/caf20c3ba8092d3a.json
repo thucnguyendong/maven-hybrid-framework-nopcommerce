@@ -1,0 +1,116 @@
+{
+  "uid" : "caf20c3ba8092d3a",
+  "name" : "TC_02_Assert_False",
+  "fullName" : "com.facebook.TC_AssertAndVerify.TC_02_Assert_False",
+  "historyId" : "c8bd47e160e42f120ab18a114722bb4f",
+  "time" : {
+    "start" : 1645889345779,
+    "stop" : 1645889345796,
+    "duration" : 17
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "beforeClass",
+    "time" : {
+      "start" : 1645889340372,
+      "stop" : 1645889345531,
+      "duration" : 5159
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "beforeSuit",
+    "time" : {
+      "start" : 1645889340363,
+      "stop" : 1645889340365,
+      "duration" : 2
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "afterClass",
+    "time" : {
+      "start" : 1645889350942,
+      "stop" : 1645889351509,
+      "duration" : 567
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.facebook.TC_AssertAndVerify"
+  }, {
+    "name" : "testClass",
+    "value" : "com.facebook.TC_AssertAndVerify"
+  }, {
+    "name" : "testMethod",
+    "value" : "TC_02_Assert_False"
+  }, {
+    "name" : "parentSuite",
+    "value" : "NopCommerce.User"
+  }, {
+    "name" : "suite",
+    "value" : "Run on chrome"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.facebook.TC_AssertAndVerify"
+  }, {
+    "name" : "host",
+    "value" : "Admin"
+  }, {
+    "name" : "thread",
+    "value" : "11292@Admin.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "browser",
+    "value" : "chrome"
+  }, {
+    "name" : "url",
+    "value" : "https://www.facebook.com/login"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "caf20c3ba8092d3a.json",
+  "parameterValues" : [ "chrome", "https://www.facebook.com/login" ]
+}

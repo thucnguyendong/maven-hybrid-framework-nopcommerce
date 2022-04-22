@@ -1,0 +1,82 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "TC_01_Assert_True",
+    "uid" : "3b3e65e933bf7089",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1645889345667,
+      "stop" : 1645889345725,
+      "duration" : 58
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome", "https://www.facebook.com/login" ]
+  }, {
+    "name" : "TC_02_Assert_False",
+    "uid" : "caf20c3ba8092d3a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1645889345779,
+      "stop" : 1645889345796,
+      "duration" : 17
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome", "https://www.facebook.com/login" ]
+  }, {
+    "name" : "TC_03_Fail",
+    "uid" : "179ab3144cd11055",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "failed",
+    "time" : {
+      "start" : 1645889345800,
+      "stop" : 1645889350841,
+      "duration" : 5041
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "chrome", "https://www.facebook.com/login" ]
+  }, {
+    "name" : "Web",
+    "children" : [ {
+      "name" : "user",
+      "children" : [ {
+        "name" : "",
+        "children" : [ {
+          "name" : "TC_01_Register_Empty_Data",
+          "uid" : "69fa0684d9f1d630",
+          "parentUid" : "06e1355b957d2658adb213932b24baaf",
+          "status" : "passed",
+          "time" : {
+            "start" : 1645896294107,
+            "stop" : 1645896294818,
+            "duration" : 711
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chrome" ]
+        }, {
+          "name" : "TC_02_Register_Invalid_Email",
+          "uid" : "b82a233e17cca771",
+          "parentUid" : "06e1355b957d2658adb213932b24baaf",
+          "status" : "passed",
+          "time" : {
+            "start" : 1645896294850,
+            "stop" : 1645896295380,
+            "duration" : 530
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "chrome" ]
+        } ],
+        "uid" : "06e1355b957d2658adb213932b24baaf"
+      } ],
+      "uid" : "9fa3c5116794c2a3b754e0609d93334a"
+    } ],
+    "uid" : "78892faaa4544dddf01f6f956cf1491b"
+  } ]
+}

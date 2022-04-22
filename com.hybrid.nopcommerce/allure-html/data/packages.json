@@ -1,0 +1,82 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "com",
+    "children" : [ {
+      "name" : "facebook.TC_AssertAndVerify",
+      "children" : [ {
+        "name" : "TC_01_Assert_True",
+        "uid" : "3b3e65e933bf7089",
+        "parentUid" : "c70088334a16b66db808c5f61173b16a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1645889345667,
+          "stop" : 1645889345725,
+          "duration" : 58
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome", "https://www.facebook.com/login" ]
+      }, {
+        "name" : "TC_02_Assert_False",
+        "uid" : "caf20c3ba8092d3a",
+        "parentUid" : "c70088334a16b66db808c5f61173b16a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1645889345779,
+          "stop" : 1645889345796,
+          "duration" : 17
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome", "https://www.facebook.com/login" ]
+      }, {
+        "name" : "TC_03_Fail",
+        "uid" : "179ab3144cd11055",
+        "parentUid" : "c70088334a16b66db808c5f61173b16a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1645889345800,
+          "stop" : 1645889350841,
+          "duration" : 5041
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome", "https://www.facebook.com/login" ]
+      } ],
+      "uid" : "facebook.TC_AssertAndVerify"
+    }, {
+      "name" : "nopcommerce.user.TC_Register_Allure",
+      "children" : [ {
+        "name" : "TC_01_Register_Empty_Data",
+        "uid" : "69fa0684d9f1d630",
+        "parentUid" : "1ce4ac86a7bff46f5dc61fe6589921d2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1645896294107,
+          "stop" : 1645896294818,
+          "duration" : 711
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome" ]
+      }, {
+        "name" : "TC_02_Register_Invalid_Email",
+        "uid" : "b82a233e17cca771",
+        "parentUid" : "1ce4ac86a7bff46f5dc61fe6589921d2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1645896294850,
+          "stop" : 1645896295380,
+          "duration" : 530
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "nopcommerce.user.TC_Register_Allure"
+    } ],
+    "uid" : "19cbf184dc946cabc9f6e8f92c007470"
+  } ]
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="false" name="NopCommerce.User">
+  <listeners>
+  	<listener class-name= "listenerConfig.MethodListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="reportConfig.AllureTestListener" />
+  </listeners>
+  <parameter name = "url" value ="https://www.facebook.com/login"></parameter>
+  <test name="Run on chrome">
+  	<parameter name = "browser" value ="chrome"></parameter>
+    <classes>
+      <class name="com.facebook.TC_AssertAndVerify"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

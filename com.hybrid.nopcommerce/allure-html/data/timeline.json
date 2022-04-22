@@ -1,0 +1,82 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "Admin",
+    "children" : [ {
+      "name" : "11292@Admin.main(1)",
+      "children" : [ {
+        "name" : "TC_01_Assert_True",
+        "uid" : "3b3e65e933bf7089",
+        "parentUid" : "107dd163f549104e043ee05dab5ccf1f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1645889345667,
+          "stop" : 1645889345725,
+          "duration" : 58
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome", "https://www.facebook.com/login" ]
+      }, {
+        "name" : "TC_02_Assert_False",
+        "uid" : "caf20c3ba8092d3a",
+        "parentUid" : "107dd163f549104e043ee05dab5ccf1f",
+        "status" : "passed",
+        "time" : {
+          "start" : 1645889345779,
+          "stop" : 1645889345796,
+          "duration" : 17
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome", "https://www.facebook.com/login" ]
+      }, {
+        "name" : "TC_03_Fail",
+        "uid" : "179ab3144cd11055",
+        "parentUid" : "107dd163f549104e043ee05dab5ccf1f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1645889345800,
+          "stop" : 1645889350841,
+          "duration" : 5041
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome", "https://www.facebook.com/login" ]
+      } ],
+      "uid" : "107dd163f549104e043ee05dab5ccf1f"
+    }, {
+      "name" : "3940@Admin.TestNG-tests-1(23)",
+      "children" : [ {
+        "name" : "TC_02_Register_Invalid_Email",
+        "uid" : "b82a233e17cca771",
+        "parentUid" : "3b56bb9091928b725e23b43be8809ae8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1645896294850,
+          "stop" : 1645896295380,
+          "duration" : 530
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome" ]
+      }, {
+        "name" : "TC_01_Register_Empty_Data",
+        "uid" : "69fa0684d9f1d630",
+        "parentUid" : "3b56bb9091928b725e23b43be8809ae8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1645896294107,
+          "stop" : 1645896294818,
+          "duration" : 711
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "chrome" ]
+      } ],
+      "uid" : "3b56bb9091928b725e23b43be8809ae8"
+    } ],
+    "uid" : "6e43a9d275ec75f9005b05025974cbd8"
+  } ]
+}
