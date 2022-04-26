@@ -1703,3 +1703,9 @@ Driver info: driver.version: RemoteWebDriver
 [INFO ] [2022-03-10 22:27:24,458] Close all drivers after suite
 [INFO ] [2022-03-10 22:27:24,459] OS name = windows 10
 [INFO ] [2022-03-10 22:27:24,460] 
+[INFO ] [2022-04-22 21:38:01,287] Close all drivers after suite
+[INFO ] [2022-04-22 21:38:01,287] OS name = windows 10
+[INFO ] [2022-04-22 21:38:01,287] Driver instance name = chromedriver: chrome on windows (a8bea90b4f614b6b8ddc0d473821445f)
+[INFO ] [2022-04-22 21:52:54,235] Close all drivers after suite
+[INFO ] [2022-04-22 21:52:54,235] OS name = windows 10
+[INFO ] [2022-04-22 21:52:54,235] Driver instance name = chromedriver: chrome on windows (2e8960c94e472f529f2392877f6b338c)

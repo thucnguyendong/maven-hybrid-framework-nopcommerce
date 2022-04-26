@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="tests" name="Failed suite [NopCommerce.User]">
+  <listeners>
+    <listener class-name="commons.MethodListener"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+    <listener class-name="reportConfig.ExtentTestListener"/>
+  </listeners>
+  <test thread-count="3" parallel="tests" name="Run on chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.nopcommerce.user.TC_Register_Extent">
+        <methods>
+          <include name="TC_02_Register_Invalid_Email" invocation-numbers="0"/>
+          <include name="afterClass"/>
+          <include name="cleanExecutableDriver"/>
+          <include name="beforeSuit"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.nopcommerce.user.TC_Register_Extent -->
+    </classes>
+  </test> <!-- Run on chrome(failed) -->
+</suite> <!-- Failed suite [NopCommerce.User] -->

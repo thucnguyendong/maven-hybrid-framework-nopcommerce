@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite parallel = "tests" name="NopCommerce.User" thread-count = "3">
   <listeners>
-  	<listener class-name= "listenerConfig.MethodListener"/>
+  	<listener class-name= "commons.MethodListener"/>
     <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
   </listeners>

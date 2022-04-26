@@ -22,7 +22,7 @@
 		<testng.version>6.14.3</testng.version>
 		<jackson.version>2.9.4</jackson.version>
 		<webdrivermanager.version>4.2.2</webdrivermanager.version>
-		<aspectj.version>1.8.10</aspectj.version>
+		<aspectj.version>1.9.4</aspectj.version>
 	</properties>
 
 	<!-- Quản lí thư viện -->
