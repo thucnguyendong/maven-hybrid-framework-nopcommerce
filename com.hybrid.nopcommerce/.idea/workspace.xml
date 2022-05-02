@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d32f4c20-d851-4b3a-ac34-b018a829d9ee" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/allure-json/8e0abb31-cded-444d-b136-9fba0c529788-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-json/c36131b2-110c-4ed6-acd5-417568d45619-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-json/d441b84b-0825-4172-b455-7a8848ebb91d-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/allure-json/e45e1293-0d54-44df-b2db-bbe035100b98-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitorLogs/NopCommerce.log" beforeDir="false" afterPath="$PROJECT_DIR$/monitorLogs/NopCommerce.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/monitorLogs/NopCommerce.txt" beforeDir="false" afterPath="$PROJECT_DIR$/monitorLogs/NopCommerce.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/reportConfig/ExtentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reportConfig/ExtentManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/runNopCommerceExtentReport.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runNopCommerceExtentReport.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/runNopCommerceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runNopCommerceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/runNopCommerceTest_Cookie.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runNopCommerceTest_Cookie.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/reportConfig/ExtentManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/reportConfig/ExtentManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runNopCommerceExtentReport.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runNopCommerceExtentReport.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runNopCommerceTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runNopCommerceTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runNopCommerceTest_Cookie.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runNopCommerceTest_Cookie.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="28L1lV0LeL6jh0tRIjcyzecEM5i" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d32f4c20-d851-4b3a-ac34-b018a829d9ee" name="Default Changelist" comment="" />
+      <created>1650981204094</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1650981204094</updated>
+    </task>
+    <servers />
+  </component>
+</project>

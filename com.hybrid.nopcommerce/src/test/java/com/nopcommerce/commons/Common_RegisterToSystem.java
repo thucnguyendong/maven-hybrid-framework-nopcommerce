@@ -4,20 +4,27 @@ import java.util.Set;
 
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
+
+import com.aventstack.extentreports.Status;
 
 import commons.BaseTest;
 import commons.GlobalConstants;
 import commons.PageGeneratorManager;
 import pageObjects.nopcommerce.portal.UserHomePageObject;
 import pageObjects.nopcommerce.portal.UserRegisterPageObject;
+import reportConfig.ExtentTestManager;
 
 public class Common_RegisterToSystem extends BaseTest {
 	private WebDriver driver;
 	private UserHomePageObject homePage;
 	private UserRegisterPageObject registerPage;
 	public static Set<Cookie> loginPageCookies;
+	public static String globalEmail;
+	public static String globalPassword;
 	private String emailAddress;
 	private String firstName = "Thuc";
 	private String lastName= "Nguyen";
@@ -62,6 +69,9 @@ public class Common_RegisterToSystem extends BaseTest {
 		verifyEquals(registerPage.getSuccessMessage(), "Your registration completed");
 		
 		loginPageCookies = homePage.getAllCookies(driver);
+		globalEmail = emailAddress;
+		globalPassword = password;
+		closeBrowserAndDriver();
 	}
-	
 }
+

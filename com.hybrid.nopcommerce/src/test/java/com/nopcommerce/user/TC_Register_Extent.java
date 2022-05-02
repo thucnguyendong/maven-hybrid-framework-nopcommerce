@@ -43,8 +43,7 @@ public class TC_Register_Extent extends BaseTest {
 	
 	@Test
 	public void TC_01_Register_Empty_Data(Method method) {
-		ExtentTestManager.startTest(method.getName(), "TC_01_Register_Empty_Data");
-		ExtentTestManager.getTest().log(Status.INFO, "Test Case 1: Register with empty data");
+		ExtentTestManager.startTest(method.getName(), "Test Case 1: Register with empty data");
 		ExtentTestManager.getTest().log(Status.INFO, "Step 1: Click Register Link");
 		registerPage = homePage.clickRegisterLink();
 		ExtentTestManager.getTest().log(Status.INFO, "Step 2: Click Register Button");
@@ -60,8 +59,7 @@ public class TC_Register_Extent extends BaseTest {
 	
 	@Test
 	public void TC_02_Register_Invalid_Email(Method method) {
-		ExtentTestManager.startTest(method.getName(), "TC_02_Register_Invalid_Email");
-		ExtentTestManager.getTest().log(Status.INFO, "Test Case 2: Register with invalid email");
+		ExtentTestManager.startTest(method.getName(), "Test Case 2: Register with invalid email");
 		ExtentTestManager.getTest().log(Status.INFO, "Step 1: Click Register Link");
 		registerPage = homePage.clickRegisterLink();
 		ExtentTestManager.getTest().log(Status.INFO, "Step 2: Click input invalid email format");
@@ -74,8 +72,7 @@ public class TC_Register_Extent extends BaseTest {
 	
 	@Test
 	public void TC_03_Register_Sucessfully(Method method) {
-		ExtentTestManager.startTest(method.getName(), "TC_03_Register_Sucessfully");
-		ExtentTestManager.getTest().log(Status.INFO, "Test Case 3: Register successfully");
+		ExtentTestManager.startTest(method.getName(), "Test Case 3: Register successfully");
 		ExtentTestManager.getTest().log(Status.INFO, "Step 1: Click Register Link");
 		registerPage = homePage.clickRegisterLink();
 		ExtentTestManager.getTest().log(Status.INFO, "Step 2: Select radio button Male");
@@ -110,6 +107,7 @@ public class TC_Register_Extent extends BaseTest {
 	@AfterClass
 	public void afterClass(String browserName) {
 		ExtentTestManager.getTest().log(Status.INFO, "Post-condition: Close browser "+browserName);
+		closeBrowserAndDriver();
 	}	
 	
 }

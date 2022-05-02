@@ -1,7 +1,5 @@
 package com.nopcommerce.user;
 
-import static org.testng.Assert.assertEquals;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -73,7 +71,7 @@ public class TC_Register_Allure extends BaseTest {
 	@AfterClass
 	public void afterClass() {
 		log.info("Post-condition: Close browser");
-		driver.quit();
+		closeBrowserAndDriver();
 	}	
 	
 }
