@@ -1,3 +1,37 @@
-[INFO ] [2022-04-22 21:52:54,235] Close all drivers after suite
-[INFO ] [2022-04-22 21:52:54,235] OS name = windows 10
-[INFO ] [2022-04-22 21:52:54,235] Driver instance name = chromedriver: chrome on windows (2e8960c94e472f529f2392877f6b338c)
+[INFO ] [2022-05-02 22:16:58,164] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-05-02 22:17:01,476] Step 1: Click Register Link
+[INFO ] [2022-05-02 22:17:01,988] Step 2: Select radio button Male
+[INFO ] [2022-05-02 22:17:02,038] Step 3: Input First Name
+[INFO ] [2022-05-02 22:17:02,112] Step 4: Input Last Name
+[INFO ] [2022-05-02 22:17:02,176] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-05-02 22:17:02,368] Step 5: Input company name
+[INFO ] [2022-05-02 22:17:02,427] Step 6: Input email address
+[INFO ] [2022-05-02 22:17:02,490] Step 7: Input password
+[INFO ] [2022-05-02 22:17:02,552] Step 8: Input confirm password
+[INFO ] [2022-05-02 22:17:02,611] Step 9: Click Register button
+[INFO ] [2022-05-02 22:17:03,387] Step 10: Verify register's success message
+[INFO ] [2022-05-02 22:17:03,413]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-05-02 22:17:03,416] OS name = windows 10
+[INFO ] [2022-05-02 22:17:03,417] Driver instance name = chromedriver: chrome on windows (0260fe0d35afdcc4462b319f6726913f)
+[INFO ] [2022-05-02 22:17:07,582]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-05-02 22:17:08,144]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-05-02 22:17:09,156]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-05-02 22:17:09,979]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-05-02 22:17:11,059]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-05-02 22:17:12,289]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-05-02 22:17:12,291] OS name = windows 10
+[INFO ] [2022-05-02 22:17:12,291] Driver instance name = chromedriver: chrome on windows (be6ac3f5a75785f7d9ed657404312a59)
+[INFO ] [2022-05-02 22:17:15,529]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-05-02 22:17:16,102]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-05-02 22:17:16,603]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-05-02 22:17:17,180]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-05-02 22:17:17,679]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-05-02 22:17:17,680] OS name = windows 10
+[INFO ] [2022-05-02 22:17:17,680] Driver instance name = chromedriver: chrome on windows (33a2c2ba347d9ad7f5bdfcfc10f9216f)
+[INFO ] [2022-05-02 22:17:18,572] Close all drivers after suite
+[INFO ] [2022-05-02 22:17:18,572] OS name = windows 10
+[INFO ] [2022-05-02 22:17:18,573] Driver instance name = chromedriver: chrome on windows (null)
+[INFO ] [2022-05-02 22:17:18,574] Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver

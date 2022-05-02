@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on chrome"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="2.200">
+  <properties />
+  
+  
+            <testcase name="TC_03_Search_Return_No_Value" time="0.501" classname="com.nopcommerce.user.TC_Search" />
+                <testcase name="TC_01_Search_Empty_Data" time="0.056" classname="com.nopcommerce.user.TC_Search" />
+                <testcase name="TC_02_Search_Less_Than_3_Characters" time="0.570" classname="com.nopcommerce.user.TC_Search" />
+                <testcase name="TC_04_Relative_Search_With_Product_Name" time="0.575" classname="com.nopcommerce.user.TC_Search" />
+                <testcase name="TC_05_Absolute_Search_With_Product_Name" time="0.498" classname="com.nopcommerce.user.TC_Search" />
+      
+</testsuite>

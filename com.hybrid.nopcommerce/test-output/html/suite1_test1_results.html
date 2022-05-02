@@ -12,98 +12,229 @@
 <body>
 <h1>Run on chrome</h1>
 <p>
-  Test duration: 8.992s
+  Test duration: 20.181s
 </p>
 
 
 
-  <table class="resultsTable">
-    <tr><th colspan="3" class="header failed">Failed Tests</th></tr>
-          <tr>
-        <td colspan="3" class="group">com.nopcommerce.user.TC_Register_Extent</td>
-      </tr>
-            
-<tr>
-  <td class="method">
-                  TC_02_Register_Invalid_Email
-      </td>
-  <td class="duration">
-    0.546s
-  </td>
-  <td class="result">
-        
-          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.user.TC_Register_Extent.TC_02_Register_Invalid_Email(java.lang.reflect.Method)</span><br />
-    
-        
-
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [Wrong email 1] but found [Wrong email]</b></a><br />
-    <div class="stackTrace" id="exception-0">
-              org.testng.Assert.fail(Assert.java:96)<br />
-              org.testng.Assert.failNotEquals(Assert.java:776)<br />
-              org.testng.Assert.assertEqualsImpl(Assert.java:137)<br />
-              org.testng.Assert.assertEquals(Assert.java:118)<br />
-              org.testng.Assert.assertEquals(Assert.java:453)<br />
-              org.testng.Assert.assertEquals(Assert.java:463)<br />
-              com.nopcommerce.user.TC_Register_Extent.TC_02_Register_Invalid_Email(TC_Register_Extent.java:72)<br />
-              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
-              java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)<br />
-              java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />
-              java.base/java.lang.reflect.Method.invoke(Method.java:564)<br />
-              org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)<br />
-              org.testng.internal.Invoker.invokeMethod(Invoker.java:583)<br />
-              org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)<br />
-              org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)<br />
-              org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)<br />
-              org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)<br />
-              org.testng.TestRunner.privateRun(TestRunner.java:648)<br />
-              org.testng.TestRunner.run(TestRunner.java:505)<br />
-              org.testng.SuiteRunner.runTest(SuiteRunner.java:455)<br />
-              org.testng.SuiteRunner.access$000(SuiteRunner.java:40)<br />
-              org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)<br />
-              org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)<br />
-              java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)<br />
-              java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)<br />
-              java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)<br />
-              java.base/java.lang.Thread.run(Thread.java:832)<br />
-                </div>
-      </td>
-</tr>
-      </table>
 
 
   <table class="resultsTable">
     <tr><th colspan="3" class="header passed">Passed Tests</th></tr>
           <tr>
-        <td colspan="3" class="group">com.nopcommerce.user.TC_Register_Extent</td>
+        <td colspan="3" class="group">com.nopcommerce.user.TC_Login</td>
       </tr>
             
 <tr>
   <td class="method">
-                  TC_01_Register_Empty_Data
+                  TC_01_Login_Empty
       </td>
   <td class="duration">
-    0.990s
+    0.828s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.user.TC_Register_Extent.TC_01_Register_Empty_Data(java.lang.reflect.Method)</span><br />
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.user.TC_Login.TC_01_Login_Empty(java.lang.reflect.Method)</span><br />
     
-        
+            <div class="testOutput">
+                        [INFO ] [2022-05-02 22:17:07,582]&nbsp; -------------------------- PASSED -------------------------- <br/>
+&lt;br&gt;<br />
+                  </div>
+    
 
       </td>
 </tr>
 <tr>
   <td class="method">
-                  TC_03_Register_Sucessfully
+                  TC_02_Login_Invalid_Email
       </td>
   <td class="duration">
-    3.526s
+    0.513s
   </td>
   <td class="result">
         
-          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.user.TC_Register_Extent.TC_03_Register_Sucessfully(java.lang.reflect.Method)</span><br />
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.user.TC_Login.TC_02_Login_Invalid_Email(java.lang.reflect.Method)</span><br />
     
+            <div class="testOutput">
+                        [INFO ] [2022-05-02 22:17:08,144]&nbsp; -------------------------- PASSED -------------------------- <br/>
+&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_03_Login_Not_Registered_Email
+      </td>
+  <td class="duration">
+    1.011s
+  </td>
+  <td class="result">
         
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.user.TC_Login.TC_03_Login_Not_Registered_Email(java.lang.reflect.Method)</span><br />
+    
+            <div class="testOutput">
+                        [INFO ] [2022-05-02 22:17:09,156]&nbsp; -------------------------- PASSED -------------------------- <br/>
+&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_04_Login_With_Empty_Password
+      </td>
+  <td class="duration">
+    0.822s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.user.TC_Login.TC_04_Login_With_Empty_Password(java.lang.reflect.Method)</span><br />
+    
+            <div class="testOutput">
+                        [INFO ] [2022-05-02 22:17:09,979]&nbsp; -------------------------- PASSED -------------------------- <br/>
+&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_05_Login_With_Wrong_Password
+      </td>
+  <td class="duration">
+    1.079s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.user.TC_Login.TC_05_Login_With_Wrong_Password(java.lang.reflect.Method)</span><br />
+    
+            <div class="testOutput">
+                        [INFO ] [2022-05-02 22:17:11,059]&nbsp; -------------------------- PASSED -------------------------- <br/>
+&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_06_Login_Successfully
+      </td>
+  <td class="duration">
+    1.229s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.user.TC_Login.TC_06_Login_Successfully(java.lang.reflect.Method)</span><br />
+    
+            <div class="testOutput">
+                        [INFO ] [2022-05-02 22:17:12,289]&nbsp; -------------------------- PASSED -------------------------- <br/>
+&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+          <tr>
+        <td colspan="3" class="group">com.nopcommerce.user.TC_Search</td>
+      </tr>
+            
+<tr>
+  <td class="method">
+                  TC_01_Search_Empty_Data
+      </td>
+  <td class="duration">
+    0.056s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.user.TC_Search.TC_01_Search_Empty_Data(java.lang.reflect.Method)</span><br />
+    
+            <div class="testOutput">
+                        [INFO ] [2022-05-02 22:17:15,529]&nbsp; -------------------------- PASSED -------------------------- <br/>
+&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_02_Search_Less_Than_3_Characters
+      </td>
+  <td class="duration">
+    0.570s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.user.TC_Search.TC_02_Search_Less_Than_3_Characters(java.lang.reflect.Method)</span><br />
+    
+            <div class="testOutput">
+                        [INFO ] [2022-05-02 22:17:16,102]&nbsp; -------------------------- PASSED -------------------------- <br/>
+&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_03_Search_Return_No_Value
+      </td>
+  <td class="duration">
+    0.501s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.user.TC_Search.TC_03_Search_Return_No_Value(java.lang.reflect.Method)</span><br />
+    
+            <div class="testOutput">
+                        [INFO ] [2022-05-02 22:17:16,603]&nbsp; -------------------------- PASSED -------------------------- <br/>
+&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_04_Relative_Search_With_Product_Name
+      </td>
+  <td class="duration">
+    0.575s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.user.TC_Search.TC_04_Relative_Search_With_Product_Name(java.lang.reflect.Method)</span><br />
+    
+            <div class="testOutput">
+                        [INFO ] [2022-05-02 22:17:17,180]&nbsp; -------------------------- PASSED -------------------------- <br/>
+&lt;br&gt;<br />
+                  </div>
+    
+
+      </td>
+</tr>
+<tr>
+  <td class="method">
+                  TC_05_Absolute_Search_With_Product_Name
+      </td>
+  <td class="duration">
+    0.498s
+  </td>
+  <td class="result">
+        
+          <i>Method arguments: </i><span class="arguments">public void com.nopcommerce.user.TC_Search.TC_05_Absolute_Search_With_Product_Name(java.lang.reflect.Method)</span><br />
+    
+            <div class="testOutput">
+                        [INFO ] [2022-05-02 22:17:17,679]&nbsp; -------------------------- PASSED -------------------------- <br/>
+&lt;br&gt;<br />
+                  </div>
+    
 
       </td>
 </tr>

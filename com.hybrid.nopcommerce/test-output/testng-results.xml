@@ -1,29 +1,152 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="4" total="15" passed="11" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[[INFO ] [2022-04-22 21:52:54,235] Close all drivers after suite
+      <![CDATA[[INFO ] [2022-05-02 22:16:58,164] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-04-22 21:52:54,235] OS name = windows 10
+      <![CDATA[[INFO ] [2022-05-02 22:17:01,476] Step 1: Click Register Link
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-04-22 21:52:54,235] Driver instance name = chromedriver: chrome on windows (2e8960c94e472f529f2392877f6b338c)
+      <![CDATA[[INFO ] [2022-05-02 22:17:01,988] Step 2: Select radio button Male
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:02,038] Step 3: Input First Name
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:02,112] Step 4: Input Last Name
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:02,176] Step 5: Select Birthday Date: day, month, year
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:02,368] Step 5: Input company name
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:02,427] Step 6: Input email address
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:02,490] Step 7: Input password
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:02,552] Step 8: Input confirm password
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:02,611] Step 9: Click Register button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:03,387] Step 10: Verify register's success message
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:03,413]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:03,416] OS name = windows 10
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:03,417] Driver instance name = chromedriver: chrome on windows (0260fe0d35afdcc4462b319f6726913f)
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:07,582]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:08,144]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:09,156]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:09,979]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:11,059]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:12,289]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:12,291] OS name = windows 10
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:12,291] Driver instance name = chromedriver: chrome on windows (be6ac3f5a75785f7d9ed657404312a59)
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:15,529]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:16,102]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:16,603]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:17,180]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:17,679]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:17,680] OS name = windows 10
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:17,680] Driver instance name = chromedriver: chrome on windows (33a2c2ba347d9ad7f5bdfcfc10f9216f)
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:18,572] Close all drivers after suite
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:18,572] OS name = windows 10
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:18,573] Driver instance name = chromedriver: chrome on windows (null)
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-02 22:17:18,574] Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
 <br>]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-04-22T14:52:45Z" name="NopCommerce.User" finished-at="2022-04-22T14:52:53Z" duration-ms="8498">
+  <suite started-at="2022-05-02T15:16:58Z" name="NopCommerce.User" finished-at="2022-05-02T15:17:18Z" duration-ms="20195">
     <groups>
     </groups>
-    <test started-at="2022-04-22T14:52:45Z" name="Run on chrome" finished-at="2022-04-22T14:52:53Z" duration-ms="8498">
-      <class name="com.nopcommerce.user.TC_Register_Extent">
-        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:com.nopcommerce.user.TC_Register_Extent@499683c4]" started-at="2022-04-22T14:52:45Z" name="beforeSuit" finished-at="2022-04-22T14:52:45Z" duration-ms="20" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuit -->
-        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.TC_Register_Extent@499683c4]" started-at="2022-04-22T14:52:45Z" name="beforeClass" finished-at="2022-04-22T14:52:48Z" duration-ms="3256" status="PASS">
+    <test started-at="2022-05-02T15:16:58Z" name="Run on chrome" finished-at="2022-05-02T15:17:18Z" duration-ms="20195">
+      <class name="com.nopcommerce.user.TC_Login">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.TC_Login@6869a3b3]" started-at="2022-05-02T15:17:04Z" name="beforeClass" finished-at="2022-05-02T15:17:06Z" duration-ms="2660" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -34,76 +157,118 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TC_01_Register_Empty_Data(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Register_Extent@499683c4]" started-at="2022-04-22T14:52:48Z" name="TC_01_Register_Empty_Data" finished-at="2022-04-22T14:52:49Z" duration-ms="990" status="PASS">
+        <test-method signature="TC_01_Login_Empty(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Login@6869a3b3]" started-at="2022-05-02T15:17:06Z" name="TC_01_Login_Empty" finished-at="2022-05-02T15:17:07Z" duration-ms="828" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.nopcommerce.user.TC_Register_Extent.TC_01_Register_Empty_Data(java.lang.reflect.Method)]]>
+                <![CDATA[public void com.nopcommerce.user.TC_Login.TC_01_Login_Empty(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:07,582]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- TC_01_Register_Empty_Data -->
-        <test-method signature="TC_02_Register_Invalid_Email(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Register_Extent@499683c4]" started-at="2022-04-22T14:52:49Z" name="TC_02_Register_Invalid_Email" finished-at="2022-04-22T14:52:50Z" duration-ms="546" status="FAIL">
+        </test-method> <!-- TC_01_Login_Empty -->
+        <test-method signature="TC_02_Login_Invalid_Email(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Login@6869a3b3]" started-at="2022-05-02T15:17:07Z" name="TC_02_Login_Invalid_Email" finished-at="2022-05-02T15:17:08Z" duration-ms="513" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.nopcommerce.user.TC_Register_Extent.TC_02_Register_Invalid_Email(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Wrong email 1] but found [Wrong email]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Wrong email 1] but found [Wrong email]
-at org.testng.Assert.fail(Assert.java:96)
-at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
-at org.testng.Assert.assertEquals(Assert.java:118)
-at org.testng.Assert.assertEquals(Assert.java:453)
-at org.testng.Assert.assertEquals(Assert.java:463)
-at com.nopcommerce.user.TC_Register_Extent.TC_02_Register_Invalid_Email(TC_Register_Extent.java:72)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
-at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
-at java.base/java.lang.Thread.run(Thread.java:832)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_02_Register_Invalid_Email -->
-        <test-method signature="TC_03_Register_Sucessfully(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Register_Extent@499683c4]" started-at="2022-04-22T14:52:50Z" name="TC_03_Register_Sucessfully" finished-at="2022-04-22T14:52:53Z" duration-ms="3526" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.user.TC_Register_Extent.TC_03_Register_Sucessfully(java.lang.reflect.Method)]]>
+                <![CDATA[public void com.nopcommerce.user.TC_Login.TC_02_Login_Invalid_Email(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:08,144]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- TC_03_Register_Sucessfully -->
-        <test-method is-config="true" signature="afterClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.TC_Register_Extent@499683c4]" started-at="2022-04-22T14:52:53Z" name="afterClass" finished-at="2022-04-22T14:52:53Z" duration-ms="1" status="PASS">
+        </test-method> <!-- TC_02_Login_Invalid_Email -->
+        <test-method signature="TC_03_Login_Not_Registered_Email(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Login@6869a3b3]" started-at="2022-05-02T15:17:08Z" name="TC_03_Login_Not_Registered_Email" finished-at="2022-05-02T15:17:09Z" duration-ms="1011" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.user.TC_Login.TC_03_Login_Not_Registered_Email(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:09,156]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_03_Login_Not_Registered_Email -->
+        <test-method signature="TC_04_Login_With_Empty_Password(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Login@6869a3b3]" started-at="2022-05-02T15:17:09Z" name="TC_04_Login_With_Empty_Password" finished-at="2022-05-02T15:17:09Z" duration-ms="822" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.user.TC_Login.TC_04_Login_With_Empty_Password(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:09,979]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_04_Login_With_Empty_Password -->
+        <test-method signature="TC_05_Login_With_Wrong_Password(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Login@6869a3b3]" started-at="2022-05-02T15:17:09Z" name="TC_05_Login_With_Wrong_Password" finished-at="2022-05-02T15:17:11Z" duration-ms="1079" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.user.TC_Login.TC_05_Login_With_Wrong_Password(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:11,059]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_05_Login_With_Wrong_Password -->
+        <test-method signature="TC_06_Login_Successfully(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Login@6869a3b3]" started-at="2022-05-02T15:17:11Z" name="TC_06_Login_Successfully" finished-at="2022-05-02T15:17:12Z" duration-ms="1229" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.user.TC_Login.TC_06_Login_Successfully(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:12,289]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_06_Login_Successfully -->
+        <test-method is-config="true" signature="afterClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.TC_Login@6869a3b3]" started-at="2022-05-02T15:17:12Z" name="afterClass" finished-at="2022-05-02T15:17:12Z" duration-ms="674" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:12,291] OS name = windows 10
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:12,291] Driver instance name = chromedriver: chrome on windows (be6ac3f5a75785f7d9ed657404312a59)
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.user.TC_Login -->
+      <class name="com.nopcommerce.user.TC_Search">
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.TC_Search@6ab4ba9f]" started-at="2022-05-02T15:17:12Z" name="beforeClass" finished-at="2022-05-02T15:17:15Z" duration-ms="2510" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -113,24 +278,202 @@ at java.base/java.lang.Thread.run(Thread.java:832)
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="cleanExecutableDriver()[pri:0, instance:com.nopcommerce.user.TC_Register_Extent@499683c4]" started-at="2022-04-22T14:52:54Z" name="cleanExecutableDriver" finished-at="2022-04-22T14:52:54Z" duration-ms="653" status="PASS">
+        </test-method> <!-- beforeClass -->
+        <test-method signature="TC_01_Search_Empty_Data(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Search@6ab4ba9f]" started-at="2022-05-02T15:17:15Z" name="TC_01_Search_Empty_Data" finished-at="2022-05-02T15:17:15Z" duration-ms="56" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.user.TC_Search.TC_01_Search_Empty_Data(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
             <line>
-              <![CDATA[[INFO ] [2022-04-22 21:52:54,235] Close all drivers after suite
+              <![CDATA[[INFO ] [2022-05-02 22:17:15,529]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_01_Search_Empty_Data -->
+        <test-method signature="TC_02_Search_Less_Than_3_Characters(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Search@6ab4ba9f]" started-at="2022-05-02T15:17:15Z" name="TC_02_Search_Less_Than_3_Characters" finished-at="2022-05-02T15:17:16Z" duration-ms="570" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.user.TC_Search.TC_02_Search_Less_Than_3_Characters(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:16,102]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_02_Search_Less_Than_3_Characters -->
+        <test-method signature="TC_03_Search_Return_No_Value(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Search@6ab4ba9f]" started-at="2022-05-02T15:17:16Z" name="TC_03_Search_Return_No_Value" finished-at="2022-05-02T15:17:16Z" duration-ms="501" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.user.TC_Search.TC_03_Search_Return_No_Value(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:16,603]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_03_Search_Return_No_Value -->
+        <test-method signature="TC_04_Relative_Search_With_Product_Name(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Search@6ab4ba9f]" started-at="2022-05-02T15:17:16Z" name="TC_04_Relative_Search_With_Product_Name" finished-at="2022-05-02T15:17:17Z" duration-ms="575" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.user.TC_Search.TC_04_Relative_Search_With_Product_Name(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:17,180]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_04_Relative_Search_With_Product_Name -->
+        <test-method signature="TC_05_Absolute_Search_With_Product_Name(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Search@6ab4ba9f]" started-at="2022-05-02T15:17:17Z" name="TC_05_Absolute_Search_With_Product_Name" finished-at="2022-05-02T15:17:17Z" duration-ms="498" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.user.TC_Search.TC_05_Absolute_Search_With_Product_Name(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:17,679]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_05_Absolute_Search_With_Product_Name -->
+        <test-method is-config="true" signature="afterClass(java.lang.String)[pri:0, instance:com.nopcommerce.user.TC_Search@6ab4ba9f]" started-at="2022-05-02T15:17:17Z" name="afterClass" finished-at="2022-05-02T15:17:18Z" duration-ms="669" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:17,680] OS name = windows 10
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-04-22 21:52:54,235] OS name = windows 10
+              <![CDATA[[INFO ] [2022-05-02 22:17:17,680] Driver instance name = chromedriver: chrome on windows (33a2c2ba347d9ad7f5bdfcfc10f9216f)
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.nopcommerce.user.TC_Search -->
+      <class name="com.nopcommerce.commons.Common_RegisterToSystem">
+        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:com.nopcommerce.commons.Common_RegisterToSystem@75769ab0]" started-at="2022-05-02T15:16:58Z" name="beforeSuit" finished-at="2022-05-02T15:16:58Z" duration-ms="20" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuit -->
+        <test-method is-config="true" signature="beforeClass(java.lang.String)[pri:0, instance:com.nopcommerce.commons.Common_RegisterToSystem@75769ab0]" started-at="2022-05-02T15:16:58Z" name="beforeClass" finished-at="2022-05-02T15:17:04Z" duration-ms="5926" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:16:58,164] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-04-22 21:52:54,235] Driver instance name = chromedriver: chrome on windows (2e8960c94e472f529f2392877f6b338c)
+              <![CDATA[[INFO ] [2022-05-02 22:17:01,476] Step 1: Click Register Link
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:01,988] Step 2: Select radio button Male
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:02,038] Step 3: Input First Name
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:02,112] Step 4: Input Last Name
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:02,176] Step 5: Select Birthday Date: day, month, year
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:02,368] Step 5: Input company name
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:02,427] Step 6: Input email address
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:02,490] Step 7: Input password
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:02,552] Step 8: Input confirm password
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:02,611] Step 9: Click Register button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:03,387] Step 10: Verify register's success message
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:03,413]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:03,416] OS name = windows 10
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:03,417] Driver instance name = chromedriver: chrome on windows (0260fe0d35afdcc4462b319f6726913f)
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="cleanExecutableDriver()[pri:0, instance:com.nopcommerce.commons.Common_RegisterToSystem@75769ab0]" started-at="2022-05-02T15:17:18Z" name="cleanExecutableDriver" finished-at="2022-05-02T15:17:18Z" duration-ms="40" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:18,572] Close all drivers after suite
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:18,572] OS name = windows 10
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:18,573] Driver instance name = chromedriver: chrome on windows (null)
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-02 22:17:18,574] Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
 <br>]]>
             </line>
           </reporter-output>
         </test-method> <!-- cleanExecutableDriver -->
-      </class> <!-- com.nopcommerce.user.TC_Register_Extent -->
+      </class> <!-- com.nopcommerce.commons.Common_RegisterToSystem -->
     </test> <!-- Run on chrome -->
   </suite> <!-- NopCommerce.User -->
 </testng-results>
