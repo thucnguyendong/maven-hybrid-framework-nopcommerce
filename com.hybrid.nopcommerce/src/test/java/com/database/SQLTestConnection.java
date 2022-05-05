@@ -1,38 +1,24 @@
 package com.database;
 
 import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.util.ArrayList;
 
-import utilities.JDBCHelper;
+import commons.BasePage;
+import commons.SQLQueryConstants;
+import utilities.DatabaseHelper;
 
 public class SQLTestConnection {
 	
 	public static void main(String[] arg) {
 		Connection conn;
-		conn = JDBCHelper.getLocalSQLConnection();
+		conn = DatabaseHelper.getLocalSQLConnection();
 		System.out.println(conn);
-		String sql = "select EMP_ID,FIRST_NAME,LAST_NAME,TITLE from automationfc.dbo.EMPLOYEE";
-		try {
-			Statement statement = conn.createStatement();
-			ResultSet result = statement.executeQuery(sql);
-			while (result.next()) {
-				int empId = result.getInt(1);
-				String empFirstName = result.getString(2);
-				String empLastName = result.getString(3);
-				String empTitle = result.getString("title");
-				
-				System.out.println("-------------");
-				System.out.println(empId);
-				System.out.println(empFirstName+ " "+ empLastName);
-				System.out.println(empTitle);
-			}
-			conn.close();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+		ArrayList<String> list= BasePage.getBasePage().getColumnDataFromDB(conn,SQLQueryConstants.GET_EMPLOYEE_INFORMATION,"FIRST_NAME");
+		ArrayList<Integer> numberList= BasePage.getBasePage().getColumnNumberFromDB(conn, SQLQueryConstants.GET_EMPLOYEE_INFORMATION, "EMP_ID");
+		for (int i=0; i<list.size();i++) {
+			System.out.println(numberList.get(i));
+			System.out.println(list.get(i));
 		}
+		DatabaseHelper.closeConnection(conn);
 	}
-
 }

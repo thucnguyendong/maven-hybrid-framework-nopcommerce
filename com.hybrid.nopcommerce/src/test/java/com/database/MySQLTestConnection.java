@@ -5,13 +5,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import utilities.JDBCHelper;
+import utilities.DatabaseHelper;
 
 public class MySQLTestConnection {
 	
 	public static void main(String[] arg) {
 		Connection conn;
-		conn = JDBCHelper.getLocalMySQLConnection();
+		conn = DatabaseHelper.getLocalMySQLConnection();
 		System.out.println(conn);
 		String sql = "select EMP_ID,FIRST_NAME,LAST_NAME,TITLE from automationfc.employee";
 		try {

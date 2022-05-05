@@ -2,8 +2,9 @@ package utilities;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.SQLException;
 
-public class JDBCHelper {
+public class DatabaseHelper {
 	
 	public static Connection getLocalMySQLConnection() {
 		String hostName = "localhost";
@@ -54,5 +55,14 @@ public class JDBCHelper {
 			e.printStackTrace();
 		}
 		return conn;
+	}
+	
+	public static void closeConnection(Connection conn) {
+		try {
+			conn.close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }

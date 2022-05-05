@@ -1,6 +1,10 @@
 
 package commons;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -904,6 +908,36 @@ public class BasePage {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public ArrayList<String> getColumnDataFromDB(Connection conn, String sql, String columnName){
+		ArrayList<String> arrayList = new ArrayList<>();
+		try {
+			Statement statement = conn.createStatement();
+			ResultSet result = statement.executeQuery(sql);
+			while (result.next()) {
+				arrayList.add(result.getString(columnName));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return arrayList;
+	}
+	
+	public ArrayList<Integer> getColumnNumberFromDB(Connection conn, String sql, String columnName){
+		ArrayList<Integer> arrayList = new ArrayList<>();
+		try {
+			Statement statement = conn.createStatement();
+			ResultSet result = statement.executeQuery(sql);
+			while (result.next()) {
+				arrayList.add(result.getInt(columnName));
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return arrayList;
 	}
 	
 	public void openFooterPageByName(WebDriver driver, String pageName) {
