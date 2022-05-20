@@ -82,7 +82,7 @@ public class UserRegisterPageObject extends BasePage {
 	public UserHomePageObject clickRegisterButton() {
 		waitForElementVisible(driver, UserRegisterPageUI.REGISTER_BUTTON);
 		clickElement(driver, UserRegisterPageUI.REGISTER_BUTTON);
-		return PageGeneratorManager.getUserHomePage(driver);
+		return PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
 	}
 	
 	public String getFirstNameErrorMessage() {
@@ -124,6 +124,6 @@ public class UserRegisterPageObject extends BasePage {
 	public UserHomePageObject clickLogOutLink() {
 		waitForElementClickable(driver, UserRegisterPageUI.LOGOUT_LINK);
 		clickElement(driver, UserRegisterPageUI.LOGOUT_LINK);
-		return PageGeneratorManager.getUserHomePage(driver);
+		return PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
 	}
 }

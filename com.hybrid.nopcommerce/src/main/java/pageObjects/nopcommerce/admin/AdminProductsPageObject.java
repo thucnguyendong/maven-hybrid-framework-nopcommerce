@@ -27,7 +27,7 @@ public class AdminProductsPageObject extends BasePage {
 		int columnIndex = getElementSize(driver, AdminProductsPageUI.HEADER_NAME_INDEX, headerName)+1;
 		waitForElementVisible(driver, AdminProductsPageUI.DYNAMIC_EDIT_BUTTON_BY_VALUE,String.valueOf(columnIndex),value);
 		clickElement(driver, AdminProductsPageUI.DYNAMIC_EDIT_BUTTON_BY_VALUE, String.valueOf(columnIndex),value);
-		return PageGeneratorManager.getAdminProductDetailPage(driver);
+		return PageGeneratorManager.getPageGenerator().getAdminProductDetailPage(driver);
 	}
 
 	public String getSuccessMessage() {

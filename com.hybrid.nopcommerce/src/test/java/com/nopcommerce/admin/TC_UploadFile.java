@@ -28,7 +28,7 @@ public class TC_UploadFile extends BaseTest {
 	public void beforeTest() {
 		setEnvironmentURL("DEV");
 		driver = getBrowserDriver("chrome",adminUrl);
-		adminLoginPage = PageGeneratorManager.getAdminLoginPage(driver);
+		adminLoginPage = PageGeneratorManager.getPageGenerator().getPageGenerator().getAdminLoginPage(driver);
 		adminDashboardPage = adminLoginPage.loginAsAdmin(adminEmailAddress, adminPassword);
 	}
 	
@@ -40,7 +40,7 @@ public class TC_UploadFile extends BaseTest {
 		String picture = "Test_01.jpg";
 		adminDashboardPage.clickAdminSideMenuItem(driver, "Catalog");
 		adminDashboardPage.clickAdminSideMenuSubItem(driver, "Products");
-		adminProductPage = PageGeneratorManager.getAdminProductsPage(driver);
+		adminProductPage = PageGeneratorManager.getPageGenerator().getAdminProductsPage(driver);
 		adminProductPage.inputProductName(productName);
 		adminProductPage.clickSearchButton();
 		adminProductDetailPage = adminProductPage.clickEditByValueOfColumn(headerName,productName);
@@ -57,7 +57,7 @@ public class TC_UploadFile extends BaseTest {
 		
 		adminDashboardPage.clickAdminSideMenuItem(driver, "Catalog");
 		adminDashboardPage.clickAdminSideMenuSubItem(driver, "Products");
-		adminProductPage = PageGeneratorManager.getAdminProductsPage(driver);
+		adminProductPage = PageGeneratorManager.getPageGenerator().getAdminProductsPage(driver);
 		adminProductPage.inputProductName(productName);
 		adminProductPage.clickSearchButton();
 		adminProductDetailPage = adminProductPage.clickEditByValueOfColumn(headerName,productName);

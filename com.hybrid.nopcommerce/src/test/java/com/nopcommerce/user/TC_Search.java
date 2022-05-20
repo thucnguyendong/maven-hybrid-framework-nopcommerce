@@ -27,14 +27,14 @@ public class TC_Search extends BaseTest {
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName,GlobalConstants.USER_PORTAL_PAGE_URL);
-		homePage = PageGeneratorManager.getUserHomePage(driver);		
+		homePage = PageGeneratorManager.getPageGenerator().getUserHomePage(driver);		
 	}
 	
 	@Test
 	public void TC_01_Search_Empty_Data(Method method) {
 		ExtentTestManager.startTest(method.getName(), "Test Case 1: Search empty data");
 		ExtentTestManager.getTest().log(Status.INFO, "Step 1: Click Search button");
-		searchPage = PageGeneratorManager.getUserSearchPage(driver);
+		searchPage = PageGeneratorManager.getPageGenerator().getUserSearchPage(driver);
 		searchPage.clickSearchButton();
 		ExtentTestManager.getTest().log(Status.INFO, "Step 2: Check error");
 		verifyEquals(searchPage.getAlertText(driver), "Please enter some search keyword");

@@ -28,7 +28,7 @@ public class UserSearchPageObject extends BasePage {
 		String xpath = UserSearchPageUI.PRODUCT_TITLE +"/a[contains(text(),'"+ searchValue + "')]";
 		waitForElementClickable(driver, xpath);
 		clickElement(driver, xpath);
-		return PageGeneratorManager.getUserProductPage(driver);
+		return PageGeneratorManager.getPageGenerator().getUserProductPage(driver);
 	}
 
 	public String getSearchErrorText() {

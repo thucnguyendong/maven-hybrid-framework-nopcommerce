@@ -4,27 +4,20 @@ import java.util.Set;
 
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
-
-import com.aventstack.extentreports.Status;
 
 import commons.BaseTest;
 import commons.GlobalConstants;
 import commons.PageGeneratorManager;
 import pageObjects.nopcommerce.portal.UserHomePageObject;
 import pageObjects.nopcommerce.portal.UserRegisterPageObject;
-import reportConfig.ExtentTestManager;
 
 public class Common_RegisterToSystem extends BaseTest {
 	private WebDriver driver;
 	private UserHomePageObject homePage;
 	private UserRegisterPageObject registerPage;
 	public static Set<Cookie> loginPageCookies;
-	public static String globalEmail;
-	public static String globalPassword;
 	private String emailAddress;
 	private String firstName = "Thuc";
 	private String lastName= "Nguyen";
@@ -40,7 +33,7 @@ public class Common_RegisterToSystem extends BaseTest {
 	public void beforeClass(String browserName) {
 		log.info("Pre-condition: Open browser "+browserName+" and navigate to "+ GlobalConstants.USER_PORTAL_PAGE_URL);
 		driver = getBrowserDriver(browserName,GlobalConstants.USER_PORTAL_PAGE_URL);
-		homePage = PageGeneratorManager.getUserHomePage(driver);
+		homePage = PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
 		emailAddress = "test"+ homePage.getRandomNumber()+"@gmail.com";
 		
 		log.info("Step 1: Click Register Link");
@@ -69,8 +62,8 @@ public class Common_RegisterToSystem extends BaseTest {
 		verifyEquals(registerPage.getSuccessMessage(), "Your registration completed");
 		
 		loginPageCookies = homePage.getAllCookies(driver);
-		globalEmail = emailAddress;
-		globalPassword = password;
+		GlobalConstants.nopcommerce_Email = emailAddress;
+		GlobalConstants.nopcommerce_Password = password;
 		closeBrowserAndDriver();
 	}
 }

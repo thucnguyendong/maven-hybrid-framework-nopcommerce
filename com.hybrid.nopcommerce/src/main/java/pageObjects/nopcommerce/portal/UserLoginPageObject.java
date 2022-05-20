@@ -26,7 +26,7 @@ public class UserLoginPageObject extends BasePage {
 	public UserHomePageObject clickLoginButton() {
 		waitForElementClickable(driver, UserLoginPageUI.LOGIN_BUTTON);
 		clickElement(driver, UserLoginPageUI.LOGIN_BUTTON);
-		return PageGeneratorManager.getUserHomePage(driver);
+		return PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
 	}
 	
 	public String getEmailErrorMessage() {
@@ -48,6 +48,6 @@ public class UserLoginPageObject extends BasePage {
 	public UserHomePageObject openHomePage() {
 		waitForElementClickable(driver, UserLoginPageUI.LOGIN_IMG);
 		clickElement(driver, UserLoginPageUI.LOGIN_IMG);
-		return PageGeneratorManager.getUserHomePage(driver);
+		return PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
 	}
 }

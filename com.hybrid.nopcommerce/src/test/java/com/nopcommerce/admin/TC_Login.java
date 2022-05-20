@@ -32,7 +32,7 @@ public class TC_Login extends BaseTest {
 	public void beforeTest() {
 		setEnvironmentURL("DEV");
 		driver = getBrowserDriver("chrome",GlobalConstants.USER_PORTAL_PAGE_URL);
-		userHomePage = PageGeneratorManager.getUserHomePage(driver);
+		userHomePage = PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
 	}
 	
 	@BeforeClass

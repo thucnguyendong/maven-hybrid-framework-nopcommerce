@@ -13,4 +13,7 @@ public class GlobalConstants {
 	public static final String TEST_DATA_PATH =  PROJECT_PATH+File.separator+"testdata"+File.separator;
 	public static final String TEST_DATA_DRIVEN_PATH =  TEST_DATA_PATH+"com"+File.separator+"nopcommerce"+File.separator+"datadriven"+File.separator;
 	public static final String JAVA_VERSION = "11.0.11";
+	
+	public static String nopcommerce_Email ="";
+	public static String nopcommerce_Password ="";
 }

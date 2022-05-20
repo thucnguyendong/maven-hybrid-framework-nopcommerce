@@ -33,7 +33,7 @@ public class TC_Register_Log4J extends BaseTest {
 	public void beforeClass(String browserName) {
 		log.info("Pre-condition: Open browser "+browserName+" and navigate to "+ GlobalConstants.USER_PORTAL_PAGE_URL);
 		driver = getBrowserDriver(browserName,GlobalConstants.USER_PORTAL_PAGE_URL);
-		homePage = PageGeneratorManager.getUserHomePage(driver);
+		homePage = PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
 		emailAddress = "test"+ homePage.getRandomNumber()+"@gmail.com";
 	}
 	

@@ -21,14 +21,14 @@ public class UserHomePageObject extends BasePage {
 	public UserLoginPageObject clickLogInLink() {
 		waitForElementClickable(driver, UserBasePageUI.LOGIN_LINK);
 		clickElement(driver, UserBasePageUI.LOGIN_LINK);
-		return PageGeneratorManager.getUserLoginPage(driver);
+		return PageGeneratorManager.getPageGenerator().getUserLoginPage(driver);
 	}
 	
 	@Step("Click Register Link")
 	public UserRegisterPageObject clickRegisterLink() {
 		waitForElementClickable(driver, UserBasePageUI.REGISTER_LINK);
 		clickElement(driver, UserBasePageUI.REGISTER_LINK);
-		return PageGeneratorManager.getUserRegisterPage(driver);
+		return PageGeneratorManager.getPageGenerator().getUserRegisterPage(driver);
 	}
 	
 	public void clickMyAccountLink() {

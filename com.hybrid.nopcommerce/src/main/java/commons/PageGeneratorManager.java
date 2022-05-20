@@ -22,75 +22,81 @@ import pageObjects.nopcommerce.admin.AdminProductDetailPageObject;
 import pageObjects.nopcommerce.admin.AdminProductsPageObject;
 
 public class PageGeneratorManager {
-	public static UserHomePageObject getUserHomePage(WebDriver driver) {
+	
+	public static PageGeneratorManager getPageGenerator() {
+		return new PageGeneratorManager();
+	}
+
+	public UserHomePageObject getUserHomePage(WebDriver driver) {
 		return new UserHomePageObject(driver);
 	}
 
-	public static UserRegisterPageObject getUserRegisterPage(WebDriver driver) {
+	public UserRegisterPageObject getUserRegisterPage(WebDriver driver) {
 		return new UserRegisterPageObject(driver);
 	}
 	
-	public static UserLoginPageObject getUserLoginPage(WebDriver driver) {
+	public UserLoginPageObject getUserLoginPage(WebDriver driver) {
 		return new UserLoginPageObject(driver);
 	}
-	
-	public static AdminLoginPageObject getAdminLoginPage(WebDriver driver) {
-		return new AdminLoginPageObject(driver);
-	}
-	
-	public static UserAddressPageObject getUserAddressPage(WebDriver driver) {
+
+	public UserAddressPageObject getUserAddressPage(WebDriver driver) {
 		return new UserAddressPageObject(driver);
 	}
 	
-	public static UserChangePasswordPageObject getUserChangePasswordPage(WebDriver driver) {
+	public UserChangePasswordPageObject getUserChangePasswordPage(WebDriver driver) {
 		return new UserChangePasswordPageObject(driver);
 	}
 	
-	public static UserCustomerInfoPageObject getUserCustomerInfoPage(WebDriver driver) {
+	public UserCustomerInfoPageObject getUserCustomerInfoPage(WebDriver driver) {
 		return new UserCustomerInfoPageObject(driver);
 	}
 	
-	public static UserMyProductReviewPageObject getUserMyProductReviewPage(WebDriver driver) {
+	public UserMyProductReviewPageObject getUserMyProductReviewPage(WebDriver driver) {
 		return new UserMyProductReviewPageObject(driver);
 	}
 	
-	public static UserRewardPointPageObject getUserRewardPointPage(WebDriver driver) {
+	public UserRewardPointPageObject getUserRewardPointPage(WebDriver driver) {
 		return new UserRewardPointPageObject(driver);
 	}
 	
-	public static UserOrderPageObject getUserOrderPage(WebDriver driver) {
+	public UserOrderPageObject getUserOrderPage(WebDriver driver) {
 		return new UserOrderPageObject(driver);
 	}
 	
-	public static UserDownloadableProductPageObject getUserDownloadableProductPage(WebDriver driver) {
+	public UserDownloadableProductPageObject getUserDownloadableProductPage(WebDriver driver) {
 		return new UserDownloadableProductPageObject(driver);
 	}
 	
-	public static UserBackInStockSubscriptionPageObject getUserBackInStockSubscriptionPage(WebDriver driver) {
+	public UserBackInStockSubscriptionPageObject getUserBackInStockSubscriptionPage(WebDriver driver) {
 		return new UserBackInStockSubscriptionPageObject(driver);
 	}
 
-	public static UserSearchPageObject getUserSearchPage(WebDriver driver) {
+	public UserSearchPageObject getUserSearchPage(WebDriver driver) {
 		return new UserSearchPageObject(driver);
 	}
 
-	public static UserProductPageObject getUserProductPage(WebDriver driver) {
+	public UserProductPageObject getUserProductPage(WebDriver driver) {
 		return new UserProductPageObject(driver);
 	}
 
-	public static UserProductReviewPageObject getUserProductReviewPage(WebDriver driver) {
+	public UserProductReviewPageObject getUserProductReviewPage(WebDriver driver) {
 		return new UserProductReviewPageObject(driver);
 	}
+	
+	
+	public AdminLoginPageObject getAdminLoginPage(WebDriver driver) {
+		return new AdminLoginPageObject(driver);
+	}
 
-	public static AdminDashboardPageObject getAdminDashboardPage(WebDriver driver) {
+	public AdminDashboardPageObject getAdminDashboardPage(WebDriver driver) {
 		return new AdminDashboardPageObject(driver);
 	}
 	
-	public static AdminProductsPageObject getAdminProductsPage(WebDriver driver) {
+	public AdminProductsPageObject getAdminProductsPage(WebDriver driver) {
 		return new AdminProductsPageObject(driver);
 	}
 	
-	public static AdminProductDetailPageObject getAdminProductDetailPage(WebDriver driver) {
+	public AdminProductDetailPageObject getAdminProductDetailPage(WebDriver driver) {
 		return new AdminProductDetailPageObject(driver);
 	}
 }

@@ -9,7 +9,6 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
-import com.nopcommerce.commons.Common_RegisterToSystem;
 
 import commons.BaseTest;
 import commons.GlobalConstants;
@@ -27,7 +26,7 @@ public class TC_Login extends BaseTest {
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName,GlobalConstants.USER_PORTAL_PAGE_URL);
-		homePage = PageGeneratorManager.getUserHomePage(driver);		
+		homePage = PageGeneratorManager.getPageGenerator().getUserHomePage(driver);		
 	}
 	
 	@Test
@@ -74,7 +73,7 @@ public class TC_Login extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Step 1: Click Login Link");
 		loginPage = homePage.clickLogInLink();
 		ExtentTestManager.getTest().log(Status.INFO, "Step 2:Input valid email");
-		loginPage.inputEmail(Common_RegisterToSystem.globalEmail);
+		loginPage.inputEmail(GlobalConstants.nopcommerce_Email);
 		ExtentTestManager.getTest().log(Status.INFO, "Step 3: Click Login Button");
 		loginPage.clickLoginButton();
 		ExtentTestManager.getTest().log(Status.INFO, "Step 4: Verify error");
@@ -88,7 +87,7 @@ public class TC_Login extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Step 1: Click Login Link");
 		loginPage = homePage.clickLogInLink();
 		ExtentTestManager.getTest().log(Status.INFO, "Step 2:Input valid email");
-		loginPage.inputEmail(Common_RegisterToSystem.globalEmail);
+		loginPage.inputEmail(GlobalConstants.nopcommerce_Email);
 		ExtentTestManager.getTest().log(Status.INFO, "Step 3: Input incorrect password");
 		loginPage.inputPassword("123457");
 		ExtentTestManager.getTest().log(Status.INFO, "Step 4: Click Login Button");
@@ -104,9 +103,9 @@ public class TC_Login extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Step 1: Click Login Link");
 		loginPage = homePage.clickLogInLink();
 		ExtentTestManager.getTest().log(Status.INFO, "Step 2:Input valid email");
-		loginPage.inputEmail(Common_RegisterToSystem.globalEmail);
+		loginPage.inputEmail(GlobalConstants.nopcommerce_Email);
 		ExtentTestManager.getTest().log(Status.INFO, "Step 3: Input valid password");
-		loginPage.inputPassword(Common_RegisterToSystem.globalPassword);
+		loginPage.inputPassword(GlobalConstants.nopcommerce_Password);
 		ExtentTestManager.getTest().log(Status.INFO, "Step 4: Click Login Button");
 		homePage=loginPage.clickLoginButton();
 		ExtentTestManager.getTest().log(Status.INFO, "Step 5: Verify My Account");

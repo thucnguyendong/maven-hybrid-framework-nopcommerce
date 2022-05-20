@@ -2,6 +2,7 @@ package commons;
 
 import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
@@ -10,14 +11,19 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.opera.OperaDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.safari.SafariOptions;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterSuite;
@@ -127,6 +133,67 @@ public class BaseTest {
 		}
 		else {
 			throw new RuntimeException("Browser name invalid");
+		}
+		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
+		driver.get(url);
+		return driver;
+	}
+	
+	protected WebDriver getBrowserDriver(String browserName, String url, String ipAddress, String portNumber) {
+		DesiredCapabilities capability = null;
+		if (browserName.equals("chrome")){
+			WebDriverManager.chromedriver().setup();
+			capability = DesiredCapabilities.chrome();
+			capability.setBrowserName(browserName);
+			capability.setPlatform(Platform.WINDOWS);
+			
+			ChromeOptions options = new ChromeOptions();
+			options.merge(capability);
+		}
+		
+		else if (browserName.equals("firefox")){
+			WebDriverManager.firefoxdriver().setup();
+			capability = DesiredCapabilities.firefox();
+			capability.setBrowserName(browserName);
+			capability.setPlatform(Platform.WINDOWS);
+			
+			FirefoxOptions options = new FirefoxOptions();
+			options.merge(capability);
+		}
+		
+		else if (browserName.equals("edge")){
+			WebDriverManager.edgedriver().setup();
+			capability = DesiredCapabilities.edge();
+			capability.setBrowserName(browserName);
+			capability.setPlatform(Platform.WINDOWS);
+			
+			EdgeOptions options = new EdgeOptions();
+			options.merge(capability);
+		}
+		else if (browserName.equals("safari")){
+			capability = DesiredCapabilities.safari();
+			capability.setBrowserName(browserName);
+			capability.setPlatform(Platform.MAC);
+			
+			SafariOptions options = new SafariOptions();
+			options.merge(capability);
+		}
+		else if (browserName.equals("ie")){
+			WebDriverManager.iedriver().arch32().setup();
+			capability = DesiredCapabilities.internetExplorer();
+			capability.setBrowserName("internetExplorer");
+			capability.setPlatform(Platform.WINDOWS);
+			capability.setJavascriptEnabled(true);
+		}
+		else {
+			throw new RuntimeException("Browser name invalid");
+		}
+		try {
+			driver = new RemoteWebDriver(new URL(String.format("http://%s:%s/wd/hub",ipAddress,portNumber)),capability);
+		}
+		catch (Exception e) {
+			e.printStackTrace();
 		}
 		driver.manage().timeouts().implicitlyWait(GlobalConstants.LONG_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().window().maximize();

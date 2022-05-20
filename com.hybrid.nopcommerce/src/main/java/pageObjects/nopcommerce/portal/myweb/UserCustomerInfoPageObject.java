@@ -20,47 +20,47 @@ public class UserCustomerInfoPageObject extends BasePage {
 		clickElement(driver,UserCustomerInfoPageUI.FEMALE_RADIO_BUTTON);
 	}
 	
-	public void inputFirstName(String firstName) {
+	public void inputFirstNameTextbox(String firstName) {
 		waitForElementVisible(driver, UserCustomerInfoPageUI.FIRSTNAME_TEXTBOX);
 		inputIntoElement(driver,UserCustomerInfoPageUI.FIRSTNAME_TEXTBOX, firstName);
 	}
 	
-	public void inputLastName(String lastName) {
+	public void inputLastNameTextbox(String lastName) {
 		waitForElementVisible(driver, UserCustomerInfoPageUI.LASTNAME_TEXTBOX);
 		inputIntoElement(driver,UserCustomerInfoPageUI.LASTNAME_TEXTBOX, lastName);
 	}
 	
-	public void selectDay(String day) {
+	public void selectDayDropdown(String day) {
 		waitForElementVisible(driver, UserCustomerInfoPageUI.DAY_DROPDOWN);
 		selectItemInDefaultDropdown(driver,UserCustomerInfoPageUI.DAY_DROPDOWN, day);
 	}
 	
-	public void selectMonth(String month) {
+	public void selectMonthDropdown(String month) {
 		waitForElementVisible(driver, UserCustomerInfoPageUI.MONTH_DROPDOWN);
 		selectItemInDefaultDropdown(driver,UserCustomerInfoPageUI.MONTH_DROPDOWN, month);
 	}
 	
-	public void selectYear(String year) {
+	public void selectYearDropdown(String year) {
 		waitForElementVisible(driver, UserCustomerInfoPageUI.YEAR_DROPDOWN);
 		selectItemInDefaultDropdown(driver,UserCustomerInfoPageUI.YEAR_DROPDOWN, year);
 	}
 	
-	public void inputEmail(String email) {
+	public void inputEmailTextbox(String email) {
 		waitForElementVisible(driver, UserCustomerInfoPageUI.EMAIL_TEXTBOX);
 		inputIntoElement(driver,UserCustomerInfoPageUI.EMAIL_TEXTBOX, email);
 	}
 	
-	public void inputCompany(String company) {
+	public void inputCompanyTextbox(String company) {
 		waitForElementVisible(driver, UserCustomerInfoPageUI.COMPANY_TEXTBOX);
 		inputIntoElement(driver,UserCustomerInfoPageUI.COMPANY_TEXTBOX, company);
 	}
 	
-	public void selectNewsletter() {
+	public void selectNewsletterCheckbox() {
 		waitForElementClickable(driver, UserCustomerInfoPageUI.NEWSLETTER_CHECKBOX);
 		checkToDefaultCheckboxRadio(driver, UserCustomerInfoPageUI.NEWSLETTER_CHECKBOX);
 	}
 	
-	public void clickSave() {
+	public void clickSaveButton() {
 		waitForElementClickable(driver, UserCustomerInfoPageUI.SAVE_BUTTON);
 		clickElement(driver, UserCustomerInfoPageUI.SAVE_BUTTON);
 	}

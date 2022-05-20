@@ -34,7 +34,7 @@ public class TC_Review_Product extends BaseTest {
 	@BeforeTest
 	public void beforeTest() {
 		driver = getBrowserDriver("chrome",GlobalConstants.USER_PORTAL_PAGE_URL);
-		homePage = PageGeneratorManager.getUserHomePage(driver);
+		homePage = PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
 	}
 	
 	@BeforeClass
@@ -66,7 +66,7 @@ public class TC_Review_Product extends BaseTest {
 	
 	@Test
 	public void TC_01_Review_Product() {	
-		searchPage = PageGeneratorManager.getUserSearchPage(driver);
+		searchPage = PageGeneratorManager.getPageGenerator().getUserSearchPage(driver);
 		String searchValue = "Build your own computer";	
 		searchPage.inputSearch(searchValue);
 		searchPage.clickSearchButton();

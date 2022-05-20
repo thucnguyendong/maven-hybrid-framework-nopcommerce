@@ -26,7 +26,7 @@ public class AdminLoginPageObject extends BasePage {
 	public AdminDashboardPageObject clickLoginButton() {
 		waitForElementClickable(driver, AdminLoginPageUI.LOGIN_BUTTON);
 		clickElement(driver, AdminLoginPageUI.LOGIN_BUTTON);
-		return PageGeneratorManager.getAdminDashboardPage(driver);
+		return PageGeneratorManager.getPageGenerator().getAdminDashboardPage(driver);
 	}
 
 	public AdminDashboardPageObject loginAsAdmin(String email, String password) {

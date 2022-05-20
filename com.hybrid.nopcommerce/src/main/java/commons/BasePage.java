@@ -948,77 +948,77 @@ public class BasePage {
 	public UserCustomerInfoPageObject openCustomerInfoPage(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.CUSTOMER_INFO_LINK);
 		clickElement(driver, UserBasePageUI.CUSTOMER_INFO_LINK);
-		return PageGeneratorManager.getUserCustomerInfoPage(driver);
+		return PageGeneratorManager.getPageGenerator().getUserCustomerInfoPage(driver);
 	}
 	
 	public UserAddressPageObject openAddressPage(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.ADDRESS_LINK);
 		clickElement(driver, UserBasePageUI.ADDRESS_LINK);
-		return PageGeneratorManager.getUserAddressPage(driver);
+		return PageGeneratorManager.getPageGenerator().getUserAddressPage(driver);
 	}
 	
 	public UserOrderPageObject openOrderPage(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.ORDER_LINK);
 		clickElement(driver, UserBasePageUI.ORDER_LINK);
-		return PageGeneratorManager.getUserOrderPage(driver);
+		return PageGeneratorManager.getPageGenerator().getUserOrderPage(driver);
 	}
 	
 	public UserDownloadableProductPageObject openDownloadableProductPage(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.DOWNLOADABLE_PRODUCTS_LINK);
 		clickElement(driver, UserBasePageUI.DOWNLOADABLE_PRODUCTS_LINK);
-		return PageGeneratorManager.getUserDownloadableProductPage(driver);
+		return PageGeneratorManager.getPageGenerator().getUserDownloadableProductPage(driver);
 	}
 	
 	public UserBackInStockSubscriptionPageObject openBackInStockSubscriptionPage(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.BACK_IN_STOCK_SUBSCRIPTION_LINK);
 		clickElement(driver, UserBasePageUI.BACK_IN_STOCK_SUBSCRIPTION_LINK);
-		return PageGeneratorManager.getUserBackInStockSubscriptionPage(driver);
+		return PageGeneratorManager.getPageGenerator().getUserBackInStockSubscriptionPage(driver);
 	}
 	
 	public UserRewardPointPageObject openRewardPointPage(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.REWARD_POINT_LINK);
 		clickElement(driver, UserBasePageUI.REWARD_POINT_LINK);
-		return PageGeneratorManager.getUserRewardPointPage(driver);
+		return PageGeneratorManager.getPageGenerator().getUserRewardPointPage(driver);
 	}
 	
 	public UserChangePasswordPageObject openChangePasswordPage(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.CHANGE_PASSWORD_LINK);
 		clickElement(driver, UserBasePageUI.CHANGE_PASSWORD_LINK);
-		return PageGeneratorManager.getUserChangePasswordPage(driver);
+		return PageGeneratorManager.getPageGenerator().getUserChangePasswordPage(driver);
 	}
 	
 	public UserMyProductReviewPageObject openMyReviewPage(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.MY_PRODUCT_REVIEW_LINK);
 		clickElement(driver, UserBasePageUI.MY_PRODUCT_REVIEW_LINK);
-		return PageGeneratorManager.getUserMyProductReviewPage(driver);
+		return PageGeneratorManager.getPageGenerator().getUserMyProductReviewPage(driver);
 	}
 	
 	public UserCustomerInfoPageObject clickMyAccountLink(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.MY_ACCOUNT_LINK);
 		clickElement(driver, UserBasePageUI.MY_ACCOUNT_LINK);
-		return PageGeneratorManager.getUserCustomerInfoPage(driver);
+		return PageGeneratorManager.getPageGenerator().getUserCustomerInfoPage(driver);
 	}
 	
 	public UserHomePageObject clickUserLogOutLink(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.LOGOUT_LINK_AT_USER);
 		clickElement(driver, UserBasePageUI.LOGOUT_LINK_AT_USER);
-		return PageGeneratorManager.getUserHomePage(driver);
+		return PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
 	}
 	
 	public AdminLoginPageObject clickAdminLogOutLink(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.LOGOUT_LINK_AT_ADMIN);
 		clickElement(driver, UserBasePageUI.LOGOUT_LINK_AT_ADMIN);
-		return PageGeneratorManager.getAdminLoginPage(driver);
+		return PageGeneratorManager.getPageGenerator().getAdminLoginPage(driver);
 	}
 	
 	public AdminLoginPageObject openAdminPage(WebDriver driver,String url) {
 		openBrowser(driver, url);
-		return PageGeneratorManager.getAdminLoginPage(driver);
+		return PageGeneratorManager.getPageGenerator().getAdminLoginPage(driver);
 	}
 	
 	public UserHomePageObject openPortalPage(WebDriver driver,String url) {
 		openBrowser(driver, url);
-		return PageGeneratorManager.getUserHomePage(driver);
+		return PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
 	}
 	
 	public void clickAdminSideMenuItem(WebDriver driver, String item) {

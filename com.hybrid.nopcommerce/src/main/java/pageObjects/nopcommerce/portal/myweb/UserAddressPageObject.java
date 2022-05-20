@@ -16,62 +16,62 @@ public class UserAddressPageObject extends BasePage {
 		clickElement(driver, UserAddressPageUI.ADD_BUTTON);
 	}
 	
-	public void inputFirstName(String firstName) {
+	public void inputFirstNameTextbox(String firstName) {
 		waitForElementVisible(driver, UserAddressPageUI.FIRSTNAME_TEXTBOX);
 		inputIntoElement(driver,UserAddressPageUI.FIRSTNAME_TEXTBOX, firstName);
 	}
 	
-	public void inputLastName(String lastName) {
+	public void inputLastNameTextbox(String lastName) {
 		waitForElementVisible(driver, UserAddressPageUI.LASTNAME_TEXTBOX);
 		inputIntoElement(driver,UserAddressPageUI.LASTNAME_TEXTBOX, lastName);
 	}
 	
-	public void inputEmail(String email) {
+	public void inputEmailTextbox(String email) {
 		waitForElementVisible(driver, UserAddressPageUI.EMAIL_TEXTBOX);
 		inputIntoElement(driver,UserAddressPageUI.EMAIL_TEXTBOX, email);
 	}
 	
-	public void inputCompany(String company) {
+	public void inputCompanyTextbox(String company) {
 		waitForElementVisible(driver, UserAddressPageUI.COMPANY_TEXTBOX);
 		inputIntoElement(driver,UserAddressPageUI.COMPANY_TEXTBOX, company);
 	}
 
-	public void selectCountry(String country) {
+	public void selectCountryDropdown(String country) {
 		waitForElementVisible(driver, UserAddressPageUI.COUNTRY_DROPDOWN);
 		selectItemInDefaultDropdown(driver,UserAddressPageUI.COUNTRY_DROPDOWN, country);
 	}
 	
-	public void selectState(String state) {
+	public void selectStateDropdown(String state) {
 		waitForElementVisible(driver, UserAddressPageUI.STATE_DROPDOWN);
 		selectItemInDefaultDropdown(driver,UserAddressPageUI.STATE_DROPDOWN, state);
 	}
 	
-	public void inputCity(String city) {
+	public void inputCityTextbox(String city) {
 		waitForElementVisible(driver, UserAddressPageUI.CITY_TEXTBOX);
 		inputIntoElement(driver,UserAddressPageUI.CITY_TEXTBOX, city);
 	}
 	
-	public void inputAddress1(String address) {
+	public void inputAddress1Textbox(String address) {
 		waitForElementVisible(driver, UserAddressPageUI.ADDRESS_1_TEXTBOX);
 		inputIntoElement(driver,UserAddressPageUI.ADDRESS_1_TEXTBOX, address);
 	}
 	
-	public void inputAddress2(String address) {
+	public void inputAddress2Textbox(String address) {
 		waitForElementVisible(driver, UserAddressPageUI.ADDRESS_2_TEXTBOX);
 		inputIntoElement(driver,UserAddressPageUI.ADDRESS_2_TEXTBOX, address);
 	}
 	
-	public void inputZip(String zip) {
+	public void inputZipTextbox(String zip) {
 		waitForElementVisible(driver, UserAddressPageUI.ZIP_TEXTBOX);
 		inputIntoElement(driver,UserAddressPageUI.ZIP_TEXTBOX, zip);
 	}
 	
-	public void inputPhoneNumber(String phoneNumber) {
+	public void inputPhoneNumberTextbox(String phoneNumber) {
 		waitForElementVisible(driver, UserAddressPageUI.PHONE_TEXTBOX);
 		inputIntoElement(driver,UserAddressPageUI.PHONE_TEXTBOX, phoneNumber);
 	}
 	
-	public void inputFaxNumber(String faxNumber) {
+	public void inputFaxTextbox(String faxNumber) {
 		waitForElementVisible(driver, UserAddressPageUI.FAX_TEXTBOX);
 		inputIntoElement(driver,UserAddressPageUI.FAX_TEXTBOX, faxNumber);
 	}

@@ -15,6 +15,6 @@ public class UserProductPageObject extends BasePage {
 	public UserProductReviewPageObject clickReview() {
 		waitForElementClickable(driver, UserProductPageUI.ADD_REVIEW_BUTTON);
 		clickElement(driver, UserProductPageUI.ADD_REVIEW_BUTTON);
-		return PageGeneratorManager.getUserProductReviewPage(driver);
+		return PageGeneratorManager.getPageGenerator().getUserProductReviewPage(driver);
 	}
 }
