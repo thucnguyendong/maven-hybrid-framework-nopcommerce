@@ -1897,3 +1897,149 @@ Driver info: driver.version: RemoteWebDriver
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ADMIN', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: driver.version: RemoteWebDriver
+[INFO ] [2022-05-20 23:24:29,614] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-05-20 23:24:34,065] Step 1: Click Register Link
+[INFO ] [2022-05-20 23:24:34,597] Step 2: Select radio button Male
+[INFO ] [2022-05-20 23:24:34,644] Step 3: Input First Name
+[INFO ] [2022-05-20 23:24:34,711] Step 4: Input Last Name
+[INFO ] [2022-05-20 23:24:34,772] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-05-20 23:24:34,964] Step 5: Input company name
+[INFO ] [2022-05-20 23:24:35,022] Step 6: Input email address
+[INFO ] [2022-05-20 23:24:35,088] Step 7: Input password
+[INFO ] [2022-05-20 23:24:35,147] Step 8: Input confirm password
+[INFO ] [2022-05-20 23:24:35,206] Step 9: Click Register button
+[INFO ] [2022-05-20 23:24:36,071] Step 10: Verify register's success message
+[INFO ] [2022-05-20 23:24:36,100]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-05-20 23:24:36,104] OS name = windows 10
+[INFO ] [2022-05-20 23:24:36,104] Driver instance name = chromedriver: chrome on windows (c1b1dc01f716bbcd5f7e58c1a433b5e9)
+[INFO ] [2022-05-20 23:24:43,591] OS name = windows 10
+[INFO ] [2022-05-20 23:24:43,591] Driver instance name = chromedriver: chrome on windows (4a2e70ed9f7ede3bf2422699d4374b31)
+[INFO ] [2022-05-20 23:24:44,483] Close all drivers after suite
+[INFO ] [2022-05-20 23:24:44,483] OS name = windows 10
+[INFO ] [2022-05-20 23:24:44,483] Driver instance name = chromedriver: chrome on windows (null)
+[INFO ] [2022-05-20 23:24:44,484] Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
+[INFO ] [2022-05-20 23:43:45,583] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-05-20 23:43:48,957] Step 1: Click Register Link
+[INFO ] [2022-05-20 23:43:49,485] Step 2: Select radio button Male
+[INFO ] [2022-05-20 23:43:49,535] Step 3: Input First Name
+[INFO ] [2022-05-20 23:43:49,601] Step 4: Input Last Name
+[INFO ] [2022-05-20 23:43:49,665] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-05-20 23:43:49,856] Step 5: Input company name
+[INFO ] [2022-05-20 23:43:49,915] Step 6: Input email address
+[INFO ] [2022-05-20 23:43:49,975] Step 7: Input password
+[INFO ] [2022-05-20 23:43:50,038] Step 8: Input confirm password
+[INFO ] [2022-05-20 23:43:50,095] Step 9: Click Register button
+[INFO ] [2022-05-20 23:43:50,933] Step 10: Verify register's success message
+[INFO ] [2022-05-20 23:43:50,959]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-05-20 23:43:50,964] OS name = windows 10
+[INFO ] [2022-05-20 23:43:50,964] Driver instance name = chromedriver: chrome on windows (0e5c2a430fbf703b099ce185903c8fc6)
+[INFO ] [2022-05-20 23:44:00,219] OS name = windows 10
+[INFO ] [2022-05-20 23:44:00,219] Driver instance name = chromedriver: chrome on windows (5f5f072174a484b0626771e4daaa7459)
+[INFO ] [2022-05-20 23:44:01,178] Close all drivers after suite
+[INFO ] [2022-05-20 23:44:01,178] OS name = windows 10
+[INFO ] [2022-05-20 23:44:01,178] Driver instance name = chromedriver: chrome on windows (null)
+[INFO ] [2022-05-20 23:44:01,179] Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
+[INFO ] [2022-05-21 00:08:21,614] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-05-21 00:08:24,934] Step 1: Click Register Link
+[INFO ] [2022-05-21 00:08:25,460] Step 2: Select radio button Male
+[INFO ] [2022-05-21 00:08:25,510] Step 3: Input First Name
+[INFO ] [2022-05-21 00:08:25,576] Step 4: Input Last Name
+[INFO ] [2022-05-21 00:08:25,638] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-05-21 00:08:25,836] Step 5: Input company name
+[INFO ] [2022-05-21 00:08:25,894] Step 6: Input email address
+[INFO ] [2022-05-21 00:08:25,956] Step 7: Input password
+[INFO ] [2022-05-21 00:08:26,019] Step 8: Input confirm password
+[INFO ] [2022-05-21 00:08:26,075] Step 9: Click Register button
+[INFO ] [2022-05-21 00:08:26,880] Step 10: Verify register's success message
+[INFO ] [2022-05-21 00:08:26,909]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-05-21 00:08:26,913] OS name = windows 10
+[INFO ] [2022-05-21 00:08:26,913] Driver instance name = chromedriver: chrome on windows (df87821867706411630d0b5185054560)
+[INFO ] [2022-05-21 00:08:39,119] OS name = windows 10
+[INFO ] [2022-05-21 00:08:39,119] Driver instance name = chromedriver: chrome on windows (031645ebbe989740d23fb2459269f544)
+[INFO ] [2022-05-21 00:08:39,996] Close all drivers after suite
+[INFO ] [2022-05-21 00:08:39,996] OS name = windows 10
+[INFO ] [2022-05-21 00:08:39,996] Driver instance name = chromedriver: chrome on windows (null)
+[INFO ] [2022-05-21 00:08:39,997] Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
+[INFO ] [2022-05-21 00:13:23,353] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-05-21 00:13:26,587] Step 1: Click Register Link
+[INFO ] [2022-05-21 00:13:27,056] Step 2: Select radio button Male
+[INFO ] [2022-05-21 00:13:27,106] Step 3: Input First Name
+[INFO ] [2022-05-21 00:13:27,172] Step 4: Input Last Name
+[INFO ] [2022-05-21 00:13:27,234] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-05-21 00:13:27,427] Step 5: Input company name
+[INFO ] [2022-05-21 00:13:27,485] Step 6: Input email address
+[INFO ] [2022-05-21 00:13:27,544] Step 7: Input password
+[INFO ] [2022-05-21 00:13:27,605] Step 8: Input confirm password
+[INFO ] [2022-05-21 00:13:27,662] Step 9: Click Register button
+[INFO ] [2022-05-21 00:13:28,710] Step 10: Verify register's success message
+[INFO ] [2022-05-21 00:13:28,736]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-05-21 00:13:28,740] OS name = windows 10
+[INFO ] [2022-05-21 00:13:28,740] Driver instance name = chromedriver: chrome on windows (0ccc3998f191357804d63350dd694b34)
+[INFO ] [2022-05-21 00:14:14,434] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-05-21 00:14:17,688] Step 1: Click Register Link
+[INFO ] [2022-05-21 00:14:18,197] Step 2: Select radio button Male
+[INFO ] [2022-05-21 00:14:18,246] Step 3: Input First Name
+[INFO ] [2022-05-21 00:14:18,311] Step 4: Input Last Name
+[INFO ] [2022-05-21 00:14:18,375] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-05-21 00:14:18,580] Step 5: Input company name
+[INFO ] [2022-05-21 00:14:18,639] Step 6: Input email address
+[INFO ] [2022-05-21 00:14:18,702] Step 7: Input password
+[INFO ] [2022-05-21 00:14:18,760] Step 8: Input confirm password
+[INFO ] [2022-05-21 00:14:18,817] Step 9: Click Register button
+[INFO ] [2022-05-21 00:14:19,599] Step 10: Verify register's success message
+[INFO ] [2022-05-21 00:14:19,625]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-05-21 00:14:19,629] OS name = windows 10
+[INFO ] [2022-05-21 00:14:19,629] Driver instance name = chromedriver: chrome on windows (8c6fa2e7dbeecef31b43c79131590b6c)
+[INFO ] [2022-05-21 00:15:42,281] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-05-21 00:15:44,594] Step 1: Click Register Link
+[INFO ] [2022-05-21 00:15:45,109] Step 2: Select radio button Male
+[INFO ] [2022-05-21 00:15:45,157] Step 3: Input First Name
+[INFO ] [2022-05-21 00:15:45,222] Step 4: Input Last Name
+[INFO ] [2022-05-21 00:15:45,284] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-05-21 00:15:45,475] Step 5: Input company name
+[INFO ] [2022-05-21 00:15:45,536] Step 6: Input email address
+[INFO ] [2022-05-21 00:15:45,599] Step 7: Input password
+[INFO ] [2022-05-21 00:15:45,661] Step 8: Input confirm password
+[INFO ] [2022-05-21 00:15:45,717] Step 9: Click Register button
+[INFO ] [2022-05-21 00:15:46,506] Step 10: Verify register's success message
+[INFO ] [2022-05-21 00:15:46,532]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-05-21 00:15:46,536] OS name = windows 10
+[INFO ] [2022-05-21 00:15:46,536] Driver instance name = chromedriver: chrome on windows (4cf5c49201da8b16394c058a0bc139f0)
+[INFO ] [2022-05-21 00:18:17,066] Close all drivers after suite
+[INFO ] [2022-05-21 00:18:17,067] OS name = windows 10
+[INFO ] [2022-05-21 00:18:17,067] Cannot invoke "Object.toString()" because "this.driver" is null
+[INFO ] [2022-05-21 00:18:23,986] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-05-21 00:18:27,246] Step 1: Click Register Link
+[INFO ] [2022-05-21 00:18:27,756] Step 2: Select radio button Male
+[INFO ] [2022-05-21 00:18:27,807] Step 3: Input First Name
+[INFO ] [2022-05-21 00:18:27,871] Step 4: Input Last Name
+[INFO ] [2022-05-21 00:18:27,934] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-05-21 00:18:28,133] Step 5: Input company name
+[INFO ] [2022-05-21 00:18:28,192] Step 6: Input email address
+[INFO ] [2022-05-21 00:18:28,252] Step 7: Input password
+[INFO ] [2022-05-21 00:18:28,313] Step 8: Input confirm password
+[INFO ] [2022-05-21 00:18:28,371] Step 9: Click Register button
+[INFO ] [2022-05-21 00:18:29,203] Step 10: Verify register's success message
+[INFO ] [2022-05-21 00:18:29,229]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-05-21 00:18:29,233] OS name = windows 10
+[INFO ] [2022-05-21 00:18:29,233] Driver instance name = chromedriver: chrome on windows (cd534496d4cd249545640b989701675b)
+[INFO ] [2022-05-21 00:18:40,070] OS name = windows 10
+[INFO ] [2022-05-21 00:18:40,070] Driver instance name = chromedriver: chrome on windows (3d5cfeb816472e287acb31b867a722bc)
+[INFO ] [2022-05-21 00:18:47,848] OS name = windows 10
+[INFO ] [2022-05-21 00:18:47,849] Driver instance name = chromedriver: chrome on windows (130852fe394e12268d1b572be2a20515)
+[INFO ] [2022-05-21 00:18:48,721] Close all drivers after suite
+[INFO ] [2022-05-21 00:18:48,721] OS name = windows 10
+[INFO ] [2022-05-21 00:18:48,721] Driver instance name = chromedriver: chrome on windows (null)
+[INFO ] [2022-05-21 00:18:48,721] Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN', ip: '192.168.1.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver

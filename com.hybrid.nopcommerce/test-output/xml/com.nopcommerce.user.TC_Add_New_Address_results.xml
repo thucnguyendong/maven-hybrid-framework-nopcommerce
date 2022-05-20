@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Run on chrome"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="3.260">
+  <properties />
+  
+  
+            <testcase name="TC_Update_Address" time="3.260" classname="com.nopcommerce.user.TC_Add_New_Address" />
+      
+</testsuite>
