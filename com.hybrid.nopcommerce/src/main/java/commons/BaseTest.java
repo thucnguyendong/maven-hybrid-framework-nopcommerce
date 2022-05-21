@@ -48,6 +48,7 @@ public class BaseTest {
 		System.out.println("---------- START delete file in folder ----------");
 		deleteAllFileInFolder("extentReportScrShoot");
 		deleteAllFileInFolder("allure-json");
+		deleteAllFileInFolder("allure-html");
 		System.out.println("---------- END delete file in folder ----------");
 	}
 	

@@ -10,6 +10,7 @@ import commons.GlobalConstants;
 import commons.PageGeneratorManager;
 import pageObjects.nopcommerce.portal.UserHomePageObject;
 import pageObjects.nopcommerce.portal.UserRegisterPageObject;
+import utilities.DataHelper;
 
 public class TC_Register extends BaseTest {
 	private WebDriver driver;
@@ -30,7 +31,7 @@ public class TC_Register extends BaseTest {
 		log.info("Pre-condition: Open browser chrome and navigate to "+ GlobalConstants.USER_PORTAL_PAGE_URL);
 		driver = getBrowserDriver("chrome",GlobalConstants.USER_PORTAL_PAGE_URL);
 		homePage = PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
-		emailAddress = "test"+ homePage.getRandomNumber()+"@gmail.com";
+		emailAddress = "test"+ DataHelper.getData().getRandomNumber()+"@gmail.com";
 	}
 	
 	@Test

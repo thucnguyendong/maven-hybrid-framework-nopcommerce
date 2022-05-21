@@ -1,17 +1,12 @@
 
 package commons;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
-import java.util.Random;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
@@ -763,7 +758,11 @@ public class BasePage {
 		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByXpath(xpathLocator)));
 	}
 	
-	
+	/**
+	 * wait for all elements to be removed from DOM
+	 * @param driver
+	 * @param xpathLocator of elements to wait
+	 */
 	public boolean waitForStaleness(WebDriver driver, String xpathLocator) {
 		WebDriverWait wait = new WebDriverWait(driver,GlobalConstants.LONG_TIMEOUT);
 		return wait.until(ExpectedConditions.stalenessOf(driver.findElement(getByXpath(xpathLocator))));
@@ -774,6 +773,12 @@ public class BasePage {
 		return wait.until(ExpectedConditions.stalenessOf(driver.findElement(getByXpath(getDynamicLocator(xpathLocator, params)))));
 	}
 	
+	/**
+	 * create URL with multiple file name
+	 * @param fileNames
+	 * @return URL with multiple file name
+	 */
+	
 	public String getMultipleFileNames(String... fileNames) {
 		String fullName = "";
 		for (String file:fileNames) {
@@ -782,6 +787,45 @@ public class BasePage {
 		fullName = fullName.trim();
 		return GlobalConstants.UPLOAD_FOLDER_PATH+fullName;
 	}
+	
+	/**
+	 * check that all element text in list contain value
+	 * @param driver
+	 * @param xpathLocator of elements to wait
+	 * @param value
+	 */
+	
+	public boolean isElementTextInListContainValue(WebDriver driver, String xpathLocator, String value) {
+		
+		List<WebElement> elementList = getListElement(driver, xpathLocator);
+		for (WebElement element: elementList) {
+			if (!element.getText().contains(value))
+				return false;
+		}
+		
+		return true;
+	}
+	
+	/**
+	 * check that all element text in list equal value
+	 * @param driver
+	 * @param xpathLocator of elements to wait
+	 * @param value
+	 */
+	public boolean isElementTextInListEqualValue(WebDriver driver, String xpathLocator, String value) {
+		List<WebElement> elementList = getListElement(driver, xpathLocator);
+		for (WebElement element: elementList) {
+			if (!element.getText().equals(value))
+				return false;
+		}
+		return true;
+	}
+	
+	/**
+	 * Check that list is sorted ascending
+	 * @param driver
+	 * @param xpathLocator of elements to wait
+	 */
 	
 	public boolean isDataStringSortedAscending(WebDriver driver, String xpathLocator) {
 		List<WebElement> elementList = getListElement(driver, xpathLocator);
@@ -795,6 +839,12 @@ public class BasePage {
 		Collections.sort(sortedList);
 		return arrayList.equals(sortedList);
 	}
+	
+	/**
+	 * Check that list is sorted descending
+	 * @param driver
+	 * @param xpathLocator of elements to wait
+	 */
 	
 	public boolean isDataStringSortedDescending(WebDriver driver, String xpathLocator) {
 		List<WebElement> elementList = getListElement(driver, xpathLocator);
@@ -810,6 +860,11 @@ public class BasePage {
 		return arrayList.equals(sortedList);
 	}
 	
+	/**
+	 * Check that number list is sorted ascending
+	 * @param driver
+	 * @param xpathLocator of elements to wait
+	 */
 	public boolean isDataFloatSortedAscending(WebDriver driver, String xpathLocator) {
 		List<WebElement> elementList = getListElement(driver, xpathLocator);
 		ArrayList<Float> arrayList = new ArrayList<>();
@@ -824,6 +879,11 @@ public class BasePage {
 		return arrayList.equals(sortedList);
 	}
 	
+	/**
+	 * Check that number list is sorted descending
+	 * @param driver
+	 * @param xpathLocator of elements to wait
+	 */ 
 	public boolean isDataFloatSortedDescending(WebDriver driver, String xpathLocator) {
 		List<WebElement> elementList = getListElement(driver, xpathLocator);
 		ArrayList<Float> arrayList = new ArrayList<>();
@@ -839,6 +899,11 @@ public class BasePage {
 		return arrayList.equals(sortedList);
 	}
 	
+	/**
+	 * Check that date list is sorted ascending
+	 * @param driver
+	 * @param xpathLocator of elements to wait
+	 */
 	public boolean isDataDateSortedAscending(WebDriver driver, String xpathLocator) {
 		List<WebElement> elementList = getListElement(driver, xpathLocator);
 		ArrayList<Date> arrayList = new ArrayList<>();
@@ -852,7 +917,11 @@ public class BasePage {
 		return arrayList.equals(sortedList);
 	}
 	
-
+	/**
+	 * Check that date list is sorted descending
+	 * @param driver
+	 * @param xpathLocator of elements to wait
+	 */
 	public boolean isDataDateSortedDescending(WebDriver driver, String xpathLocator) {
 		List<WebElement> elementList = getListElement(driver, xpathLocator);
 		ArrayList<Date> arrayList = new ArrayList<>();
@@ -881,24 +950,6 @@ public class BasePage {
 	}
 	
 	/**
-	 * Create a random number
-	 */	
-	public int getRandomNumber() {
-		Random rand = new Random();
-		return rand.nextInt(999);
-	}
-	
-	/**
-	 * Create a random email
-	 * @param: prefix of the email
-	 * @param: domain name of the email
-	 * @return: generated email
-	 */	
-	public String getRandomEmail(String prefix, String domain) {
-		return prefix+getRandomNumber()+"@"+domain+".com";
-	}
-	
-	/**
 	 * Hard wait the test
 	 * @param timeoutInSecond waiting time in second
 	 */	
@@ -910,35 +961,6 @@ public class BasePage {
 		}
 	}
 	
-	public ArrayList<String> getColumnDataFromDB(Connection conn, String sql, String columnName){
-		ArrayList<String> arrayList = new ArrayList<>();
-		try {
-			Statement statement = conn.createStatement();
-			ResultSet result = statement.executeQuery(sql);
-			while (result.next()) {
-				arrayList.add(result.getString(columnName));
-			}
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return arrayList;
-	}
-	
-	public ArrayList<Integer> getColumnNumberFromDB(Connection conn, String sql, String columnName){
-		ArrayList<Integer> arrayList = new ArrayList<>();
-		try {
-			Statement statement = conn.createStatement();
-			ResultSet result = statement.executeQuery(sql);
-			while (result.next()) {
-				arrayList.add(result.getInt(columnName));
-			}
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		return arrayList;
-	}
 	
 	public void openFooterPageByName(WebDriver driver, String pageName) {
 		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_PAGE_FOOTER, pageName);

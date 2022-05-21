@@ -18,6 +18,7 @@ import commons.PageGeneratorManager;
 import pageObjects.nopcommerce.portal.UserHomePageObject;
 import pageObjects.nopcommerce.portal.UserRegisterPageObject;
 import reportConfig.ExtentTestManager;
+import utilities.DataHelper;
 
 public class TC_Register_Extent extends BaseTest {
 	private WebDriver driver;
@@ -38,7 +39,7 @@ public class TC_Register_Extent extends BaseTest {
 	public void beforeClass(String browserName) {
 		driver = getBrowserDriver(browserName,GlobalConstants.USER_PORTAL_PAGE_URL);
 		homePage = PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
-		emailAddress = "test"+ homePage.getRandomNumber()+"@gmail.com";
+		emailAddress = "test"+ DataHelper.getData().getRandomNumber()+"@gmail.com";
 	}
 	
 	@Test

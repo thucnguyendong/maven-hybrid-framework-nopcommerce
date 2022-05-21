@@ -1,7 +1,5 @@
 package com.nopcommerce.datadriven;
 
-import static org.testng.Assert.assertTrue;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -35,7 +33,6 @@ public class TC_Register_Random_Data extends BaseTest {
 		log.info("Pre-condition: Open browser chrome and navigate to "+ GlobalConstants.USER_PORTAL_PAGE_URL);
 		driver = getBrowserDriver("chrome",GlobalConstants.USER_PORTAL_PAGE_URL);
 		homePage = PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
-		emailAddress = "test"+ homePage.getRandomNumber()+"@gmail.com";
 		data = DataHelper.getData();
 		emailAddress = data.getEmailAddress();
 		password = data.getPassword();

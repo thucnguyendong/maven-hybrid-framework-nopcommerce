@@ -14,7 +14,7 @@ public class UserSearchPageObject extends BasePage {
 	}
 	
 	
-	public void inputSearch(String searchValue) {
+	public void inputSearchTextbox(String searchValue) {
 		waitForElementVisible(driver, UserSearchPageUI.SEARCH_TEXTBOX);
 		inputIntoElement(driver, UserSearchPageUI.SEARCH_TEXTBOX,searchValue);
 	}
@@ -24,10 +24,9 @@ public class UserSearchPageObject extends BasePage {
 		clickElement(driver, UserSearchPageUI.SEARCH_BUTTON);
 	}
 	
-	public UserProductPageObject selectProduct(String searchValue) {
-		String xpath = UserSearchPageUI.PRODUCT_TITLE +"/a[contains(text(),'"+ searchValue + "')]";
-		waitForElementClickable(driver, xpath);
-		clickElement(driver, xpath);
+	public UserProductPageObject clickProductLink(String searchValue) {
+		waitForElementClickable(driver, UserSearchPageUI.DYNAMIC_PRODUCT_LINK ,searchValue);
+		clickElement(driver, UserSearchPageUI.DYNAMIC_PRODUCT_LINK ,searchValue);
 		return PageGeneratorManager.getPageGenerator().getUserProductPage(driver);
 	}
 
@@ -45,5 +44,44 @@ public class UserSearchPageObject extends BasePage {
 	public int getNumberOfSearchResult(String searchValue) {
 		waitForAllElementsVisible(driver, UserSearchPageUI.PRODUCT_TITLE);
 		return getElementSize(driver, UserSearchPageUI.PRODUCT_TITLE);
+	}
+
+
+	public void checkAdvancedSearchCheckbox() {
+		waitForElementClickable(driver, UserSearchPageUI.ADVANCED_SEARCH_CHECKBOX);
+		checkToDefaultCheckboxRadio(driver, UserSearchPageUI.ADVANCED_SEARCH_CHECKBOX);
+	}
+	public void uncheckAdvancedSearchCheckbox() {
+		waitForElementClickable(driver, UserSearchPageUI.ADVANCED_SEARCH_CHECKBOX);
+		uncheckToDefaultCheckboxRadio(driver, UserSearchPageUI.ADVANCED_SEARCH_CHECKBOX);
+	}
+
+	public void selectCategoryDropdown(String category) {
+		selectItemInDefaultDropdown(driver, UserSearchPageUI.CATEGORY_DROPDOWN, category);
+	}
+
+	public void checkSearchSubCategoryCheckbox() {
+		waitForElementClickable(driver, UserSearchPageUI.SEARCH_SUB_CATEGORY_CHECKBOX);
+		checkToDefaultCheckboxRadio(driver, UserSearchPageUI.SEARCH_SUB_CATEGORY_CHECKBOX);
+	}
+	public void uncheckSearchSubCategoryCheckbox() {
+		waitForElementClickable(driver, UserSearchPageUI.SEARCH_SUB_CATEGORY_CHECKBOX);
+		uncheckToDefaultCheckboxRadio(driver, UserSearchPageUI.SEARCH_SUB_CATEGORY_CHECKBOX);
+	}
+
+	public boolean isSearchValueEqualProductTitle(String searchValue) {
+		areJQueryAndJSLoadedSuccess(driver);
+		return isElementTextInListEqualValue(driver, UserSearchPageUI.PRODUCT_TITLE, searchValue);
+	}
+
+
+	public boolean isSearchValueContainProductTitle(String searchValue) {
+		areJQueryAndJSLoadedSuccess(driver);
+		return isElementTextInListContainValue(driver, UserSearchPageUI.PRODUCT_TITLE, searchValue);
+	}
+
+
+	public void selectManufacturerDropdown(String manufacturer) {
+		selectItemInDefaultDropdown(driver, UserSearchPageUI.MANUFACTURER_DROPDOWN, manufacturer);
 	}
 }

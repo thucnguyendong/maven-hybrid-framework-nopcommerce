@@ -1,15 +1,19 @@
 package reportConfig;
+import java.io.File;
+
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import commons.GlobalConstants;
+import utilities.DataHelper;
 
 public class ExtentManager {
 	public static final ExtentReports extentReports = new ExtentReports();
 
 	public synchronized static ExtentReports createExtentReports() {
-		ExtentSparkReporter reporter = new ExtentSparkReporter(GlobalConstants.PROJECT_PATH + "/extentReport/ExtentReport.html");
+		ExtentSparkReporter reporter = 
+				new ExtentSparkReporter(GlobalConstants.PROJECT_PATH +File.separator+"extentReport"+File.separator+"ExtentReport"+DataHelper.getData().getDateToString()+".html");
 		reporter.config().setReportName("NopCommerce HTML Report");
 		reporter.config().setDocumentTitle("NopCommerce HTML Report");
 		reporter.config().setTimelineEnabled(true);

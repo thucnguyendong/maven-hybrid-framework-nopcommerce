@@ -11,7 +11,7 @@ public class MySQLTestConnection {
 	
 	public static void main(String[] arg) {
 		Connection conn;
-		conn = DatabaseHelper.getLocalMySQLConnection();
+		conn = DatabaseHelper.initDatabase().getLocalMySQLConnection();
 		System.out.println(conn);
 		String sql = "select EMP_ID,FIRST_NAME,LAST_NAME,TITLE from automationfc.employee";
 		try {

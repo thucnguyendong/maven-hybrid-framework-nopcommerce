@@ -10,15 +10,15 @@
   <test thread-count="3" parallel="tests" name="Run on chrome(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.nopcommerce.user.TC_Register_Extent">
+      <class name="com.nopcommerce.user.TC_Search_Advanced">
         <methods>
-          <include name="TC_02_Register_Invalid_Email" invocation-numbers="0"/>
-          <include name="afterClass"/>
-          <include name="cleanExecutableDriver"/>
-          <include name="beforeSuit"/>
           <include name="beforeClass"/>
+          <include name="TC_04_Relative_Search_With_Product_Name" invocation-numbers="0"/>
+          <include name="cleanExecutableDriver"/>
+          <include name="afterClass"/>
+          <include name="beforeSuit"/>
         </methods>
-      </class> <!-- com.nopcommerce.user.TC_Register_Extent -->
+      </class> <!-- com.nopcommerce.user.TC_Search_Advanced -->
     </classes>
   </test> <!-- Run on chrome(failed) -->
 </suite> <!-- Failed suite [NopCommerce.User] -->

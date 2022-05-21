@@ -12,20 +12,19 @@ public class UserProductReviewPageObject extends BasePage {
 		this.driver = driver;
 	}
 	
-	public void inputReviewTitle(String reviewTitle) {
+	public void inputReviewTitleTextbox(String reviewTitle) {
 		waitForElementVisible(driver, UserProductReviewPageUI.REVIEW_TITLE_TEXTBOX);
 		inputIntoElement(driver, UserProductReviewPageUI.REVIEW_TITLE_TEXTBOX, reviewTitle);
 	}
 	
-	public void inputReviewText(String reviewText) {
+	public void inputReviewTextarea(String reviewText) {
 		waitForElementVisible(driver, UserProductReviewPageUI.REVIEW_TEXTAREA);
 		inputIntoElement(driver, UserProductReviewPageUI.REVIEW_TEXTAREA, reviewText);
 	}
 	
-	public void clickRating(String rating) {
-		String xpath = UserProductReviewPageUI.VALUE_RADIOBUTTON+ rating + "']";
-		waitForElementVisible(driver, xpath);
-		clickElement(driver, xpath);
+	public void selectRating(String rating) {
+		waitForElementVisible(driver,UserProductReviewPageUI.DYNAMIC_RATING, rating);
+		clickElement(driver,UserProductReviewPageUI.DYNAMIC_RATING, rating);
 	}
 	
 	public void clickSubmitReview() {

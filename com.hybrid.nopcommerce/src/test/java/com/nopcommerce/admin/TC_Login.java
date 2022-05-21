@@ -16,6 +16,7 @@ import pageObjects.nopcommerce.admin.AdminLoginPageObject;
 import pageObjects.nopcommerce.portal.UserHomePageObject;
 import pageObjects.nopcommerce.portal.UserLoginPageObject;
 import pageObjects.nopcommerce.portal.UserRegisterPageObject;
+import utilities.DataHelper;
 
 public class TC_Login extends BaseTest {
 	WebDriver driver;
@@ -37,7 +38,7 @@ public class TC_Login extends BaseTest {
 	
 	@BeforeClass
 	public void beforeClass() {
-		userEmailAddress = "test"+ userHomePage.getRandomNumber()+"@gmail.com";		
+		userEmailAddress = "test"+ DataHelper.getData().getRandomNumber()+"@gmail.com";		
 		String firstName = "Thuc";
 		String lastName= "Nguyen";
 		String company = "Livegroup";

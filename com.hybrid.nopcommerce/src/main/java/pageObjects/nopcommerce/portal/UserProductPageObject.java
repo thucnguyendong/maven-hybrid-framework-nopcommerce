@@ -12,9 +12,9 @@ public class UserProductPageObject extends BasePage {
 	public UserProductPageObject(WebDriver driver) {
 		this.driver = driver;
 	}	
-	public UserProductReviewPageObject clickReview() {
-		waitForElementClickable(driver, UserProductPageUI.ADD_REVIEW_BUTTON);
-		clickElement(driver, UserProductPageUI.ADD_REVIEW_BUTTON);
+	public UserProductReviewPageObject clickAddReviewLink() {
+		waitForElementClickable(driver, UserProductPageUI.ADD_REVIEW_LINK);
+		clickElement(driver, UserProductPageUI.ADD_REVIEW_LINK);
 		return PageGeneratorManager.getPageGenerator().getUserProductReviewPage(driver);
 	}
 }

@@ -24,15 +24,6 @@ public class TC_Register_Allure extends BaseTest {
 	private WebDriver driver;
 	private UserHomePageObject homePage;
 	private UserRegisterPageObject registerPage;
-	private String emailAddress;
-	private String firstName = "Thuc";
-	private String lastName= "Nguyen";
-	private String company = "Livegroup";
-	private String password = "123456";
-	private String confirmPassword= "123456";
-	private String day = "5";
-	private String month = "May";
-	private String year = "1995";
 	
 	@Parameters("browser")
 	@BeforeClass
@@ -40,7 +31,6 @@ public class TC_Register_Allure extends BaseTest {
 		log.info("Pre-condition: Open browser "+browserName+" and navigate to "+ GlobalConstants.USER_PORTAL_PAGE_URL);
 		driver = getBrowserDriver(browserName,GlobalConstants.USER_PORTAL_PAGE_URL);
 		homePage = PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
-		emailAddress = "test"+ homePage.getRandomNumber()+"@gmail.com";
 	}
 	
 	@Story("")

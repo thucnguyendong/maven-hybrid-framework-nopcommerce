@@ -4,7 +4,6 @@ import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
 import commons.PageGeneratorManager;
-import io.qameta.allure.Step;
 import pageUI.nopcommerce.portal.UserRegisterPageUI;
 
 public class UserRegisterPageObject extends BasePage {
@@ -48,7 +47,7 @@ public class UserRegisterPageObject extends BasePage {
 		waitForElementVisible(driver, UserRegisterPageUI.YEAR_DROPDOWN);
 		selectItemInDefaultDropdown(driver,UserRegisterPageUI.YEAR_DROPDOWN, year);
 	}
-	@Step("Click input invalid email format")
+	
 	public void inputEmail(String email) {
 		waitForElementVisible(driver, UserRegisterPageUI.EMAIL_TEXTBOX);
 		inputIntoElement(driver,UserRegisterPageUI.EMAIL_TEXTBOX, email);
@@ -78,7 +77,7 @@ public class UserRegisterPageObject extends BasePage {
 		waitForElementVisible(driver, UserRegisterPageUI.CONFIRM_PASSWORD_TEXTBOX);
 		inputIntoElement(driver, UserRegisterPageUI.CONFIRM_PASSWORD_TEXTBOX, password);
 	}
-	@Step("Click Register Button")
+
 	public UserHomePageObject clickRegisterButton() {
 		waitForElementVisible(driver, UserRegisterPageUI.REGISTER_BUTTON);
 		clickElement(driver, UserRegisterPageUI.REGISTER_BUTTON);
@@ -95,7 +94,7 @@ public class UserRegisterPageObject extends BasePage {
 		waitForElementVisible(driver, UserRegisterPageUI.LAST_NAME_ERROR_MESSAGE);
 		return getElementText(driver, UserRegisterPageUI.LAST_NAME_ERROR_MESSAGE);
 	}
-	@Step("Verify email field")
+	
 	public String getEmailErrorMessage() {
 		waitForElementVisible(driver, UserRegisterPageUI.EMAIL_ERROR_MESSAGE);
 		return getElementText(driver, UserRegisterPageUI.EMAIL_ERROR_MESSAGE);
