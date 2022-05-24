@@ -20,8 +20,9 @@ public class UserBasePageUI {
 	public static final String BACK_IN_STOCK_SUBSCRIPTION_LINK = "//ul[@class='list']//a[text()='Back in stock subscriptions']";
 	
 	/** My Dynamic page list */
-	public static final String DYNAMIC_MYWEB_MENU = "//ul[@class='list']//a[text()='%s']";
-	public static final String DYNAMIC_PAGE_FOOTER = "//div[@class='footer']//a[text()='%s']";
+	public static final String DYNAMIC_MYWEB_MENU = "//ul[@class='list']//a[normalize-space(text())='%s']";
+	public static final String DYNAMIC_PAGE_FOOTER = "//div[@class='footer']//a[normalize-space(text())='%s']";
+	public static final String DYNAMIC_MENU_HEADER = "//div[@class='header-menu']/ul[contains(@class,'notmobile')]/li/a[normalize-space(text())='%s']";
 	public static final String DYNAMIC_TEXTBOX_BY_ID = "//input[@id='%s']";
 	public static final String DYNAMIC_DROPDOWN_LIST_BY_NAME = "//select[@name='%s']";
 	public static final String DYNAMIC_BUTTON_BY_TEXT = "//button[text()='%s']";

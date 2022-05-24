@@ -387,11 +387,11 @@ public class BasePage {
 	 * @return size of element list-
 	 */
 	public int getElementSize(WebDriver driver, String xpathLocator) {
-		return driver.findElements(getByXpath(xpathLocator)).size();
+		return getListElement(driver,xpathLocator).size();
 	}
 	
 	public int getElementSize(WebDriver driver, String xpathLocator, String... params) {
-		return driver.findElements(getByXpath(getDynamicLocator(xpathLocator, params))).size();
+		return getListElement(driver,getDynamicLocator(xpathLocator, params)).size();
 	}
 	
 	/**
@@ -442,6 +442,12 @@ public class BasePage {
 		return getElement(driver, getDynamicLocator(xpathLocator, params)).isDisplayed();
 	}
 	
+	/**
+	 * Check the element to be not displayed
+	 * @param driver
+	 * @param xpathLocator of the element
+	 * @return true/false
+	 */
 	public boolean isElementUndisplayed(WebDriver driver, String xpathLocator) {
 		overideImplicitTimeout(driver,GlobalConstants.SHORT_TIMEOUT);
 		List<WebElement> elements = getListElement(driver, xpathLocator);
@@ -755,7 +761,7 @@ public class BasePage {
 	 */
 	public void waitForAllElementsToBePresenced(WebDriver driver, String xpathLocator) {
 		WebDriverWait wait = new WebDriverWait(driver,GlobalConstants.LONG_TIMEOUT);
-		wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(getByXpath(xpathLocator)));
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(getByXpath(xpathLocator)));
 	}
 	
 	/**
@@ -961,12 +967,75 @@ public class BasePage {
 		}
 	}
 	
+	/**
+	 * input textbox using html id tag
+	 * @param driver driver of web driver
+	 * @param textbox_id the id of the textbox
+	 * @param value the inputted value in textbox
+	 */	
+	public void inputToTextboxByID(WebDriver driver, String textbox_id, String value) {
+		waitForElementVisible(driver, UserBasePageUI.DYNAMIC_TEXTBOX_BY_ID,textbox_id);
+		inputIntoElement(driver, UserBasePageUI.DYNAMIC_TEXTBOX_BY_ID, value, textbox_id);
+	}
+	
+	/**
+	 * Select dropdown using html name tag
+	 * @param driver driver of web driver
+	 * @param dropdown_name the name tag of the dropdown list
+	 * @param value the displayed value in dropdown list
+	 */	
+	public void selectDropdownListByName(WebDriver driver, String dropdown_name, String value) {
+		selectItemInDefaultDropdown(driver, UserBasePageUI.DYNAMIC_DROPDOWN_LIST_BY_NAME, value, dropdown_name);
+	}
+	
+	/**
+	 * Click button using html text tag
+	 * @param driver driver of web driver
+	 * @param button_text the text tag of the button
+	 */	
+	public void clickButtonByText(WebDriver driver, String button_text) {
+		waitForElementVisible(driver, UserBasePageUI.DYNAMIC_BUTTON_BY_TEXT,button_text);
+		clickElement(driver, UserBasePageUI.DYNAMIC_BUTTON_BY_TEXT, button_text);
+	}
+	
+	/**
+	 * Open the user url
+	 * @param driver driver of web driver
+	 * @param url the url of the page
+	 */	
+	
+	public UserHomePageObject openPortalPage(WebDriver driver,String url) {
+		openBrowser(driver, url);
+		return PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
+	}
+	
+	/**
+	 * click items on Footer using name
+	 * @param driver driver of web driver
+	 * @param pageName the name of the page
+	 */	
 	
 	public void openFooterPageByName(WebDriver driver, String pageName) {
 		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
 		clickElement(driver, UserBasePageUI.DYNAMIC_PAGE_FOOTER, pageName);
 	}
 	
+	/**
+	 * click items on Header using name
+	 * @param driver driver of web driver
+	 * @param menuHeader the name of the header
+	 */	
+	
+	public void openHeaderMenuByName(WebDriver driver, String menuHeader) {
+		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_MENU_HEADER, menuHeader);
+		clickElement(driver, UserBasePageUI.DYNAMIC_MENU_HEADER, menuHeader);
+	}
+	
+	/**
+	 * click items on Header using name
+	 * @param driver driver of web driver
+	 * @param menuHeader the name of the header
+	 */	
 	public UserCustomerInfoPageObject openCustomerInfoPage(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.CUSTOMER_INFO_LINK);
 		clickElement(driver, UserBasePageUI.CUSTOMER_INFO_LINK);
@@ -1027,6 +1096,11 @@ public class BasePage {
 		return PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
 	}
 	
+	/**
+	 * click items on Header using name
+	 * @param driver driver of web driver
+	 * @param menuHeader the name of the header
+	 */	
 	public AdminLoginPageObject clickAdminLogOutLink(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.LOGOUT_LINK_AT_ADMIN);
 		clickElement(driver, UserBasePageUI.LOGOUT_LINK_AT_ADMIN);
@@ -1038,11 +1112,6 @@ public class BasePage {
 		return PageGeneratorManager.getPageGenerator().getAdminLoginPage(driver);
 	}
 	
-	public UserHomePageObject openPortalPage(WebDriver driver,String url) {
-		openBrowser(driver, url);
-		return PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
-	}
-	
 	public void clickAdminSideMenuItem(WebDriver driver, String item) {
 		waitForElementClickable(driver, AdminBasePageUI.DYNAMIC_SIDE_MENU_ITEM, item);
 		clickElement(driver, AdminBasePageUI.DYNAMIC_SIDE_MENU_ITEM, item);
@@ -1051,19 +1120,5 @@ public class BasePage {
 	public void clickAdminSideMenuSubItem(WebDriver driver, String item) {
 		waitForElementClickable(driver, AdminBasePageUI.DYNAMIC_SIDE_SUB_MENU_ITEM, item);
 		clickElement(driver, AdminBasePageUI.DYNAMIC_SIDE_SUB_MENU_ITEM, item);
-	}
-	
-	public void inputToTextboxByID(WebDriver driver, String textbox_id, String value) {
-		waitForElementVisible(driver, UserBasePageUI.DYNAMIC_TEXTBOX_BY_ID,textbox_id);
-		inputIntoElement(driver, UserBasePageUI.DYNAMIC_TEXTBOX_BY_ID, value, textbox_id);
-	}
-	
-	public void selectDropdownListByName(WebDriver driver, String dropdown_name, String value) {
-		selectItemInDefaultDropdown(driver, UserBasePageUI.DYNAMIC_DROPDOWN_LIST_BY_NAME, value, dropdown_name);
-	}
-	
-	public void clickButtonByText(WebDriver driver, String button_text) {
-		waitForElementVisible(driver, UserBasePageUI.DYNAMIC_BUTTON_BY_TEXT,button_text);
-		clickElement(driver, UserBasePageUI.DYNAMIC_BUTTON_BY_TEXT, button_text);
 	}
 }

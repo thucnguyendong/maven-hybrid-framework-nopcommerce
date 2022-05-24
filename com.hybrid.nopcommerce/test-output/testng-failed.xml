@@ -3,23 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nopcommerce.user.TC_Search_Advanced">
+      <class name="com.nopcommerce.user.TC_Sort_Display_Paging">
         <methods>
-          <include name="beforeClass"/>
-          <include name="TC_04_Relative_Search_With_Product_Name"/>
-          <include name="TC_03_Search_Return_No_Value"/>
-          <include name="cleanExecutableDriver"/>
-          <include name="TC_01_Search_Empty_Data"/>
           <include name="afterClass"/>
-          <include name="TC_05_Absolute_Search_With_Product_Name"/>
-          <include name="TC_07_Advanced_Search_Sub_Category"/>
-          <include name="TC_08_Advanced_Search_Incorrect_Manufacturer"/>
+          <include name="TC_05_Display_6_Value" invocation-numbers="0"/>
+          <include name="cleanExecutableDriver"/>
           <include name="beforeSuit"/>
-          <include name="TC_09_Advanced_Search_Correct_Manufacturer"/>
-          <include name="TC_06_Advanced_Search_Parent_Category"/>
-          <include name="TC_02_Search_Less_Than_3_Characters"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.nopcommerce.user.TC_Search_Advanced -->
+      </class> <!-- com.nopcommerce.user.TC_Sort_Display_Paging -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

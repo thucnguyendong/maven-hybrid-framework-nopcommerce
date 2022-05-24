@@ -2,6 +2,7 @@ package commons;
 
 import org.openqa.selenium.WebDriver;
 
+import pageObjects.nopcommerce.portal.UserProductCatgoryPageObject;
 import pageObjects.nopcommerce.portal.UserHomePageObject;
 import pageObjects.nopcommerce.portal.UserLoginPageObject;
 import pageObjects.nopcommerce.portal.UserProductPageObject;
@@ -86,6 +87,10 @@ public class PageGeneratorManager {
 
 	public UserProductReviewPageObject getUserProductReviewPage(WebDriver driver) {
 		return new UserProductReviewPageObject(driver);
+	}
+	
+	public UserProductCatgoryPageObject getUserProductCategoryPage(WebDriver driver) {
+		return new UserProductCatgoryPageObject(driver);
 	}
 	
 	
