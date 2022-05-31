@@ -71,13 +71,13 @@ public class UserSearchPageObject extends BasePage {
 
 	public boolean isSearchValueEqualProductTitle(String searchValue) {
 		areJQueryAndJSLoadedSuccess(driver);
-		return isElementTextInListEqualValue(driver, UserSearchPageUI.PRODUCT_TITLE, searchValue);
+		return isAllElementsTextInListEqualValue(driver, UserSearchPageUI.PRODUCT_TITLE, searchValue);
 	}
 
 
 	public boolean isSearchValueContainProductTitle(String searchValue) {
 		areJQueryAndJSLoadedSuccess(driver);
-		return isElementTextInListContainValue(driver, UserSearchPageUI.PRODUCT_TITLE, searchValue);
+		return isAllElementsTextInListContainValue(driver, UserSearchPageUI.PRODUCT_TITLE, searchValue);
 	}
 
 

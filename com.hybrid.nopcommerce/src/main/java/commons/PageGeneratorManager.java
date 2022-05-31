@@ -18,6 +18,7 @@ import pageObjects.nopcommerce.portal.myweb.UserDownloadableProductPageObject;
 import pageObjects.nopcommerce.portal.myweb.UserMyProductReviewPageObject;
 import pageObjects.nopcommerce.portal.myweb.UserOrderPageObject;
 import pageObjects.nopcommerce.portal.myweb.UserRewardPointPageObject;
+import pageObjects.nopcommerce.portal.myweb.UserWishlistPageObject;
 import pageObjects.nopcommerce.admin.AdminDashboardPageObject;
 import pageObjects.nopcommerce.admin.AdminLoginPageObject;
 import pageObjects.nopcommerce.admin.AdminProductDetailPageObject;
@@ -108,5 +109,9 @@ public class PageGeneratorManager {
 	
 	public AdminProductDetailPageObject getAdminProductDetailPage(WebDriver driver) {
 		return new AdminProductDetailPageObject(driver);
+	}
+
+	public UserWishlistPageObject getUserWishlistPage(WebDriver driver) {
+		return new UserWishlistPageObject(driver);
 	}
 }

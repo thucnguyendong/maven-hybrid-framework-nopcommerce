@@ -24,7 +24,6 @@ public class UserHomePageObject extends BasePage {
 		return PageGeneratorManager.getPageGenerator().getUserLoginPage(driver);
 	}
 	
-	@Step("Click Register Link")
 	public UserRegisterPageObject clickRegisterLink() {
 		waitForElementClickable(driver, UserBasePageUI.REGISTER_LINK);
 		clickElement(driver, UserBasePageUI.REGISTER_LINK);

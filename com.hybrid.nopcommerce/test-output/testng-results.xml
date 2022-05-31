@@ -1,130 +1,182 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[[INFO ] [2022-05-25 01:32:14,218] OS name = windows 10
+      <![CDATA[[INFO ] [2022-05-31 23:52:33,436] Step 1: Click Register Link
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-05-25 01:32:14,218] Driver instance name = chromedriver: chrome on windows (68065993cf0edc96553855cea80f5135)
+      <![CDATA[[INFO ] [2022-05-31 23:52:33,935] Step 2: Select radio button Male
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-05-25 01:32:14,879] Close all drivers after suite
+      <![CDATA[[INFO ] [2022-05-31 23:52:33,984] Step 3: Input First Name
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-05-25 01:32:14,879] OS name = windows 10
+      <![CDATA[[INFO ] [2022-05-31 23:52:34,050] Step 4: Input Last Name
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-05-25 01:32:14,879] Driver instance name = chromedriver: chrome on windows (null)
+      <![CDATA[[INFO ] [2022-05-31 23:52:34,111] Step 5: Select Birthday Date: day, month, year
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-05-25 01:32:14,880] Session ID is null. Using WebDriver after calling quit()?
+      <![CDATA[[INFO ] [2022-05-31 23:52:35,493] Step 5: Input company name
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-31 23:52:35,556] Step 6: Input email address
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-31 23:52:35,614] Step 7: Input password
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-31 23:52:35,677] Step 8: Input confirm password
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-31 23:52:35,734] Step 9: Click Register button
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-31 23:52:36,520] Step 10: Verify register's success message
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-31 23:52:36,548]  -------------------------- PASSED -------------------------- 
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-31 23:53:19,203] OS name = windows 10
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-31 23:53:19,203] Driver instance name = chromedriver: chrome on windows (7441fc8b637184b0bb59ef37fee20e17)
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-31 23:53:19,881] Close all drivers after suite
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-31 23:53:19,881] OS name = windows 10
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-31 23:53:19,881] Driver instance name = chromedriver: chrome on windows (null)
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-05-31 23:53:19,882] Session ID is null. Using WebDriver after calling quit()?
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ADMIN', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: driver.version: RemoteWebDriver
 <br>]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-05-24T18:31:20Z" name="Default suite" finished-at="2022-05-24T18:32:14Z" duration-ms="54792">
+  <suite started-at="2022-05-31T16:52:30Z" name="Default suite" finished-at="2022-05-31T16:53:19Z" duration-ms="49651">
     <groups>
     </groups>
-    <test started-at="2022-05-24T18:31:20Z" name="Default test" finished-at="2022-05-24T18:32:14Z" duration-ms="54792">
-      <class name="com.nopcommerce.user.TC_Sort_Display_Paging">
-        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:com.nopcommerce.user.TC_Sort_Display_Paging@7144655b]" started-at="2022-05-24T18:31:20Z" name="beforeSuit" finished-at="2022-05-24T18:31:20Z" duration-ms="15" status="PASS">
+    <test started-at="2022-05-31T16:52:30Z" name="Default test" finished-at="2022-05-31T16:53:19Z" duration-ms="49651">
+      <class name="com.nopcommerce.user.TC_Wishlist_Compare_Recent_View">
+        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:com.nopcommerce.user.TC_Wishlist_Compare_Recent_View@14379273]" started-at="2022-05-31T16:52:30Z" name="beforeSuit" finished-at="2022-05-31T16:52:30Z" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuit -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nopcommerce.user.TC_Sort_Display_Paging@7144655b]" started-at="2022-05-24T18:31:20Z" name="beforeClass" finished-at="2022-05-24T18:31:24Z" duration-ms="4248" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method signature="TC_01_Sort_A_To_Z(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Sort_Display_Paging@7144655b]" started-at="2022-05-24T18:31:24Z" name="TC_01_Sort_A_To_Z" finished-at="2022-05-24T18:31:25Z" duration-ms="710" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.user.TC_Sort_Display_Paging.TC_01_Sort_A_To_Z(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_01_Sort_A_To_Z -->
-        <test-method signature="TC_02_Sort_Low_To_High(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Sort_Display_Paging@7144655b]" started-at="2022-05-24T18:31:25Z" name="TC_02_Sort_Low_To_High" finished-at="2022-05-24T18:31:25Z" duration-ms="652" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.user.TC_Sort_Display_Paging.TC_02_Sort_Low_To_High(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_02_Sort_Low_To_High -->
-        <test-method signature="TC_04_Display_3_Value(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Sort_Display_Paging@7144655b]" started-at="2022-05-24T18:31:25Z" name="TC_04_Display_3_Value" finished-at="2022-05-24T18:31:56Z" duration-ms="31130" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.user.TC_Sort_Display_Paging.TC_04_Display_3_Value(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_04_Display_3_Value -->
-        <test-method signature="TC_05_Display_6_Value(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Sort_Display_Paging@7144655b]" started-at="2022-05-24T18:31:56Z" name="TC_05_Display_6_Value" finished-at="2022-05-24T18:32:08Z" duration-ms="11700" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.user.TC_Sort_Display_Paging.TC_05_Display_6_Value(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_05_Display_6_Value -->
-        <test-method signature="TC_06_Display_9_Value(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Sort_Display_Paging@7144655b]" started-at="2022-05-24T18:32:08Z" name="TC_06_Display_9_Value" finished-at="2022-05-24T18:32:14Z" duration-ms="5633" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.nopcommerce.user.TC_Sort_Display_Paging.TC_06_Display_9_Value(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_06_Display_9_Value -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.TC_Sort_Display_Paging@7144655b]" started-at="2022-05-24T18:32:14Z" name="afterClass" finished-at="2022-05-24T18:32:14Z" duration-ms="649" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nopcommerce.user.TC_Wishlist_Compare_Recent_View@14379273]" started-at="2022-05-31T16:52:30Z" name="beforeClass" finished-at="2022-05-31T16:52:36Z" duration-ms="6318" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[[INFO ] [2022-05-25 01:32:14,218] OS name = windows 10
+              <![CDATA[[INFO ] [2022-05-31 23:52:33,436] Step 1: Click Register Link
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-05-25 01:32:14,218] Driver instance name = chromedriver: chrome on windows (68065993cf0edc96553855cea80f5135)
+              <![CDATA[[INFO ] [2022-05-31 23:52:33,935] Step 2: Select radio button Male
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-31 23:52:33,984] Step 3: Input First Name
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-31 23:52:34,050] Step 4: Input Last Name
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-31 23:52:34,111] Step 5: Select Birthday Date: day, month, year
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-31 23:52:35,493] Step 5: Input company name
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-31 23:52:35,556] Step 6: Input email address
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-31 23:52:35,614] Step 7: Input password
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-31 23:52:35,677] Step 8: Input confirm password
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-31 23:52:35,734] Step 9: Click Register button
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-31 23:52:36,520] Step 10: Verify register's success message
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-31 23:52:36,548]  -------------------------- PASSED -------------------------- 
+<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method signature="TC_01_Search_Empty_Data(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Wishlist_Compare_Recent_View@14379273]" started-at="2022-05-31T16:52:36Z" name="TC_01_Search_Empty_Data" finished-at="2022-05-31T16:53:19Z" duration-ms="42600" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.user.TC_Wishlist_Compare_Recent_View.TC_01_Search_Empty_Data(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_Search_Empty_Data -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.TC_Wishlist_Compare_Recent_View@14379273]" started-at="2022-05-31T16:53:19Z" name="afterClass" finished-at="2022-05-31T16:53:19Z" duration-ms="667" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[INFO ] [2022-05-31 23:53:19,203] OS name = windows 10
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-05-31 23:53:19,203] Driver instance name = chromedriver: chrome on windows (7441fc8b637184b0bb59ef37fee20e17)
 <br>]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="cleanExecutableDriver()[pri:0, instance:com.nopcommerce.user.TC_Sort_Display_Paging@7144655b]" started-at="2022-05-24T18:32:14Z" name="cleanExecutableDriver" finished-at="2022-05-24T18:32:14Z" duration-ms="45" status="PASS">
+        <test-method is-config="true" signature="cleanExecutableDriver()[pri:0, instance:com.nopcommerce.user.TC_Wishlist_Compare_Recent_View@14379273]" started-at="2022-05-31T16:53:19Z" name="cleanExecutableDriver" finished-at="2022-05-31T16:53:19Z" duration-ms="45" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[[INFO ] [2022-05-25 01:32:14,879] Close all drivers after suite
+              <![CDATA[[INFO ] [2022-05-31 23:53:19,881] Close all drivers after suite
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-05-25 01:32:14,879] OS name = windows 10
+              <![CDATA[[INFO ] [2022-05-31 23:53:19,881] OS name = windows 10
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-05-25 01:32:14,879] Driver instance name = chromedriver: chrome on windows (null)
+              <![CDATA[[INFO ] [2022-05-31 23:53:19,881] Driver instance name = chromedriver: chrome on windows (null)
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-05-25 01:32:14,880] Session ID is null. Using WebDriver after calling quit()?
+              <![CDATA[[INFO ] [2022-05-31 23:53:19,882] Session ID is null. Using WebDriver after calling quit()?
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ADMIN', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: driver.version: RemoteWebDriver
@@ -132,7 +184,7 @@ Driver info: driver.version: RemoteWebDriver
             </line>
           </reporter-output>
         </test-method> <!-- cleanExecutableDriver -->
-      </class> <!-- com.nopcommerce.user.TC_Sort_Display_Paging -->
+      </class> <!-- com.nopcommerce.user.TC_Wishlist_Compare_Recent_View -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

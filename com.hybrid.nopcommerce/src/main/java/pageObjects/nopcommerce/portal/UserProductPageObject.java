@@ -17,4 +17,18 @@ public class UserProductPageObject extends BasePage {
 		clickElement(driver, UserProductPageUI.ADD_REVIEW_LINK);
 		return PageGeneratorManager.getPageGenerator().getUserProductReviewPage(driver);
 	}
+	
+	public void clickAddToWishList() {
+		clickButtonByText(driver, "Add to wishlist");
+	}
+	public String getSuccessMessage() {
+		waitForElementVisible(driver, UserProductPageUI.SUCCESS_MESSAGE);
+		return getElementText(driver, UserProductPageUI.SUCCESS_MESSAGE);
+	}
+	public void closeSuccessMessage() {
+		waitForElementInvisible(driver, UserProductPageUI.CLOSE_SUCCESS_BUTTON);
+		if(!isElementUndisplayed(driver, UserProductPageUI.CLOSE_SUCCESS_BUTTON)) {
+			clickElement(driver, UserProductPageUI.CLOSE_SUCCESS_BUTTON);			
+		}
+	}	
 }

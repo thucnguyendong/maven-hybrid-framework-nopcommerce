@@ -242,6 +242,10 @@ public class BasePage {
 		return driver.findElements(getByXpath(xpathLocator));
 	}
 	
+	private List<WebElement> getListElement(WebDriver driver, String xpathLocator, String...params) {
+		return driver.findElements(getByXpath(getDynamicLocator(xpathLocator,params)));
+	}
+	
 	private String getDynamicLocator(String xpathLocator, String...params) {
 		return String.format(xpathLocator, (Object[])params);
 	}
@@ -801,7 +805,7 @@ public class BasePage {
 	 * @param value
 	 */
 	
-	public boolean isElementTextInListContainValue(WebDriver driver, String xpathLocator, String value) {
+	public boolean isAllElementsTextInListContainValue(WebDriver driver, String xpathLocator, String value) {
 		
 		List<WebElement> elementList = getListElement(driver, xpathLocator);
 		for (WebElement element: elementList) {
@@ -818,13 +822,38 @@ public class BasePage {
 	 * @param xpathLocator of elements to wait
 	 * @param value
 	 */
-	public boolean isElementTextInListEqualValue(WebDriver driver, String xpathLocator, String value) {
+	public boolean isAllElementsTextInListEqualValue(WebDriver driver, String xpathLocator, String value) {
 		List<WebElement> elementList = getListElement(driver, xpathLocator);
 		for (WebElement element: elementList) {
 			if (!element.getText().equals(value))
 				return false;
 		}
 		return true;
+	}
+	
+	/**
+	 * check that all element text in list equal value
+	 * @param driver
+	 * @param xpathLocator of elements to wait
+	 * @param value
+	 */
+	public boolean isOneElementTextInListEqualValue(WebDriver driver, String xpathLocator, String value) {
+		List<WebElement> elementList = getListElement(driver, xpathLocator);
+		for (WebElement element: elementList) {
+			if (element.getText().equals(value))
+				return true;
+		}
+		return false;
+	}
+
+	
+	public boolean isOneElementTextInListEqualValue(WebDriver driver, String xpathLocator, String value, String...params) {
+		List<WebElement> elementList = getListElement(driver, xpathLocator, params);
+		for (WebElement element: elementList) {
+			if (element.getText().equals(value))
+				return true;
+		}
+		return false;
 	}
 	
 	/**
@@ -1029,6 +1058,17 @@ public class BasePage {
 	public void openHeaderMenuByName(WebDriver driver, String menuHeader) {
 		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_MENU_HEADER, menuHeader);
 		clickElement(driver, UserBasePageUI.DYNAMIC_MENU_HEADER, menuHeader);
+	}
+	
+	/**
+	 * click items on Header using name
+	 * @param driver driver of web driver
+	 * @param menuHeader the name of the header
+	 */	
+	
+	public void openUserHeaderLinkByName(WebDriver driver, String userHeaderLink) {
+		waitForElementClickable(driver, UserBasePageUI.DYNAMIC_USER_MENU_LINK, userHeaderLink);
+		clickElement(driver, UserBasePageUI.DYNAMIC_USER_MENU_LINK, userHeaderLink);
 	}
 	
 	/**

@@ -10,8 +10,7 @@
   	<parameter name = "browser" value ="chrome"></parameter>
     <classes>
       <class name="com.nopcommerce.commons.Common_RegisterToSystem"/>
-      <class name="com.nopcommerce.user.TC_Search_With_SearchBar"/>
-      <class name="com.nopcommerce.user.TC_Search_Advanced"/>
+      <class name="com.nopcommerce.user.TC_Sort_Display_Paging"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
