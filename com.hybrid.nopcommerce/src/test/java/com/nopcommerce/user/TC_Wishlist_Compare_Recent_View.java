@@ -16,11 +16,12 @@ import commons.BaseTest;
 import commons.GlobalConstants;
 import commons.PageGeneratorManager;
 import pageObjects.nopcommerce.portal.UserHomePageObject;
+import pageObjects.nopcommerce.portal.UserProductCartPageObject;
 import pageObjects.nopcommerce.portal.UserProductPageObject;
 import pageObjects.nopcommerce.portal.UserRegisterPageObject;
 import pageObjects.nopcommerce.portal.UserSearchBarPageObject;
 import pageObjects.nopcommerce.portal.UserSearchPageObject;
-import pageObjects.nopcommerce.portal.myweb.UserWishlistPageObject;
+import pageObjects.nopcommerce.portal.UserWishlistPageObject;
 import reportConfig.ExtentTestManager;
 import utilities.DataHelper;
 
@@ -32,6 +33,7 @@ public class TC_Wishlist_Compare_Recent_View extends BaseTest {
 	UserProductPageObject productPage;
 	String searchValue;
 	UserWishlistPageObject wishlistPage;
+	UserProductCartPageObject productCart;
 	
 	private String emailAddress;
 	private String firstName = "Thuc";
@@ -80,7 +82,7 @@ public class TC_Wishlist_Compare_Recent_View extends BaseTest {
 	}
 	
 	//@Test
-	public void TC_01_Search_Empty_Data(Method method) {
+	public void TC_01_Add_To_Wishlist(Method method) {
 		searchValue = "Asus N551JK-XO076H Laptop";
 		//ExtentTestManager.startTest(method.getName(), "Test Case 1: Search empty data");
 		//ExtentTestManager.getTest().log(Status.INFO, "Step 1: Click Search button");
@@ -91,14 +93,35 @@ public class TC_Wishlist_Compare_Recent_View extends BaseTest {
 		productPage =searchPage.clickProductLink(searchValue);
 		productPage.clickAddToWishList();
 		assertEquals(productPage.getSuccessMessage(),"The product has been added to your wishlist");
-		productPage.closeSuccessMessage();
+		wishlistPage = productPage.clickWishlistLinkOnSuccessMessage();
+		wishlistPage = PageGeneratorManager.getPageGenerator().getUserWishlistPage(driver);
+		assertTrue(wishlistPage.isProductDisplayedByProductName(searchValue));
+		wishlistPage.clickRemoveButtonByProductName(searchValue);
+		assertTrue(wishlistPage.isProductRemovedByProductName(searchValue));
+	}
+	
+	//@Test
+	public void TC_02_Add_To_Product_Cart(Method method) {
+		searchValue = "Asus N551JK-XO076H Laptop";
+		//ExtentTestManager.startTest(method.getName(), "Test Case 1: Search empty data");
+		//ExtentTestManager.getTest().log(Status.INFO, "Step 1: Click Search button");
+		searchBar = PageGeneratorManager.getPageGenerator().getUserSearchBar(driver);
+		searchBar.inputSearchTextbox(searchValue);
+		searchPage = searchBar.clickSearchButton();
+		//ExtentTestManager.getTest().log(Status.INFO, "Step 2: Check error");
+		productPage =searchPage.clickProductLink(searchValue);
+		productPage.clickAddToWishList();
+		wishlistPage = productPage.clickWishlistLinkOnSuccessMessage();
+		wishlistPage.checkItemByProductName(searchValue);
+		productCart = wishlistPage.clickAddToCartButton();
+		assertTrue(productCart.isProductDisplayedByProductName(searchValue));
 		productPage.openUserHeaderLinkByName(driver, "Wishlist");
 		wishlistPage = PageGeneratorManager.getPageGenerator().getUserWishlistPage(driver);
-		assertTrue(wishlistPage.isProductNameDisplayed(searchValue));
+		assertTrue(wishlistPage.isProductRemovedByProductName(searchValue));
 	}
 	
 	@Test
-	public void TC_02_Search_Empty_Data(Method method) {
+	public void TC_03_Check_Empty_Wishlist(Method method) {
 		searchValue = "Asus N551JK-XO076H Laptop";
 		//ExtentTestManager.startTest(method.getName(), "Test Case 1: Search empty data");
 		//ExtentTestManager.getTest().log(Status.INFO, "Step 1: Click Search button");
@@ -109,10 +132,9 @@ public class TC_Wishlist_Compare_Recent_View extends BaseTest {
 		productPage =searchPage.clickProductLink(searchValue);
 		productPage.clickAddToWishList();
 		assertEquals(productPage.getSuccessMessage(),"The product has been added to your wishlist");
-		productPage.closeSuccessMessage();
-		productPage.openUserHeaderLinkByName(driver, "Wishlist");
-		wishlistPage = PageGeneratorManager.getPageGenerator().getUserWishlistPage(driver);
-		assertTrue(wishlistPage.isProductNameDisplayed(searchValue));
+		wishlistPage = productPage.clickWishlistLinkOnSuccessMessage();
+		wishlistPage.removeAllProducts();
+		assertTrue(wishlistPage.isWishlistEmpty());
 	}
 	
 	//@Parameters("browser")

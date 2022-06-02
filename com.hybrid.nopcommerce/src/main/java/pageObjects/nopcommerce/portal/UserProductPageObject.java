@@ -25,10 +25,16 @@ public class UserProductPageObject extends BasePage {
 		waitForElementVisible(driver, UserProductPageUI.SUCCESS_MESSAGE);
 		return getElementText(driver, UserProductPageUI.SUCCESS_MESSAGE);
 	}
+	
 	public void closeSuccessMessage() {
-		waitForElementInvisible(driver, UserProductPageUI.CLOSE_SUCCESS_BUTTON);
 		if(!isElementUndisplayed(driver, UserProductPageUI.CLOSE_SUCCESS_BUTTON)) {
-			clickElement(driver, UserProductPageUI.CLOSE_SUCCESS_BUTTON);			
+			clickElement(driver, UserProductPageUI.CLOSE_SUCCESS_BUTTON);
+			waitForElementInvisible(driver, UserProductPageUI.CLOSE_SUCCESS_BUTTON);
 		}
+	}
+	public UserWishlistPageObject clickWishlistLinkOnSuccessMessage() {
+		waitForElementClickable(driver, UserProductPageUI.WISHLIST_LINK_SUCCESS_MESSAGE);
+		clickElement(driver, UserProductPageUI.WISHLIST_LINK_SUCCESS_MESSAGE);
+		return PageGeneratorManager.getPageGenerator().getUserWishlistPage(driver);
 	}	
 }

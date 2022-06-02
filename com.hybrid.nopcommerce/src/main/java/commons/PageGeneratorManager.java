@@ -5,11 +5,13 @@ import org.openqa.selenium.WebDriver;
 import pageObjects.nopcommerce.portal.UserProductCatgoryPageObject;
 import pageObjects.nopcommerce.portal.UserHomePageObject;
 import pageObjects.nopcommerce.portal.UserLoginPageObject;
+import pageObjects.nopcommerce.portal.UserProductCartPageObject;
 import pageObjects.nopcommerce.portal.UserProductPageObject;
 import pageObjects.nopcommerce.portal.UserProductReviewPageObject;
 import pageObjects.nopcommerce.portal.UserRegisterPageObject;
 import pageObjects.nopcommerce.portal.UserSearchBarPageObject;
 import pageObjects.nopcommerce.portal.UserSearchPageObject;
+import pageObjects.nopcommerce.portal.UserWishlistPageObject;
 import pageObjects.nopcommerce.portal.myweb.UserAddressPageObject;
 import pageObjects.nopcommerce.portal.myweb.UserBackInStockSubscriptionPageObject;
 import pageObjects.nopcommerce.portal.myweb.UserChangePasswordPageObject;
@@ -18,7 +20,6 @@ import pageObjects.nopcommerce.portal.myweb.UserDownloadableProductPageObject;
 import pageObjects.nopcommerce.portal.myweb.UserMyProductReviewPageObject;
 import pageObjects.nopcommerce.portal.myweb.UserOrderPageObject;
 import pageObjects.nopcommerce.portal.myweb.UserRewardPointPageObject;
-import pageObjects.nopcommerce.portal.myweb.UserWishlistPageObject;
 import pageObjects.nopcommerce.admin.AdminDashboardPageObject;
 import pageObjects.nopcommerce.admin.AdminLoginPageObject;
 import pageObjects.nopcommerce.admin.AdminProductDetailPageObject;
@@ -113,5 +114,10 @@ public class PageGeneratorManager {
 
 	public UserWishlistPageObject getUserWishlistPage(WebDriver driver) {
 		return new UserWishlistPageObject(driver);
+	}
+
+	public UserProductCartPageObject getUserProductCartPage(WebDriver driver) {
+		// TODO Auto-generated method stub
+		return  new UserProductCartPageObject(driver);
 	}
 }

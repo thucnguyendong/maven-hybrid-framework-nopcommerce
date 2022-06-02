@@ -238,11 +238,11 @@ public class BasePage {
 	 * @param xpathLocator xpathLocator of elements
 	 * @return list of web element found
 	 */	
-	private List<WebElement> getListElement(WebDriver driver, String xpathLocator) {
+	protected List<WebElement> getListElement(WebDriver driver, String xpathLocator) {
 		return driver.findElements(getByXpath(xpathLocator));
 	}
 	
-	private List<WebElement> getListElement(WebDriver driver, String xpathLocator, String...params) {
+	protected List<WebElement> getListElement(WebDriver driver, String xpathLocator, String...params) {
 		return driver.findElements(getByXpath(getDynamicLocator(xpathLocator,params)));
 	}
 	
@@ -410,6 +410,13 @@ public class BasePage {
 		}
 	}
 	
+	public void uncheckToDefaultCheckboxRadio(WebDriver driver, String xpathLocator, String... params) {
+		WebElement element = getElement(driver, getDynamicLocator(xpathLocator, params));
+		if(element.isSelected()) {
+			element.click();
+		}
+	}
+	
 	/**
 	 * Check the checkbox to be unselected before checking it
 	 * @param driver
@@ -417,6 +424,13 @@ public class BasePage {
 	 */
 	public void checkToDefaultCheckboxRadio(WebDriver driver, String xpathLocator) {
 		WebElement element = getElement(driver, xpathLocator);
+		if(!element.isSelected()) {
+			element.click();
+		}
+	}
+	
+	public void checkToDefaultCheckboxRadio(WebDriver driver, String xpathLocator, String... params) {
+		WebElement element = getElement(driver, getDynamicLocator(xpathLocator, params));
 		if(!element.isSelected()) {
 			element.click();
 		}
@@ -455,6 +469,21 @@ public class BasePage {
 	public boolean isElementUndisplayed(WebDriver driver, String xpathLocator) {
 		overideImplicitTimeout(driver,GlobalConstants.SHORT_TIMEOUT);
 		List<WebElement> elements = getListElement(driver, xpathLocator);
+		overideImplicitTimeout(driver,GlobalConstants.LONG_TIMEOUT);
+		if(elements.size()==0) {
+			return true;
+		}
+		else if(elements.size()>0 && (!elements.get(0).isDisplayed())) {
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
+	public boolean isElementUndisplayed(WebDriver driver, String xpathLocator, String...params) {
+		overideImplicitTimeout(driver,GlobalConstants.SHORT_TIMEOUT);
+		List<WebElement> elements = getListElement(driver, xpathLocator, params);
 		overideImplicitTimeout(driver,GlobalConstants.LONG_TIMEOUT);
 		if(elements.size()==0) {
 			return true;
