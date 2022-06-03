@@ -3,6 +3,7 @@ package commons;
 import org.openqa.selenium.WebDriver;
 
 import pageObjects.nopcommerce.portal.UserProductCatgoryPageObject;
+import pageObjects.nopcommerce.portal.UserProductComparisonPageObject;
 import pageObjects.nopcommerce.portal.UserHomePageObject;
 import pageObjects.nopcommerce.portal.UserLoginPageObject;
 import pageObjects.nopcommerce.portal.UserProductCartPageObject;
@@ -119,5 +120,10 @@ public class PageGeneratorManager {
 	public UserProductCartPageObject getUserProductCartPage(WebDriver driver) {
 		// TODO Auto-generated method stub
 		return  new UserProductCartPageObject(driver);
+	}
+
+	public UserProductComparisonPageObject getUserProductComparisonPage(WebDriver driver) {
+		// TODO Auto-generated method stub
+		return new UserProductComparisonPageObject(driver);
 	}
 }

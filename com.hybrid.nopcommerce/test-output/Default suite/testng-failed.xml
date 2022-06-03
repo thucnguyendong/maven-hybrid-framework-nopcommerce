@@ -6,7 +6,7 @@
       <class name="com.nopcommerce.user.TC_Wishlist_Compare_Recent_View">
         <methods>
           <include name="cleanExecutableDriver"/>
-          <include name="TC_02_Search_Empty_Data" invocation-numbers="0"/>
+          <include name="TC_04_Add_Product_To_Compare" invocation-numbers="0"/>
           <include name="beforeSuit"/>
           <include name="beforeClass"/>
           <include name="afterClass"/>

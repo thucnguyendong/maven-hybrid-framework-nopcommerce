@@ -2887,3 +2887,132 @@ Driver info: driver.version: RemoteWebDriver
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'ADMIN', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
 Driver info: driver.version: RemoteWebDriver
+[INFO ] [2022-06-03 23:00:52,173] Step 1: Click Register Link
+[INFO ] [2022-06-03 23:00:52,652] Step 2: Select radio button Male
+[INFO ] [2022-06-03 23:00:52,701] Step 3: Input First Name
+[INFO ] [2022-06-03 23:00:52,767] Step 4: Input Last Name
+[INFO ] [2022-06-03 23:00:52,830] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-03 23:00:54,216] Step 5: Input company name
+[INFO ] [2022-06-03 23:00:54,277] Step 6: Input email address
+[INFO ] [2022-06-03 23:00:54,337] Step 7: Input password
+[INFO ] [2022-06-03 23:00:54,396] Step 8: Input confirm password
+[INFO ] [2022-06-03 23:00:54,453] Step 9: Click Register button
+[INFO ] [2022-06-03 23:00:55,178] Step 10: Verify register's success message
+[INFO ] [2022-06-03 23:00:55,204]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-03 23:00:58,997] OS name = windows 10
+[INFO ] [2022-06-03 23:00:58,997] Driver instance name = chromedriver: chrome on windows (b5fcaa1cf7d08a6be99562b25ba2458f)
+[INFO ] [2022-06-03 23:00:59,680] Close all drivers after suite
+[INFO ] [2022-06-03 23:00:59,680] OS name = windows 10
+[INFO ] [2022-06-03 23:00:59,680] Driver instance name = chromedriver: chrome on windows (null)
+[INFO ] [2022-06-03 23:00:59,682] Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
+[INFO ] [2022-06-03 23:06:38,167] Step 1: Click Register Link
+[INFO ] [2022-06-03 23:06:38,655] Step 2: Select radio button Male
+[INFO ] [2022-06-03 23:06:38,705] Step 3: Input First Name
+[INFO ] [2022-06-03 23:06:38,772] Step 4: Input Last Name
+[INFO ] [2022-06-03 23:06:38,839] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-03 23:06:40,338] Step 5: Input company name
+[INFO ] [2022-06-03 23:06:40,398] Step 6: Input email address
+[INFO ] [2022-06-03 23:06:40,458] Step 7: Input password
+[INFO ] [2022-06-03 23:06:40,517] Step 8: Input confirm password
+[INFO ] [2022-06-03 23:06:40,578] Step 9: Click Register button
+[INFO ] [2022-06-03 23:06:41,326] Step 10: Verify register's success message
+[INFO ] [2022-06-03 23:06:41,355]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-03 23:06:44,165] OS name = windows 10
+[INFO ] [2022-06-03 23:06:44,165] Driver instance name = chromedriver: chrome on windows (7247bf63cc4ab55656743c9cdb146def)
+[INFO ] [2022-06-03 23:06:44,847] Close all drivers after suite
+[INFO ] [2022-06-03 23:06:44,847] OS name = windows 10
+[INFO ] [2022-06-03 23:06:44,847] Driver instance name = chromedriver: chrome on windows (null)
+[INFO ] [2022-06-03 23:06:44,848] Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
+[INFO ] [2022-06-03 23:08:10,902] Step 1: Click Register Link
+[INFO ] [2022-06-03 23:08:11,347] Step 2: Select radio button Male
+[INFO ] [2022-06-03 23:08:11,398] Step 3: Input First Name
+[INFO ] [2022-06-03 23:08:11,465] Step 4: Input Last Name
+[INFO ] [2022-06-03 23:08:11,533] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-03 23:08:13,004] Step 5: Input company name
+[INFO ] [2022-06-03 23:08:13,067] Step 6: Input email address
+[INFO ] [2022-06-03 23:08:13,128] Step 7: Input password
+[INFO ] [2022-06-03 23:08:13,187] Step 8: Input confirm password
+[INFO ] [2022-06-03 23:08:13,245] Step 9: Click Register button
+[INFO ] [2022-06-03 23:08:14,042] Step 10: Verify register's success message
+[INFO ] [2022-06-03 23:08:14,070]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-03 23:10:22,805] Step 1: Click Register Link
+[INFO ] [2022-06-03 23:10:23,272] Step 2: Select radio button Male
+[INFO ] [2022-06-03 23:10:23,323] Step 3: Input First Name
+[INFO ] [2022-06-03 23:10:23,390] Step 4: Input Last Name
+[INFO ] [2022-06-03 23:10:23,457] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-03 23:10:25,019] Step 5: Input company name
+[INFO ] [2022-06-03 23:10:25,083] Step 6: Input email address
+[INFO ] [2022-06-03 23:10:25,146] Step 7: Input password
+[INFO ] [2022-06-03 23:10:25,205] Step 8: Input confirm password
+[INFO ] [2022-06-03 23:10:25,264] Step 9: Click Register button
+[INFO ] [2022-06-03 23:10:26,079] Step 10: Verify register's success message
+[INFO ] [2022-06-03 23:10:26,107]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-03 23:12:22,659] Step 1: Click Register Link
+[INFO ] [2022-06-03 23:12:23,115] Step 2: Select radio button Male
+[INFO ] [2022-06-03 23:12:23,165] Step 3: Input First Name
+[INFO ] [2022-06-03 23:12:23,230] Step 4: Input Last Name
+[INFO ] [2022-06-03 23:12:23,293] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-03 23:12:24,671] Step 5: Input company name
+[INFO ] [2022-06-03 23:12:24,732] Step 6: Input email address
+[INFO ] [2022-06-03 23:12:24,790] Step 7: Input password
+[INFO ] [2022-06-03 23:12:24,847] Step 8: Input confirm password
+[INFO ] [2022-06-03 23:12:24,904] Step 9: Click Register button
+[INFO ] [2022-06-03 23:12:25,626] Step 10: Verify register's success message
+[INFO ] [2022-06-03 23:12:25,654]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-03 23:12:29,990] OS name = windows 10
+[INFO ] [2022-06-03 23:12:29,990] Driver instance name = chromedriver: chrome on windows (4de2ca493d73e1eabb0bbd2a51ceb835)
+[INFO ] [2022-06-03 23:12:30,668] Close all drivers after suite
+[INFO ] [2022-06-03 23:12:30,668] OS name = windows 10
+[INFO ] [2022-06-03 23:12:30,668] Driver instance name = chromedriver: chrome on windows (null)
+[INFO ] [2022-06-03 23:12:30,669] Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
+[INFO ] [2022-06-03 23:21:31,612] Step 1: Click Register Link
+[INFO ] [2022-06-03 23:21:32,075] Step 2: Select radio button Male
+[INFO ] [2022-06-03 23:21:32,130] Step 3: Input First Name
+[INFO ] [2022-06-03 23:21:32,194] Step 4: Input Last Name
+[INFO ] [2022-06-03 23:21:32,257] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-03 23:21:33,629] Step 5: Input company name
+[INFO ] [2022-06-03 23:21:33,690] Step 6: Input email address
+[INFO ] [2022-06-03 23:21:33,747] Step 7: Input password
+[INFO ] [2022-06-03 23:21:33,804] Step 8: Input confirm password
+[INFO ] [2022-06-03 23:21:33,861] Step 9: Click Register button
+[INFO ] [2022-06-03 23:21:34,633] Step 10: Verify register's success message
+[INFO ] [2022-06-03 23:21:34,661]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-03 23:22:09,105] OS name = windows 10
+[INFO ] [2022-06-03 23:22:09,105] Driver instance name = chromedriver: chrome on windows (3fbb8e8f0a7946a7967a1d3924702ec3)
+[INFO ] [2022-06-03 23:22:09,799] Close all drivers after suite
+[INFO ] [2022-06-03 23:22:09,799] OS name = windows 10
+[INFO ] [2022-06-03 23:22:09,799] Driver instance name = chromedriver: chrome on windows (null)
+[INFO ] [2022-06-03 23:22:09,799] Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
+[INFO ] [2022-06-03 23:22:49,323] Step 1: Click Register Link
+[INFO ] [2022-06-03 23:22:49,793] Step 2: Select radio button Male
+[INFO ] [2022-06-03 23:22:49,844] Step 3: Input First Name
+[INFO ] [2022-06-03 23:22:49,909] Step 4: Input Last Name
+[INFO ] [2022-06-03 23:22:49,974] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-03 23:22:51,372] Step 5: Input company name
+[INFO ] [2022-06-03 23:22:51,432] Step 6: Input email address
+[INFO ] [2022-06-03 23:22:51,493] Step 7: Input password
+[INFO ] [2022-06-03 23:22:51,557] Step 8: Input confirm password
+[INFO ] [2022-06-03 23:22:51,613] Step 9: Click Register button
+[INFO ] [2022-06-03 23:22:52,365] Step 10: Verify register's success message
+[INFO ] [2022-06-03 23:22:52,393]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-03 23:22:59,051] OS name = windows 10
+[INFO ] [2022-06-03 23:22:59,051] Driver instance name = chromedriver: chrome on windows (0d6877982cb7a2b8d13283e31cb9a7b6)
+[INFO ] [2022-06-03 23:22:59,729] Close all drivers after suite
+[INFO ] [2022-06-03 23:22:59,729] OS name = windows 10
+[INFO ] [2022-06-03 23:22:59,729] Driver instance name = chromedriver: chrome on windows (null)
+[INFO ] [2022-06-03 23:22:59,731] Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver

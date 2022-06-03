@@ -866,6 +866,24 @@ public class BasePage {
 	 * @param xpathLocator of elements to wait
 	 * @param value
 	 */
+	public boolean isAllElementsTextEqualList(WebDriver driver, String xpathLocator, String[] value) {
+		List<WebElement> elementList = getListElement(driver, xpathLocator);
+		int i= 0;
+		for (WebElement element: elementList) {
+			String test = element.getText();
+			if (!test.equals(value[i]))
+				return false;
+			i++;
+		}
+		return true;
+	}
+	
+	/**
+	 * check that at least 1 element text in list equal value
+	 * @param driver
+	 * @param xpathLocator of elements to wait
+	 * @param value
+	 */
 	public boolean isOneElementTextInListEqualValue(WebDriver driver, String xpathLocator, String value) {
 		List<WebElement> elementList = getListElement(driver, xpathLocator);
 		for (WebElement element: elementList) {
@@ -875,7 +893,6 @@ public class BasePage {
 		return false;
 	}
 
-	
 	public boolean isOneElementTextInListEqualValue(WebDriver driver, String xpathLocator, String value, String...params) {
 		List<WebElement> elementList = getListElement(driver, xpathLocator, params);
 		for (WebElement element: elementList) {

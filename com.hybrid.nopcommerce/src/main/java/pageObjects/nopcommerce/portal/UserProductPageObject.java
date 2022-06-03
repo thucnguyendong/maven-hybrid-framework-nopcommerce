@@ -36,5 +36,14 @@ public class UserProductPageObject extends BasePage {
 		waitForElementClickable(driver, UserProductPageUI.WISHLIST_LINK_SUCCESS_MESSAGE);
 		clickElement(driver, UserProductPageUI.WISHLIST_LINK_SUCCESS_MESSAGE);
 		return PageGeneratorManager.getPageGenerator().getUserWishlistPage(driver);
-	}	
+	}
+	public void clickAddToCompareListButton() {
+		clickButtonByText(driver, "Add to compare list");	
+	}
+	
+	public UserProductComparisonPageObject clickProductComparisonLinkOnSuccessMessage() {
+		waitForElementClickable(driver, UserProductPageUI.PRODUCT_COMPARISON_LINK_SUCCESS_MESSAGE);
+		clickElement(driver, UserProductPageUI.PRODUCT_COMPARISON_LINK_SUCCESS_MESSAGE);
+		return PageGeneratorManager.getPageGenerator().getUserProductComparisonPage(driver);
+	}
 }

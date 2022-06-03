@@ -17,6 +17,7 @@ import commons.GlobalConstants;
 import commons.PageGeneratorManager;
 import pageObjects.nopcommerce.portal.UserHomePageObject;
 import pageObjects.nopcommerce.portal.UserProductCartPageObject;
+import pageObjects.nopcommerce.portal.UserProductComparisonPageObject;
 import pageObjects.nopcommerce.portal.UserProductPageObject;
 import pageObjects.nopcommerce.portal.UserRegisterPageObject;
 import pageObjects.nopcommerce.portal.UserSearchBarPageObject;
@@ -34,6 +35,7 @@ public class TC_Wishlist_Compare_Recent_View extends BaseTest {
 	String searchValue;
 	UserWishlistPageObject wishlistPage;
 	UserProductCartPageObject productCart;
+	UserProductComparisonPageObject productComparison;
 	
 	private String emailAddress;
 	private String firstName = "Thuc";
@@ -120,7 +122,7 @@ public class TC_Wishlist_Compare_Recent_View extends BaseTest {
 		assertTrue(wishlistPage.isProductRemovedByProductName(searchValue));
 	}
 	
-	@Test
+	//@Test
 	public void TC_03_Check_Empty_Wishlist(Method method) {
 		searchValue = "Asus N551JK-XO076H Laptop";
 		//ExtentTestManager.startTest(method.getName(), "Test Case 1: Search empty data");
@@ -135,6 +137,40 @@ public class TC_Wishlist_Compare_Recent_View extends BaseTest {
 		wishlistPage = productPage.clickWishlistLinkOnSuccessMessage();
 		wishlistPage.removeAllProducts();
 		assertTrue(wishlistPage.isWishlistEmpty());
+	}
+	
+	@Test
+	public void TC_04_Add_Product_To_Compare(Method method) {
+		searchValue = "Asus N551JK-XO076H Laptop";
+		String searchValue2 = "Build your own computer";
+		
+		//ExtentTestManager.startTest(method.getName(), "Test Case 1: Search empty data");
+		//ExtentTestManager.getTest().log(Status.INFO, "Step 1: Click Search button");
+		searchBar = PageGeneratorManager.getPageGenerator().getUserSearchBar(driver);
+		searchBar.inputSearchTextbox(searchValue);
+		searchPage = searchBar.clickSearchButton();
+		//ExtentTestManager.getTest().log(Status.INFO, "Step 2: Check error");
+		productPage =searchPage.clickProductLink(searchValue);
+		productPage.clickAddToCompareListButton();
+		assertEquals(productPage.getSuccessMessage(),"The product has been added to your product comparison");
+		productComparison = productPage.clickProductComparisonLinkOnSuccessMessage();
+		assertTrue(productComparison.isProductDisplayedByProductName(searchValue));
+		assertTrue(productComparison.isFirstColumnDisplayedCorrectlyForOneItem());
+		
+		//ExtentTestManager.getTest().log(Status.INFO, "Step 1: Click Search button");
+		searchBar = PageGeneratorManager.getPageGenerator().getUserSearchBar(driver);
+		searchBar.inputSearchTextbox(searchValue2);
+		searchPage = searchBar.clickSearchButton();
+		//ExtentTestManager.getTest().log(Status.INFO, "Step 2: Check error");
+		productPage =searchPage.clickProductLink(searchValue2);
+		productPage.clickAddToCompareListButton();
+		assertEquals(productPage.getSuccessMessage(),"The product has been added to your product comparison");
+		productComparison = productPage.clickProductComparisonLinkOnSuccessMessage();
+		assertTrue(productComparison.isProductDisplayedByProductName(searchValue));
+		assertTrue(productComparison.isFirstColumnDisplayedCorrectlyForMultipleItem());
+		
+		productComparison.clickClearListButton();
+		assertEquals(productComparison.getNoItemText(),"You have no items to compare.");
 	}
 	
 	//@Parameters("browser")
