@@ -13,6 +13,10 @@ public class UserProductCartPageObject extends BasePage {
 	}
 
 	public boolean isProductDisplayedByProductName(String productName) {
-		return isElementDisplayed(driver, UserProductCartPageUI.DYNAMIC_PRODUCT_BUTTON_BY_PRODUCT_NAME,productName);
+		return isElementDisplayed(driver, UserProductCartPageUI.DYNAMIC_PRODUCT_LINK_BY_PRODUCT_NAME,productName);
+	}
+
+	public String getProductDetailByProductName(String productName) {
+		return getElementText(driver, UserProductCartPageUI.DYNAMIC_PRODUCT_DETAIL_BY_PRODUCT_NAME,productName);
 	}
 }

@@ -17,12 +17,12 @@ public class UserWishlistPageObject extends BasePage {
 	}
 	
 	public boolean isProductDisplayedByProductName(String productName) {
-		return isElementDisplayed(driver, UserWishlistPageUI.DYNAMIC_PRODUCT_BUTTON_BY_PRODUCT_NAME, productName);
+		return isElementDisplayed(driver, UserWishlistPageUI.DYNAMIC_PRODUCT_LINK_BY_PRODUCT_NAME, productName);
 	}
 
 	public boolean isProductRemovedByProductName(String productName) {
 		// TODO Auto-generated method stub
-		return isElementUndisplayed(driver, UserWishlistPageUI.DYNAMIC_PRODUCT_BUTTON_BY_PRODUCT_NAME, productName);
+		return isElementUndisplayed(driver, UserWishlistPageUI.DYNAMIC_PRODUCT_LINK_BY_PRODUCT_NAME, productName);
 	}
 
 	public void clickRemoveButtonByProductName(String productName) {

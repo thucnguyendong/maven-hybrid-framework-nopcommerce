@@ -18,9 +18,18 @@ public class UserProductPageObject extends BasePage {
 		return PageGeneratorManager.getPageGenerator().getUserProductReviewPage(driver);
 	}
 	
-	public void clickAddToWishList() {
+	public void clickAddToWishListButton() {
 		clickButtonByText(driver, "Add to wishlist");
 	}
+	
+	public void clickAddToCompareListButton() {
+		clickButtonByText(driver, "Add to compare list");	
+	}
+	
+	public void clickAddToCartButton() {
+		clickButtonByText(driver, "Add to cart");		
+	}
+	
 	public String getSuccessMessage() {
 		waitForElementVisible(driver, UserProductPageUI.SUCCESS_MESSAGE);
 		return getElementText(driver, UserProductPageUI.SUCCESS_MESSAGE);
@@ -37,13 +46,38 @@ public class UserProductPageObject extends BasePage {
 		clickElement(driver, UserProductPageUI.WISHLIST_LINK_SUCCESS_MESSAGE);
 		return PageGeneratorManager.getPageGenerator().getUserWishlistPage(driver);
 	}
-	public void clickAddToCompareListButton() {
-		clickButtonByText(driver, "Add to compare list");	
-	}
-	
+
 	public UserProductComparisonPageObject clickProductComparisonLinkOnSuccessMessage() {
 		waitForElementClickable(driver, UserProductPageUI.PRODUCT_COMPARISON_LINK_SUCCESS_MESSAGE);
 		clickElement(driver, UserProductPageUI.PRODUCT_COMPARISON_LINK_SUCCESS_MESSAGE);
 		return PageGeneratorManager.getPageGenerator().getUserProductComparisonPage(driver);
+	}
+	public void selectProcessorDropdown(String processor) {
+		selectItemInDefaultDropdown(driver, UserProductPageUI.PROCESSOR_DROPDOWN, processor);
+	}
+	public void selectRamDropdown(String ram) {
+		selectItemInDefaultDropdown(driver, UserProductPageUI.RAM_DROPDOWN, ram);		
+	}
+	public void selectHDDRadio(String hdd) {
+		checkToDefaultCheckboxRadio(driver, UserProductPageUI.HDD_RADIO_BUTTON,hdd);
+	}
+	public void selectOSRadio(String os) {
+		checkToDefaultCheckboxRadio(driver, UserProductPageUI.OS_RADIO_BUTTON,os);	
+	}
+	public void checkSoftwareCheckbox(String software) {
+		checkToDefaultCheckboxRadio(driver, UserProductPageUI.SOFTWARE_CHECKBOX,software);
+	}
+	
+	public void uncheckSoftwareCheckbox(String software) {
+		uncheckToDefaultCheckboxRadio(driver, UserProductPageUI.SOFTWARE_CHECKBOX,software);
+	}
+	public String getTotalPrice() {
+		areJQueryAndJSLoadedSuccess(driver);
+		return getElementText(driver, UserProductPageUI.TOTAL_PRICE_TEXT);
+	}
+	public UserProductCartPageObject clickProductCartLinkOnSuccessMessage() {
+		waitForElementClickable(driver, UserProductPageUI.PRODUCT_CART_LINK_SUCCESS_MESSAGE);
+		clickElement(driver, UserProductPageUI.PRODUCT_CART_LINK_SUCCESS_MESSAGE);
+		return PageGeneratorManager.getPageGenerator().getUserProductCartPage(driver);
 	}
 }

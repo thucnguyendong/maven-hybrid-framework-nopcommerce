@@ -9,6 +9,7 @@ import pageObjects.nopcommerce.portal.UserLoginPageObject;
 import pageObjects.nopcommerce.portal.UserProductCartPageObject;
 import pageObjects.nopcommerce.portal.UserProductPageObject;
 import pageObjects.nopcommerce.portal.UserProductReviewPageObject;
+import pageObjects.nopcommerce.portal.UserRecentlyViewProductPageObject;
 import pageObjects.nopcommerce.portal.UserRegisterPageObject;
 import pageObjects.nopcommerce.portal.UserSearchBarPageObject;
 import pageObjects.nopcommerce.portal.UserSearchPageObject;
@@ -118,12 +119,14 @@ public class PageGeneratorManager {
 	}
 
 	public UserProductCartPageObject getUserProductCartPage(WebDriver driver) {
-		// TODO Auto-generated method stub
 		return  new UserProductCartPageObject(driver);
 	}
 
 	public UserProductComparisonPageObject getUserProductComparisonPage(WebDriver driver) {
-		// TODO Auto-generated method stub
 		return new UserProductComparisonPageObject(driver);
+	}
+
+	public UserRecentlyViewProductPageObject getUserRecentlyViewProductPage(WebDriver driver) {
+		return new UserRecentlyViewProductPageObject(driver);
 	}
 }

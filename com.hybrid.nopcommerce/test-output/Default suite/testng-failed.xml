@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nopcommerce.user.TC_Wishlist_Compare_Recent_View">
+      <class name="com.nopcommerce.user.TC_Order">
         <methods>
-          <include name="cleanExecutableDriver"/>
-          <include name="TC_04_Add_Product_To_Compare" invocation-numbers="0"/>
-          <include name="beforeSuit"/>
           <include name="beforeClass"/>
+          <include name="TC_03_Register_Sucessfully" invocation-numbers="0"/>
+          <include name="cleanExecutableDriver"/>
+          <include name="beforeSuit"/>
           <include name="afterClass"/>
         </methods>
-      </class> <!-- com.nopcommerce.user.TC_Wishlist_Compare_Recent_View -->
+      </class> <!-- com.nopcommerce.user.TC_Order -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
