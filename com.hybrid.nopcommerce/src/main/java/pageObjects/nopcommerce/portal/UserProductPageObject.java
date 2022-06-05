@@ -30,6 +30,10 @@ public class UserProductPageObject extends BasePage {
 		clickButtonByText(driver, "Add to cart");		
 	}
 	
+	public void clickUpdateButton() {
+		clickButtonByText(driver, "Update");		
+	}
+	
 	public String getSuccessMessage() {
 		waitForElementVisible(driver, UserProductPageUI.SUCCESS_MESSAGE);
 		return getElementText(driver, UserProductPageUI.SUCCESS_MESSAGE);

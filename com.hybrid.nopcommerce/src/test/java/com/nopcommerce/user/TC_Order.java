@@ -76,8 +76,8 @@ public class TC_Order extends BaseTest {
 		verifyEquals(registerPage.getSuccessMessage(), "Your registration completed");
 	}
 
-	@Test
-	public void TC_03_Register_Sucessfully(Method method) {
+	//@Test
+	public void TC_01_Add_Product_To_Cart(Method method) {
 		searchValue = "Build your own computer";
 		String processor="2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]";
 		String ram = "4GB [+$20.00]";
@@ -105,6 +105,72 @@ public class TC_Order extends BaseTest {
 		productCartPage = productPage.clickProductCartLinkOnSuccessMessage();
 		assertTrue(productCartPage.isProductDisplayedByProductName(searchValue));
 		assertTrue(productCartPage.getProductDetailByProductName(searchValue).equals(fullProductDetail));
+	}
+	
+	//@Test(dependsOnMethods = "TC_01_Add_Product_To_Cart")
+	public void TC_02_Edit_Product(Method method) {
+		searchValue = "Build your own computer";
+		String processor="2.2 GHz Intel Pentium Dual-Core E2200";
+		String ram = "2 GB";
+		String hdd = "320 GB";
+		String os = "Vista Premium [+$60.00]";
+		String software = "Microsoft Office [+$50.00]";
+		String totalPrice = "$1,310.00";
+		String fullProductDetail = "Processor: "+processor+"\n"+"RAM: "+ram+"\n"+"HDD: "+hdd+"\n"+"OS: "+os+"\n"+"Software: "+software;
+		//ExtentTestManager.startTest(method.getName(), "Test Case 1: Add to Wishlist");
+		//ExtentTestManager.getTest().log(Status.INFO, "Step 1: Input Search value");
+		productPage= productCartPage.clickEditLinkByProductName(searchValue);
+		//ExtentTestManager.getTest().log(Status.INFO, "Step 2: Click Search button");
+		//ExtentTestManager.getTest().log(Status.INFO, "Step 3: Open Product page");
+		productPage.selectProcessorDropdown(processor);
+		productPage.selectRamDropdown(ram);
+		productPage.selectHDDRadio(hdd);
+		productPage.selectOSRadio(os);
+		assertEquals(productPage.getTotalPrice(), totalPrice);
+		productPage.clickUpdateButton();
+		assertEquals(productPage.getSuccessMessage(), "The product has been added to your shopping cart");
+		productCartPage = productPage.clickProductCartLinkOnSuccessMessage();
+		assertTrue(productCartPage.getProductDetailByProductName(searchValue).equals(fullProductDetail));
+	}
+	
+	//@Test(dependsOnMethods = "TC_01_Add_Product_To_Cart")
+	public void TC_03_Remove_Product(Method method) {
+		searchValue = "Build your own computer";
+		productCartPage.clickRemoveButtonByProductName(searchValue);
+		assertTrue(productCartPage.isProductUndisplayedByProductName(lastName));
+		assertEquals(productCartPage.getNoDataText(),"Your Shopping Cart is empty!");
+	}
+	
+	@Test
+	public void TC_04_Update_Product_Quantity(Method method) {
+		searchValue = "Build your own computer";
+		String processor="2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]";
+		String ram = "4GB [+$20.00]";
+		String hdd = "400 GB [+$100.00]";
+		String os = "Vista Home [+$50.00]";
+		String software = "Microsoft Office [+$50.00]";
+		float price = 1435;
+		String quantity = "5";
+		//ExtentTestManager.startTest(method.getName(), "Test Case 1: Add to Wishlist");
+		//ExtentTestManager.getTest().log(Status.INFO, "Step 1: Input Search value");
+		searchBar = PageGeneratorManager.getPageGenerator().getUserSearchBar(driver);
+		searchBar.inputSearchTextbox(searchValue);
+		//ExtentTestManager.getTest().log(Status.INFO, "Step 2: Click Search button");
+		searchPage = searchBar.clickSearchButton();
+		//ExtentTestManager.getTest().log(Status.INFO, "Step 3: Open Product page");
+		productPage =searchPage.clickProductLink(searchValue);
+		productPage.selectProcessorDropdown(processor);
+		productPage.selectRamDropdown(ram);
+		productPage.selectHDDRadio(hdd);
+		productPage.selectOSRadio(os);
+		productPage.checkSoftwareCheckbox(software);
+		productPage.clickAddToCartButton();
+		assertEquals(productPage.getSuccessMessage(), "The product has been added to your shopping cart");
+		productCartPage = productPage.clickProductCartLinkOnSuccessMessage();
+		assertTrue(productCartPage.isPriceDisplayedCorrectlyByProductName(searchValue,price));
+		productCartPage.inputQtyByProductName(searchValue,quantity);
+		productCartPage.clickUpdateShoppingCart();
+		assertTrue(productCartPage.isTotalPriceDisplayedCorrectlyByProductName(searchValue,price*productCartPage.convertStringToFloat(quantity)));
 	}
 	
 	@AfterClass

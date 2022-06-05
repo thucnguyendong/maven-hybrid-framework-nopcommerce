@@ -5,8 +5,8 @@
     <classes>
       <class name="com.nopcommerce.user.TC_Order">
         <methods>
+          <include name="TC_04_Update_Product_Quantity" invocation-numbers="0"/>
           <include name="beforeClass"/>
-          <include name="TC_03_Register_Sucessfully" invocation-numbers="0"/>
           <include name="cleanExecutableDriver"/>
           <include name="beforeSuit"/>
           <include name="afterClass"/>

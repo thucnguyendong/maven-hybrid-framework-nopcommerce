@@ -861,6 +861,25 @@ public class BasePage {
 	}
 	
 	/**
+	 * check that all element text in list equal numeric value
+	 * @param driver
+	 * @param xpathLocator of elements to wait
+	 * @param value
+	 */
+	public boolean isAllElementsTextInListEqualNumericValue(WebDriver driver, String xpathLocator, float value) {
+		List<WebElement> elementList = getListElement(driver, xpathLocator);
+		for (WebElement element: elementList) {
+			if (!(convertStringToFloat(element.getText()) == value))
+				return false;
+		}
+		return true;
+	}
+		
+	public float convertStringToFloat(String str) {
+		return Float.parseFloat(str.replaceAll("[^\\d.-]", ""));
+	}
+	
+	/**
 	 * check that all element text in list equal value
 	 * @param driver
 	 * @param xpathLocator of elements to wait
@@ -950,8 +969,7 @@ public class BasePage {
 		List<WebElement> elementList = getListElement(driver, xpathLocator);
 		ArrayList<Float> arrayList = new ArrayList<>();
 		for (WebElement element: elementList) {
-			String str = element.getText().replaceAll("[^\\d.-]", "");
-			arrayList.add(Float.parseFloat(str));
+			arrayList.add(convertStringToFloat(element.getText()));
 		}
 		
 		ArrayList<Float> sortedList = new ArrayList<>();
@@ -969,8 +987,7 @@ public class BasePage {
 		List<WebElement> elementList = getListElement(driver, xpathLocator);
 		ArrayList<Float> arrayList = new ArrayList<>();
 		for (WebElement element: elementList) {
-			String str = element.getText().replaceAll("[^\\d.-]", "");
-			arrayList.add(Float.parseFloat(str));
+			arrayList.add(convertStringToFloat(element.getText()));
 		}
 		
 		ArrayList<Float> sortedList = new ArrayList<>();
