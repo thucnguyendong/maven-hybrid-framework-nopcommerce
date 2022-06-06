@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import commons.BasePage;
 import commons.GlobalConstants;
 import commons.PageGeneratorManager;
-import io.qameta.allure.Step;
 import pageUI.nopcommerce.portal.UserBasePageUI;
 import pageUI.nopcommerce.portal.UserHomePageUI;
 

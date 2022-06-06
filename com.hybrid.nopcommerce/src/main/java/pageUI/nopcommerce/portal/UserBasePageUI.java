@@ -25,6 +25,7 @@ public class UserBasePageUI {
 	public static final String DYNAMIC_MENU_HEADER = "//div[@class='header-menu']/ul[contains(@class,'notmobile')]/li/a[normalize-space(text())='%s']";
 	public static final String DYNAMIC_TEXTBOX_BY_ID = "//input[@id='%s']";
 	public static final String DYNAMIC_DROPDOWN_LIST_BY_NAME = "//select[@name='%s']";
-	public static final String DYNAMIC_BUTTON_BY_TEXT = "//button[text()='%s']";
+	public static final String DYNAMIC_BUTTON_BY_TEXT = "//button[normalize-space(text())='%s']";
 	public static final String DYNAMIC_USER_MENU_LINK = "//div[@class='header-links']//li//span[starts-with(text(),'Wishlist')]/parent::a";
+	public static final String DYNAMIC_CHECKBOX_BY_ID = "//input[@id='%s' and @type='checkbox']";
 }

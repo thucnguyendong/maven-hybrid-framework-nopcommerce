@@ -64,4 +64,45 @@ public class UserProductCartPageObject extends BasePage {
 		clickButtonByText(driver, "Update shopping cart");
 		areJQueryAndJSLoadedSuccess(driver);
 	}
+
+	public void selectGiftWrappingDropdown(String giftWrapping) {
+		selectDropdownListByName(driver, "checkout_attribute_1", giftWrapping);		
+	}
+
+	public void clickEstimateShippingButton() {
+		waitForElementClickable(driver, UserProductCartPageUI.ESTIMATE_SHIPPING_BUTTON);
+		clickElement(driver, UserProductCartPageUI.ESTIMATE_SHIPPING_BUTTON);
+		areJQueryAndJSLoadedSuccess(driver);
+	}
+
+	public void selectShipToCountryDropdown(String country) {
+		selectDropdownListByName(driver, "CountryId", country);
+	}
+
+	public void selectShipToStateDropdown(String state) {
+		selectDropdownListByName(driver, "StateProvinceId", state);
+	}
+
+	public void inputShipToZipCodeTextbox(String zipCode) {
+		inputToTextboxByID(driver, "ZipPostalCode", zipCode);
+	}
+
+	public void clickShippingMethodRadioButtonByMethodName(String methodName) {
+		areJQueryAndJSLoadedSuccess(driver);
+		waitForElementClickable(driver,UserProductCartPageUI.DYNAMIC_SHIPPING_METHOD_RADIO_BUTTON_BY_METHOD_NAME,methodName);
+		clickElement(driver,UserProductCartPageUI.DYNAMIC_SHIPPING_METHOD_RADIO_BUTTON_BY_METHOD_NAME,methodName);
+	}
+
+	public void clickApplyButton() {
+		clickButtonByText(driver, "Apply");
+	}
+
+	public UserCheckoutPageObject clickCheckOutButton() {
+		clickButtonByText(driver, "Checkout");
+		return PageGeneratorManager.getPageGenerator().getUserCheckoutPage(driver);
+	}
+
+	public void checkTermOfServiceCheckbox() {
+		checkCheckboxByID(driver, "termsofservice");
+	}
 }

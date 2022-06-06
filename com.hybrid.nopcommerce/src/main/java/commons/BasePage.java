@@ -1091,6 +1091,24 @@ public class BasePage {
 	}
 	
 	/**
+	 * Check checkbox using html id
+	 * @param driver driver of web driver
+	 * @param button_text the text tag of the button
+	 */	
+	public void checkCheckboxByID(WebDriver driver, String checkbox_ID) {
+		checkToDefaultCheckboxRadio(driver,UserBasePageUI.DYNAMIC_CHECKBOX_BY_ID,checkbox_ID);
+	}
+	
+	/**
+	 * Uncheck checkbox using html text tag
+	 * @param driver driver of web driver
+	 * @param button_text the text tag of the button
+	 */	
+	public void uncheckCheckboxByID(WebDriver driver, String checkbox_ID) {
+		uncheckToDefaultCheckboxRadio(driver,UserBasePageUI.DYNAMIC_CHECKBOX_BY_ID,checkbox_ID);
+	}
+	
+	/**
 	 * Open the user url
 	 * @param driver driver of web driver
 	 * @param url the url of the page

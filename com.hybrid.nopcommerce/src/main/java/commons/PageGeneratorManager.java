@@ -4,6 +4,7 @@ import org.openqa.selenium.WebDriver;
 
 import pageObjects.nopcommerce.portal.UserProductCatgoryPageObject;
 import pageObjects.nopcommerce.portal.UserProductComparisonPageObject;
+import pageObjects.nopcommerce.portal.UserCheckoutPageObject;
 import pageObjects.nopcommerce.portal.UserHomePageObject;
 import pageObjects.nopcommerce.portal.UserLoginPageObject;
 import pageObjects.nopcommerce.portal.UserProductCartPageObject;
@@ -128,5 +129,9 @@ public class PageGeneratorManager {
 
 	public UserRecentlyViewProductPageObject getUserRecentlyViewProductPage(WebDriver driver) {
 		return new UserRecentlyViewProductPageObject(driver);
+	}
+
+	public UserCheckoutPageObject getUserCheckoutPage(WebDriver driver) {
+		return new UserCheckoutPageObject(driver);
 	}
 }

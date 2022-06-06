@@ -15,6 +15,7 @@ import com.aventstack.extentreports.Status;
 import commons.BaseTest;
 import commons.GlobalConstants;
 import commons.PageGeneratorManager;
+import pageObjects.nopcommerce.portal.UserCheckoutPageObject;
 import pageObjects.nopcommerce.portal.UserHomePageObject;
 import pageObjects.nopcommerce.portal.UserProductCartPageObject;
 import pageObjects.nopcommerce.portal.UserProductPageObject;
@@ -31,6 +32,7 @@ public class TC_Order extends BaseTest {
 	UserSearchPageObject searchPage;
 	UserProductPageObject productPage;
 	UserProductCartPageObject productCartPage;
+	UserCheckoutPageObject checkoutPage;
 	private UserRegisterPageObject registerPage;
 	private String emailAddress;
 	private String firstName = "Thuc";
@@ -137,11 +139,11 @@ public class TC_Order extends BaseTest {
 	public void TC_03_Remove_Product(Method method) {
 		searchValue = "Build your own computer";
 		productCartPage.clickRemoveButtonByProductName(searchValue);
-		assertTrue(productCartPage.isProductUndisplayedByProductName(lastName));
+		assertTrue(productCartPage.isProductUndisplayedByProductName(searchValue));
 		assertEquals(productCartPage.getNoDataText(),"Your Shopping Cart is empty!");
 	}
 	
-	@Test
+	//@Test
 	public void TC_04_Update_Product_Quantity(Method method) {
 		searchValue = "Build your own computer";
 		String processor="2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]";
@@ -171,6 +173,40 @@ public class TC_Order extends BaseTest {
 		productCartPage.inputQtyByProductName(searchValue,quantity);
 		productCartPage.clickUpdateShoppingCart();
 		assertTrue(productCartPage.isTotalPriceDisplayedCorrectlyByProductName(searchValue,price*productCartPage.convertStringToFloat(quantity)));
+		productCartPage.clickRemoveButtonByProductName(searchValue);
+		assertTrue(productCartPage.isProductUndisplayedByProductName(searchValue));
+		assertEquals(productCartPage.getNoDataText(),"Your Shopping Cart is empty!");
+	}
+	
+	@Test
+	public void TC_05_Update_Product_Quantity(Method method) {
+		searchValue = "Apple MacBook Pro 13-inch";
+		String giftWrapping = "Yes [+$10.00]";
+		String country = "United States";
+		String state = "Hawaii";
+		String zipCode = "5000";
+		String methodName = "Next Day Air";
+		//ExtentTestManager.startTest(method.getName(), "Test Case 1: Add to Wishlist");
+		//ExtentTestManager.getTest().log(Status.INFO, "Step 1: Input Search value");
+		searchBar = PageGeneratorManager.getPageGenerator().getUserSearchBar(driver);
+		searchBar.inputSearchTextbox(searchValue);
+		//ExtentTestManager.getTest().log(Status.INFO, "Step 2: Click Search button");
+		searchPage = searchBar.clickSearchButton();
+		//ExtentTestManager.getTest().log(Status.INFO, "Step 3: Open Product page");
+		productPage =searchPage.clickProductLink(searchValue);
+		productPage.clickAddToCartButton();
+		assertEquals(productPage.getSuccessMessage(), "The product has been added to your shopping cart");
+		productCartPage = productPage.clickProductCartLinkOnSuccessMessage();
+		productCartPage.selectGiftWrappingDropdown(giftWrapping);
+		productCartPage.clickEstimateShippingButton();
+		productCartPage.selectShipToCountryDropdown(country);
+		productCartPage.selectShipToStateDropdown(state);
+		productCartPage.inputShipToZipCodeTextbox(zipCode);
+		productCartPage.clickShippingMethodRadioButtonByMethodName(methodName);
+		productCartPage.clickApplyButton();
+		productCartPage.checkTermOfServiceCheckbox();
+		checkoutPage = productCartPage.clickCheckOutButton();
+		
 	}
 	
 	@AfterClass
