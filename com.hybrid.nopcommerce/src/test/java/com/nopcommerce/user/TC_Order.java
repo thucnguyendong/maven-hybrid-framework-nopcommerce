@@ -186,6 +186,26 @@ public class TC_Order extends BaseTest {
 		String state = "Hawaii";
 		String zipCode = "5000";
 		String methodName = "Next Day Air";
+		
+		firstName = "Automation"; 
+		lastName= "FC"; 
+		company ="NEO Livegroup"; 
+		String city = "Ho Chi Minh";
+		String address_1 = "220 NTL";
+		String address_2 = "440 THD";
+		String phone ="0123456789";
+		String fax = "123511";
+		String paymentMethod = "Credit Card";
+		String creditCardType = "Master card";
+		String cardholderName = "Testing";
+		String cardNumber = "000011112222333";
+		String expireMonth = "12";
+		String expireYear = "2025";
+		String cardCode = "847";
+		
+		String billingDetail =firstName+" "+lastName+"\n"+"Email: "+emailAddress+"\n"+"Phone: "+phone+"\n"+"Fax: "+fax+"\n"+company+"\n"+address_1+"\n"+address_2
+				+"\n"+city+","+state+","+zipCode+"\n"+country;
+		
 		//ExtentTestManager.startTest(method.getName(), "Test Case 1: Add to Wishlist");
 		//ExtentTestManager.getTest().log(Status.INFO, "Step 1: Input Search value");
 		searchBar = PageGeneratorManager.getPageGenerator().getUserSearchBar(driver);
@@ -206,12 +226,39 @@ public class TC_Order extends BaseTest {
 		productCartPage.clickApplyButton();
 		productCartPage.checkTermOfServiceCheckbox();
 		checkoutPage = productCartPage.clickCheckOutButton();
-		
+		checkoutPage.inputFirstNameTextbox(firstName);
+		checkoutPage.inputLastNameTextbox(lastName);
+		checkoutPage.inputEmailTextbox(emailAddress);
+		checkoutPage.inputCompanyTextbox(company);
+		checkoutPage.selectCountryDropdown(country);
+		checkoutPage.selectStateDropdown(state);
+		checkoutPage.inputCityTextbox(city);
+		checkoutPage.inputAddress1Textbox(address_1);
+		checkoutPage.inputAddress2Textbox(address_2);
+		checkoutPage.inputZipTexbox(zipCode);
+		checkoutPage.inputPhoneTextbox(phone);
+		checkoutPage.inputFaxTextbox(fax);
+		checkoutPage.clickBillingContinueButton();
+		checkoutPage.clickShippingMethodRadioButtonByMethodName(methodName);
+		checkoutPage.clickShippingContinueButton();
+		checkoutPage.clickPaymentMethodRadioButtonByMethodName(paymentMethod);
+		checkoutPage.clickPaymentContinueButton();
+		checkoutPage.selectCreditCardDropdown(creditCardType);
+		checkoutPage.inputCardholderNameTextbox(cardholderName);
+		checkoutPage.inputCardNumberTextbox(cardNumber);
+		checkoutPage.selectExpireMonthDropdown(expireMonth);
+		checkoutPage.selectExpireYearDropdown(expireYear);
+		checkoutPage.inputCardCodeTextbox(cardCode);
+		checkoutPage.clickPaymentInfoContinueButton();
+		assertEquals(checkoutPage.getBillingDetailText(), billingDetail);
+		checkoutPage.clickConfirmButton();
+		assertTrue(checkoutPage.isSuccessOrderTextDisplayed());
+		assertTrue(checkoutPage.isOrderNumberDisplayed());
 	}
 	
 	@AfterClass
 	public void afterClass() {
 		log.info("Post-condition: Close browser chrome");
-		closeBrowserAndDriver();
+		//closeBrowserAndDriver();
 	}	
 }

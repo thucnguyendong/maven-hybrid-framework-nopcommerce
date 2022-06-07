@@ -3481,3 +3481,191 @@ Driver info: driver.version: RemoteWebDriver
 [INFO ] [2022-06-06 23:26:39,382] Step 9: Click Register button
 [INFO ] [2022-06-06 23:26:40,104] Step 10: Verify register's success message
 [INFO ] [2022-06-06 23:26:40,132]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-07 23:08:19,761] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-06-07 23:08:24,493] Step 1: Click Register Link
+[INFO ] [2022-06-07 23:08:25,006] Step 2: Select radio button Male
+[INFO ] [2022-06-07 23:08:25,060] Step 3: Input First Name
+[INFO ] [2022-06-07 23:08:25,131] Step 4: Input Last Name
+[INFO ] [2022-06-07 23:08:25,195] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-07 23:08:26,564] Step 5: Input company name
+[INFO ] [2022-06-07 23:08:26,626] Step 6: Input email address
+[INFO ] [2022-06-07 23:08:26,685] Step 7: Input password
+[INFO ] [2022-06-07 23:08:26,745] Step 8: Input confirm password
+[INFO ] [2022-06-07 23:08:26,805] Step 9: Click Register button
+[INFO ] [2022-06-07 23:08:27,576] Step 10: Verify register's success message
+[INFO ] [2022-06-07 23:08:27,604]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-07 23:08:41,945] Post-condition: Close browser chrome
+[INFO ] [2022-06-07 23:08:41,945] OS name = windows 10
+[INFO ] [2022-06-07 23:08:41,945] Driver instance name = chromedriver: chrome on windows (86f511636b79ae3c0d1fab82c2c7b072)
+[INFO ] [2022-06-07 23:08:42,636] Close all drivers after suite
+[INFO ] [2022-06-07 23:08:42,636] OS name = windows 10
+[INFO ] [2022-06-07 23:08:42,636] Driver instance name = chromedriver: chrome on windows (null)
+[INFO ] [2022-06-07 23:08:42,638] Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'ADMIN', ip: '192.168.1.106', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: driver.version: RemoteWebDriver
+[INFO ] [2022-06-07 23:08:49,574] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-06-07 23:08:52,892] Step 1: Click Register Link
+[INFO ] [2022-06-07 23:08:55,151] Step 2: Select radio button Male
+[INFO ] [2022-06-07 23:08:55,204] Step 3: Input First Name
+[INFO ] [2022-06-07 23:08:55,270] Step 4: Input Last Name
+[INFO ] [2022-06-07 23:08:55,332] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-07 23:08:56,835] Step 5: Input company name
+[INFO ] [2022-06-07 23:08:56,901] Step 6: Input email address
+[INFO ] [2022-06-07 23:08:56,966] Step 7: Input password
+[INFO ] [2022-06-07 23:08:57,026] Step 8: Input confirm password
+[INFO ] [2022-06-07 23:08:57,085] Step 9: Click Register button
+[INFO ] [2022-06-07 23:08:59,627] Step 10: Verify register's success message
+[INFO ] [2022-06-07 23:08:59,657]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-07 23:12:20,922] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-06-07 23:12:23,303] Step 1: Click Register Link
+[INFO ] [2022-06-07 23:12:23,796] Step 2: Select radio button Male
+[INFO ] [2022-06-07 23:12:23,846] Step 3: Input First Name
+[INFO ] [2022-06-07 23:12:23,913] Step 4: Input Last Name
+[INFO ] [2022-06-07 23:12:23,978] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-07 23:12:25,362] Step 5: Input company name
+[INFO ] [2022-06-07 23:12:25,424] Step 6: Input email address
+[INFO ] [2022-06-07 23:12:25,486] Step 7: Input password
+[INFO ] [2022-06-07 23:12:25,544] Step 8: Input confirm password
+[INFO ] [2022-06-07 23:12:25,603] Step 9: Click Register button
+[INFO ] [2022-06-07 23:12:26,381] Step 10: Verify register's success message
+[INFO ] [2022-06-07 23:12:26,408]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-07 23:12:26,757] Post-condition: Close browser chrome
+[INFO ] [2022-06-07 23:12:26,775] Close all drivers after suite
+[INFO ] [2022-06-07 23:12:40,439] Post-condition: Close browser chrome
+[INFO ] [2022-06-07 23:12:40,451] Close all drivers after suite
+[INFO ] [2022-06-07 23:41:09,777] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-06-07 23:41:13,202] Step 1: Click Register Link
+[INFO ] [2022-06-07 23:41:13,655] Step 2: Select radio button Male
+[INFO ] [2022-06-07 23:41:13,708] Step 3: Input First Name
+[INFO ] [2022-06-07 23:41:13,774] Step 4: Input Last Name
+[INFO ] [2022-06-07 23:41:13,838] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-07 23:41:15,185] Step 5: Input company name
+[INFO ] [2022-06-07 23:41:15,246] Step 6: Input email address
+[INFO ] [2022-06-07 23:41:15,306] Step 7: Input password
+[INFO ] [2022-06-07 23:41:15,364] Step 8: Input confirm password
+[INFO ] [2022-06-07 23:41:15,422] Step 9: Click Register button
+[INFO ] [2022-06-07 23:41:16,199] Step 10: Verify register's success message
+[INFO ] [2022-06-07 23:41:16,226]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-07 23:41:29,561] Post-condition: Close browser chrome
+[INFO ] [2022-06-07 23:41:29,574] Close all drivers after suite
+[INFO ] [2022-06-08 00:00:35,632] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-06-08 00:00:38,842] Step 1: Click Register Link
+[INFO ] [2022-06-08 00:00:39,311] Step 2: Select radio button Male
+[INFO ] [2022-06-08 00:00:39,361] Step 3: Input First Name
+[INFO ] [2022-06-08 00:00:39,425] Step 4: Input Last Name
+[INFO ] [2022-06-08 00:00:39,489] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-08 00:00:40,858] Step 5: Input company name
+[INFO ] [2022-06-08 00:00:40,918] Step 6: Input email address
+[INFO ] [2022-06-08 00:00:40,979] Step 7: Input password
+[INFO ] [2022-06-08 00:00:41,037] Step 8: Input confirm password
+[INFO ] [2022-06-08 00:00:41,100] Step 9: Click Register button
+[INFO ] [2022-06-08 00:00:41,860] Step 10: Verify register's success message
+[INFO ] [2022-06-08 00:00:41,887]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-08 00:01:26,858] Post-condition: Close browser chrome
+[INFO ] [2022-06-08 00:01:26,875] Close all drivers after suite
+[INFO ] [2022-06-08 00:05:37,173] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-06-08 00:05:40,447] Step 1: Click Register Link
+[INFO ] [2022-06-08 00:05:40,936] Step 2: Select radio button Male
+[INFO ] [2022-06-08 00:05:40,986] Step 3: Input First Name
+[INFO ] [2022-06-08 00:05:41,052] Step 4: Input Last Name
+[INFO ] [2022-06-08 00:05:41,117] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-08 00:05:42,465] Step 5: Input company name
+[INFO ] [2022-06-08 00:05:42,525] Step 6: Input email address
+[INFO ] [2022-06-08 00:05:42,587] Step 7: Input password
+[INFO ] [2022-06-08 00:05:42,644] Step 8: Input confirm password
+[INFO ] [2022-06-08 00:05:42,705] Step 9: Click Register button
+[INFO ] [2022-06-08 00:05:43,480] Step 10: Verify register's success message
+[INFO ] [2022-06-08 00:05:43,506]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-08 00:06:28,166] Post-condition: Close browser chrome
+[INFO ] [2022-06-08 00:06:28,184] Close all drivers after suite
+[INFO ] [2022-06-08 00:09:05,852] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-06-08 00:09:09,054] Step 1: Click Register Link
+[INFO ] [2022-06-08 00:09:09,530] Step 2: Select radio button Male
+[INFO ] [2022-06-08 00:09:09,580] Step 3: Input First Name
+[INFO ] [2022-06-08 00:09:09,648] Step 4: Input Last Name
+[INFO ] [2022-06-08 00:09:09,716] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-08 00:09:11,073] Step 5: Input company name
+[INFO ] [2022-06-08 00:09:11,136] Step 6: Input email address
+[INFO ] [2022-06-08 00:09:11,195] Step 7: Input password
+[INFO ] [2022-06-08 00:09:11,253] Step 8: Input confirm password
+[INFO ] [2022-06-08 00:09:11,311] Step 9: Click Register button
+[INFO ] [2022-06-08 00:09:12,034] Step 10: Verify register's success message
+[INFO ] [2022-06-08 00:09:12,061]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-08 00:09:26,116] Post-condition: Close browser chrome
+[INFO ] [2022-06-08 00:09:26,128] Close all drivers after suite
+[INFO ] [2022-06-08 00:10:28,230] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-06-08 00:10:31,319] Step 1: Click Register Link
+[INFO ] [2022-06-08 00:10:31,790] Step 2: Select radio button Male
+[INFO ] [2022-06-08 00:10:31,841] Step 3: Input First Name
+[INFO ] [2022-06-08 00:10:31,909] Step 4: Input Last Name
+[INFO ] [2022-06-08 00:10:31,973] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-08 00:10:33,375] Step 5: Input company name
+[INFO ] [2022-06-08 00:10:33,434] Step 6: Input email address
+[INFO ] [2022-06-08 00:10:33,494] Step 7: Input password
+[INFO ] [2022-06-08 00:10:33,552] Step 8: Input confirm password
+[INFO ] [2022-06-08 00:10:33,610] Step 9: Click Register button
+[INFO ] [2022-06-08 00:10:34,440] Step 10: Verify register's success message
+[INFO ] [2022-06-08 00:10:34,467]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-08 00:10:51,105] Post-condition: Close browser chrome
+[INFO ] [2022-06-08 00:10:51,117] Close all drivers after suite
+[INFO ] [2022-06-08 00:52:10,161] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-06-08 00:52:12,535] Step 1: Click Register Link
+[INFO ] [2022-06-08 00:52:13,012] Step 2: Select radio button Male
+[INFO ] [2022-06-08 00:52:13,062] Step 3: Input First Name
+[INFO ] [2022-06-08 00:52:13,129] Step 4: Input Last Name
+[INFO ] [2022-06-08 00:52:13,194] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-08 00:52:14,574] Step 5: Input company name
+[INFO ] [2022-06-08 00:52:14,635] Step 6: Input email address
+[INFO ] [2022-06-08 00:52:14,694] Step 7: Input password
+[INFO ] [2022-06-08 00:52:14,752] Step 8: Input confirm password
+[INFO ] [2022-06-08 00:52:14,810] Step 9: Click Register button
+[INFO ] [2022-06-08 00:52:15,550] Step 10: Verify register's success message
+[INFO ] [2022-06-08 00:52:15,577]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-08 00:52:59,172] Post-condition: Close browser chrome
+[INFO ] [2022-06-08 00:52:59,186] Close all drivers after suite
+[INFO ] [2022-06-08 00:54:32,690] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-06-08 00:54:35,723] Step 1: Click Register Link
+[INFO ] [2022-06-08 00:54:36,205] Step 2: Select radio button Male
+[INFO ] [2022-06-08 00:54:36,254] Step 3: Input First Name
+[INFO ] [2022-06-08 00:54:36,322] Step 4: Input Last Name
+[INFO ] [2022-06-08 00:54:36,385] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-08 00:54:37,754] Step 5: Input company name
+[INFO ] [2022-06-08 00:54:37,816] Step 6: Input email address
+[INFO ] [2022-06-08 00:54:37,876] Step 7: Input password
+[INFO ] [2022-06-08 00:54:37,934] Step 8: Input confirm password
+[INFO ] [2022-06-08 00:54:37,991] Step 9: Click Register button
+[INFO ] [2022-06-08 00:54:38,733] Step 10: Verify register's success message
+[INFO ] [2022-06-08 00:54:38,759]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-08 00:54:54,247] Post-condition: Close browser chrome
+[INFO ] [2022-06-08 00:54:54,261] Close all drivers after suite
+[INFO ] [2022-06-08 01:07:09,647] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-06-08 01:07:12,919] Step 1: Click Register Link
+[INFO ] [2022-06-08 01:07:13,403] Step 2: Select radio button Male
+[INFO ] [2022-06-08 01:07:13,453] Step 3: Input First Name
+[INFO ] [2022-06-08 01:07:13,521] Step 4: Input Last Name
+[INFO ] [2022-06-08 01:07:13,587] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-08 01:07:14,972] Step 5: Input company name
+[INFO ] [2022-06-08 01:07:15,033] Step 6: Input email address
+[INFO ] [2022-06-08 01:07:15,091] Step 7: Input password
+[INFO ] [2022-06-08 01:07:15,148] Step 8: Input confirm password
+[INFO ] [2022-06-08 01:07:15,205] Step 9: Click Register button
+[INFO ] [2022-06-08 01:07:15,967] Step 10: Verify register's success message
+[INFO ] [2022-06-08 01:07:15,992]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-08 01:07:30,475] Post-condition: Close browser chrome
+[INFO ] [2022-06-08 01:07:30,491] Close all drivers after suite
+[INFO ] [2022-06-08 01:08:58,489] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-06-08 01:09:01,699] Step 1: Click Register Link
+[INFO ] [2022-06-08 01:09:02,179] Step 2: Select radio button Male
+[INFO ] [2022-06-08 01:09:02,228] Step 3: Input First Name
+[INFO ] [2022-06-08 01:09:02,294] Step 4: Input Last Name
+[INFO ] [2022-06-08 01:09:02,358] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-08 01:09:03,743] Step 5: Input company name
+[INFO ] [2022-06-08 01:09:03,804] Step 6: Input email address
+[INFO ] [2022-06-08 01:09:03,864] Step 7: Input password
+[INFO ] [2022-06-08 01:09:03,924] Step 8: Input confirm password
+[INFO ] [2022-06-08 01:09:03,983] Step 9: Click Register button
+[INFO ] [2022-06-08 01:09:04,758] Step 10: Verify register's success message
+[INFO ] [2022-06-08 01:09:04,786]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-08 01:09:21,848] Post-condition: Close browser chrome
+[INFO ] [2022-06-08 01:09:21,860] Close all drivers after suite

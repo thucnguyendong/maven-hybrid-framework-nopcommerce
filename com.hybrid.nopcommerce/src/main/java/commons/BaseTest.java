@@ -33,8 +33,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BaseTest {
 	private WebDriver driver;
-	protected String projectPath = System.getProperty("user.dir");
-	private String screenShotLocation = projectPath+File.separator+"extentReportScrShoot"+File.separator;
+	private String screenShotLocation = GlobalConstants.PROJECT_PATH+File.separator+"extentReportScrShoot"+File.separator;
 	private String chromeVersion = "93.0.4577.63";
 	protected String userUrl,adminUrl;
 	protected final Log log;
@@ -55,7 +54,7 @@ public class BaseTest {
 	@AfterSuite(alwaysRun = true)
 	protected void cleanExecutableDriver() {
 		log.info("Close all drivers after suite");
-		closeBrowserAndDriver();
+		//closeBrowserAndDriver();
 	}
 	
 	public WebDriver getWebdriver() {
@@ -64,15 +63,15 @@ public class BaseTest {
 	
 	protected WebDriver getLocalBrowserDriver(String browserName) {
 		if (browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", projectPath+File.separator+"driverBrowsers"+File.separator+"chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", GlobalConstants.PROJECT_PATH+File.separator+"driverBrowsers"+File.separator+"chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		else if (browserName.equals("firefox")){
-			System.setProperty("webdriver.gecko.driver", projectPath+File.separator+"driverBrowsers"+File.separator+"geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", GlobalConstants.PROJECT_PATH+File.separator+"driverBrowsers"+File.separator+"geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 		else if (browserName.equals("edge")){
-			System.setProperty("webdriver.edge.driver", projectPath+File.separator+"driverBrowsers"+File.separator+"msedgedriver.exe");
+			System.setProperty("webdriver.edge.driver", GlobalConstants.PROJECT_PATH+File.separator+"driverBrowsers"+File.separator+"msedgedriver.exe");
 			driver = new EdgeDriver();
 		}
 		else {
@@ -84,7 +83,7 @@ public class BaseTest {
 	}
 	protected WebDriver getHeadlessBrowserDriver(String browserName) {
 		if (browserName.equals("chrome")){
-			System.setProperty("webdriver.chrome.driver", projectPath+File.separator+"driverBrowsers"+File.separator+"chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", GlobalConstants.PROJECT_PATH+File.separator+"driverBrowsers"+File.separator+"chromedriver.exe");
 			ChromeOptions option = new ChromeOptions();
 			option.addArguments("headless");
 			option.addArguments("window-size-1440x900");
@@ -92,7 +91,7 @@ public class BaseTest {
 		}
 		
 		else if (browserName.equals("firefox")){
-			System.setProperty("webdriver.gecko.driver", projectPath+File.separator+"driverBrowsers"+File.separator+"geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", GlobalConstants.PROJECT_PATH+File.separator+"driverBrowsers"+File.separator+"geckodriver.exe");
 			FirefoxOptions option = new FirefoxOptions();
 			option.addArguments("-headless");
 			option.addArguments("window-size-1440x900");
