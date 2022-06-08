@@ -1,155 +1,226 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[[INFO ] [2022-06-08 01:08:58,489] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+      <![CDATA[[INFO ] [2022-06-08 23:50:38,418] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-06-08 01:09:01,699] Step 1: Click Register Link
+      <![CDATA[[INFO ] [2022-06-08 23:50:41,693] Step 1: Click Register Link
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-06-08 01:09:02,179] Step 2: Select radio button Male
+      <![CDATA[[INFO ] [2022-06-08 23:50:42,181] Step 2: Select radio button Male
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-06-08 01:09:02,228] Step 3: Input First Name
+      <![CDATA[[INFO ] [2022-06-08 23:50:42,232] Step 3: Input First Name
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-06-08 01:09:02,294] Step 4: Input Last Name
+      <![CDATA[[INFO ] [2022-06-08 23:50:42,297] Step 4: Input Last Name
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-06-08 01:09:02,358] Step 5: Select Birthday Date: day, month, year
+      <![CDATA[[INFO ] [2022-06-08 23:50:42,361] Step 5: Select Birthday Date: day, month, year
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-06-08 01:09:03,743] Step 5: Input company name
+      <![CDATA[[INFO ] [2022-06-08 23:50:43,739] Step 5: Input company name
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-06-08 01:09:03,804] Step 6: Input email address
+      <![CDATA[[INFO ] [2022-06-08 23:50:43,800] Step 6: Input email address
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-06-08 01:09:03,864] Step 7: Input password
+      <![CDATA[[INFO ] [2022-06-08 23:50:43,859] Step 7: Input password
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-06-08 01:09:03,924] Step 8: Input confirm password
+      <![CDATA[[INFO ] [2022-06-08 23:50:43,922] Step 8: Input confirm password
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-06-08 01:09:03,983] Step 9: Click Register button
+      <![CDATA[[INFO ] [2022-06-08 23:50:43,981] Step 9: Click Register button
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-06-08 01:09:04,758] Step 10: Verify register's success message
+      <![CDATA[[INFO ] [2022-06-08 23:50:44,743] Step 10: Verify register's success message
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-06-08 01:09:04,786]  -------------------------- PASSED -------------------------- 
+      <![CDATA[[INFO ] [2022-06-08 23:50:44,773]  -------------------------- PASSED -------------------------- 
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-06-08 01:09:21,848] Post-condition: Close browser chrome
+      <![CDATA[[INFO ] [2022-06-08 23:51:33,565] Post-condition: Close browser chrome
 <br>]]>
     </line>
     <line>
-      <![CDATA[[INFO ] [2022-06-08 01:09:21,860] Close all drivers after suite
+      <![CDATA[[INFO ] [2022-06-08 23:51:33,565] OS name = windows 10
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-06-08 23:51:33,565] Driver instance name = chromedriver: chrome on windows (54bbd774b36380dded9b570a785b30c4)
+<br>]]>
+    </line>
+    <line>
+      <![CDATA[[INFO ] [2022-06-08 23:51:34,249] Close all drivers after suite
 <br>]]>
     </line>
   </reporter-output>
-  <suite started-at="2022-06-07T18:08:58Z" name="Default suite" finished-at="2022-06-07T18:09:21Z" duration-ms="23369">
+  <suite started-at="2022-06-08T16:50:38Z" name="Default suite" finished-at="2022-06-08T16:51:34Z" duration-ms="55829">
     <groups>
     </groups>
-    <test started-at="2022-06-07T18:08:58Z" name="Default test" finished-at="2022-06-07T18:09:21Z" duration-ms="23369">
+    <test started-at="2022-06-08T16:50:38Z" name="Default test" finished-at="2022-06-08T16:51:34Z" duration-ms="55829">
       <class name="com.nopcommerce.user.TC_Order">
-        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:com.nopcommerce.user.TC_Order@bc4d5e1]" started-at="2022-06-07T18:08:58Z" name="beforeSuit" finished-at="2022-06-07T18:08:58Z" duration-ms="15" status="PASS">
+        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:com.nopcommerce.user.TC_Order@11a00961]" started-at="2022-06-08T16:50:38Z" name="beforeSuit" finished-at="2022-06-08T16:50:38Z" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuit -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nopcommerce.user.TC_Order@bc4d5e1]" started-at="2022-06-07T18:08:58Z" name="beforeClass" finished-at="2022-06-07T18:09:04Z" duration-ms="6298" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.nopcommerce.user.TC_Order@11a00961]" started-at="2022-06-08T16:50:38Z" name="beforeClass" finished-at="2022-06-08T16:50:44Z" duration-ms="6356" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[[INFO ] [2022-06-08 01:08:58,489] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+              <![CDATA[[INFO ] [2022-06-08 23:50:38,418] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-06-08 01:09:01,699] Step 1: Click Register Link
+              <![CDATA[[INFO ] [2022-06-08 23:50:41,693] Step 1: Click Register Link
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-06-08 01:09:02,179] Step 2: Select radio button Male
+              <![CDATA[[INFO ] [2022-06-08 23:50:42,181] Step 2: Select radio button Male
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-06-08 01:09:02,228] Step 3: Input First Name
+              <![CDATA[[INFO ] [2022-06-08 23:50:42,232] Step 3: Input First Name
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-06-08 01:09:02,294] Step 4: Input Last Name
+              <![CDATA[[INFO ] [2022-06-08 23:50:42,297] Step 4: Input Last Name
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-06-08 01:09:02,358] Step 5: Select Birthday Date: day, month, year
+              <![CDATA[[INFO ] [2022-06-08 23:50:42,361] Step 5: Select Birthday Date: day, month, year
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-06-08 01:09:03,743] Step 5: Input company name
+              <![CDATA[[INFO ] [2022-06-08 23:50:43,739] Step 5: Input company name
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-06-08 01:09:03,804] Step 6: Input email address
+              <![CDATA[[INFO ] [2022-06-08 23:50:43,800] Step 6: Input email address
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-06-08 01:09:03,864] Step 7: Input password
+              <![CDATA[[INFO ] [2022-06-08 23:50:43,859] Step 7: Input password
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-06-08 01:09:03,924] Step 8: Input confirm password
+              <![CDATA[[INFO ] [2022-06-08 23:50:43,922] Step 8: Input confirm password
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-06-08 01:09:03,983] Step 9: Click Register button
+              <![CDATA[[INFO ] [2022-06-08 23:50:43,981] Step 9: Click Register button
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-06-08 01:09:04,758] Step 10: Verify register's success message
+              <![CDATA[[INFO ] [2022-06-08 23:50:44,743] Step 10: Verify register's success message
 <br>]]>
             </line>
             <line>
-              <![CDATA[[INFO ] [2022-06-08 01:09:04,786]  -------------------------- PASSED -------------------------- 
+              <![CDATA[[INFO ] [2022-06-08 23:50:44,773]  -------------------------- PASSED -------------------------- 
 <br>]]>
             </line>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TC_05_Update_Product_Quantity(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Order@bc4d5e1]" started-at="2022-06-07T18:09:04Z" name="TC_05_Update_Product_Quantity" finished-at="2022-06-07T18:09:21Z" duration-ms="17007" status="PASS">
+        <test-method signature="TC_01_Add_Product_To_Cart(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Order@11a00961]" started-at="2022-06-08T16:50:44Z" name="TC_01_Add_Product_To_Cart" finished-at="2022-06-08T16:50:48Z" duration-ms="4019" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.nopcommerce.user.TC_Order.TC_05_Update_Product_Quantity(java.lang.reflect.Method)]]>
+                <![CDATA[public void com.nopcommerce.user.TC_Order.TC_01_Add_Product_To_Cart(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_05_Update_Product_Quantity -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.TC_Order@bc4d5e1]" started-at="2022-06-07T18:09:21Z" name="afterClass" finished-at="2022-06-07T18:09:21Z" duration-ms="1" status="PASS">
+        </test-method> <!-- TC_01_Add_Product_To_Cart -->
+        <test-method signature="TC_02_Edit_Product(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Order@11a00961]" started-at="2022-06-08T16:50:48Z" name="TC_02_Edit_Product" finished-at="2022-06-08T16:50:53Z" duration-ms="5041" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.user.TC_Order.TC_02_Edit_Product(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02_Edit_Product -->
+        <test-method signature="TC_03_Remove_Product(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Order@11a00961]" started-at="2022-06-08T16:50:53Z" name="TC_03_Remove_Product" finished-at="2022-06-08T16:51:00Z" duration-ms="6725" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.user.TC_Order.TC_03_Remove_Product(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_03_Remove_Product -->
+        <test-method signature="TC_04_Update_Product_Quantity(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Order@11a00961]" started-at="2022-06-08T16:51:00Z" name="TC_04_Update_Product_Quantity" finished-at="2022-06-08T16:51:09Z" duration-ms="8994" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.user.TC_Order.TC_04_Update_Product_Quantity(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_04_Update_Product_Quantity -->
+        <test-method signature="TC_05_Checkout_With_Credit_Card(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Order@11a00961]" started-at="2022-06-08T16:51:09Z" name="TC_05_Checkout_With_Credit_Card" finished-at="2022-06-08T16:51:23Z" duration-ms="13888" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.user.TC_Order.TC_05_Checkout_With_Credit_Card(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_05_Checkout_With_Credit_Card -->
+        <test-method signature="TC_06_Reorder(java.lang.reflect.Method)[pri:0, instance:com.nopcommerce.user.TC_Order@11a00961]" started-at="2022-06-08T16:51:23Z" name="TC_06_Reorder" finished-at="2022-06-08T16:51:33Z" duration-ms="10064" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.nopcommerce.user.TC_Order.TC_06_Reorder(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_06_Reorder -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.nopcommerce.user.TC_Order@11a00961]" started-at="2022-06-08T16:51:33Z" name="afterClass" finished-at="2022-06-08T16:51:34Z" duration-ms="672" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[[INFO ] [2022-06-08 01:09:21,848] Post-condition: Close browser chrome
+              <![CDATA[[INFO ] [2022-06-08 23:51:33,565] Post-condition: Close browser chrome
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-06-08 23:51:33,565] OS name = windows 10
+<br>]]>
+            </line>
+            <line>
+              <![CDATA[[INFO ] [2022-06-08 23:51:33,565] Driver instance name = chromedriver: chrome on windows (54bbd774b36380dded9b570a785b30c4)
 <br>]]>
             </line>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="cleanExecutableDriver()[pri:0, instance:com.nopcommerce.user.TC_Order@bc4d5e1]" started-at="2022-06-07T18:09:21Z" name="cleanExecutableDriver" finished-at="2022-06-07T18:09:21Z" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="cleanExecutableDriver()[pri:0, instance:com.nopcommerce.user.TC_Order@11a00961]" started-at="2022-06-08T16:51:34Z" name="cleanExecutableDriver" finished-at="2022-06-08T16:51:34Z" duration-ms="0" status="PASS">
           <reporter-output>
             <line>
-              <![CDATA[[INFO ] [2022-06-08 01:09:21,860] Close all drivers after suite
+              <![CDATA[[INFO ] [2022-06-08 23:51:34,249] Close all drivers after suite
 <br>]]>
             </line>
           </reporter-output>

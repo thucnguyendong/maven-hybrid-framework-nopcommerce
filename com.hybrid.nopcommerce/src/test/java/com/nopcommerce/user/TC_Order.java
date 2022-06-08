@@ -8,22 +8,21 @@ import java.lang.reflect.Method;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
-import com.aventstack.extentreports.Status;
 
 import commons.BaseTest;
 import commons.GlobalConstants;
 import commons.PageGeneratorManager;
 import pageObjects.nopcommerce.portal.UserCheckoutPageObject;
 import pageObjects.nopcommerce.portal.UserHomePageObject;
+import pageObjects.nopcommerce.portal.UserOrderDetailsPageObject;
 import pageObjects.nopcommerce.portal.UserProductCartPageObject;
 import pageObjects.nopcommerce.portal.UserProductPageObject;
-import pageObjects.nopcommerce.portal.UserRegisterPageObject;
 import pageObjects.nopcommerce.portal.UserSearchBarPageObject;
 import pageObjects.nopcommerce.portal.UserSearchPageObject;
-import reportConfig.ExtentTestManager;
-import utilities.DataHelper;
+import pageObjects.nopcommerce.portal.myweb.UserCustomerInfoPageObject;
+import pageObjects.nopcommerce.portal.myweb.UserOrderPageObject;
 
 public class TC_Order extends BaseTest {
 	WebDriver driver;
@@ -33,59 +32,47 @@ public class TC_Order extends BaseTest {
 	UserProductPageObject productPage;
 	UserProductCartPageObject productCartPage;
 	UserCheckoutPageObject checkoutPage;
-	private UserRegisterPageObject registerPage;
-	private String emailAddress;
-	private String firstName = "Thuc";
-	private String lastName= "Nguyen";
-	private String company = "Livegroup";
-	private String password = "123456";
-	private String confirmPassword= "123456";
-	private String day = "5";
-	private String month = "May";
-	private String year = "1995";
-	private String searchValue;
-
+	UserCustomerInfoPageObject customerInfoPage;
+	UserOrderPageObject orderPage;
+	UserOrderDetailsPageObject orderDetailsPage;
+	String orderNumber;
+	String emailAddress;
+	String firstName;
+	String lastName;
+	String company;
+	String searchValue;
+	String processor;
+	String ram;
+	String hdd;
+	String os;
+	String software;
+	String city;
+	String address_1;
+	String address_2;
+	String phone;
+	String fax;
+	String paymentMethod;
+	String country = "United States";
+	String state = "Hawaii";
+	String zipCode = "5000";
+	String methodName = "Next Day Air";
+	String creditCardType = "Master card";
 	
+	@Parameters("browser")
 	@BeforeClass
-	public void beforeClass() {
-		log.info("Pre-condition: Open browser chrome and navigate to "+ GlobalConstants.USER_PORTAL_PAGE_URL);
-		driver = getBrowserDriver("chrome",GlobalConstants.USER_PORTAL_PAGE_URL);
-		homePage = PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
-		emailAddress = "test"+ DataHelper.getData().getRandomNumber()+"@gmail.com";
-		log.info("Step 1: Click Register Link");
-		registerPage = homePage.clickRegisterLink();
-		log.info("Step 2: Select radio button Male");
-		registerPage.selectMaleGender();
-		log.info("Step 3: Input First Name");
-		registerPage.inputFirstName(firstName);
-		log.info("Step 4: Input Last Name");
-		registerPage.inputLastName(lastName);
-		log.info("Step 5: Select Birthday Date: day, month, year");
-		registerPage.selectDay(day);
-		registerPage.selectMonth(month);
-		registerPage.selectYear(year);
-		log.info("Step 5: Input company name");
-		registerPage.inputCompany(company);
-		log.info("Step 6: Input email address");
-		registerPage.inputEmail(emailAddress);
-		log.info("Step 7: Input password");
-		registerPage.inputPassword(password);
-		log.info("Step 8: Input confirm password");
-		registerPage.inputConfirmPassword(confirmPassword);
-		log.info("Step 9: Click Register button");
-		registerPage.clickRegisterButton();
-		log.info("Step 10: Verify register's success message");
-		verifyEquals(registerPage.getSuccessMessage(), "Your registration completed");
+	public void beforeClass(String browserName) {
+		driver = getBrowserDriver(browserName,GlobalConstants.USER_PORTAL_PAGE_URL);
+		homePage = PageGeneratorManager.getPageGenerator().getUserHomePage(driver);		
 	}
 
-	//@Test
+	@Test
 	public void TC_01_Add_Product_To_Cart(Method method) {
 		searchValue = "Build your own computer";
-		String processor="2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]";
-		String ram = "4GB [+$20.00]";
-		String hdd = "400 GB [+$100.00]";
-		String os = "Vista Home [+$50.00]";
-		String software = "Microsoft Office [+$50.00]";
+		processor="2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]";
+		ram = "4GB [+$20.00]";
+		hdd = "400 GB [+$100.00]";
+		os = "Vista Home [+$50.00]";
+		software = "Microsoft Office [+$50.00]";
 		String totalPrice = "$1,435.00";
 		String fullProductDetail = "Processor: "+processor+"\n"+"RAM: "+ram+"\n"+"HDD: "+hdd+"\n"+"OS: "+os+"\n"+"Software: "+software;
 		//ExtentTestManager.startTest(method.getName(), "Test Case 1: Add to Wishlist");
@@ -109,14 +96,14 @@ public class TC_Order extends BaseTest {
 		assertTrue(productCartPage.getProductDetailByProductName(searchValue).equals(fullProductDetail));
 	}
 	
-	//@Test(dependsOnMethods = "TC_01_Add_Product_To_Cart")
+	@Test
 	public void TC_02_Edit_Product(Method method) {
 		searchValue = "Build your own computer";
-		String processor="2.2 GHz Intel Pentium Dual-Core E2200";
-		String ram = "2 GB";
-		String hdd = "320 GB";
-		String os = "Vista Premium [+$60.00]";
-		String software = "Microsoft Office [+$50.00]";
+		processor="2.2 GHz Intel Pentium Dual-Core E2200";
+		ram = "2 GB";
+		hdd = "320 GB";
+		os = "Vista Premium [+$60.00]";
+		software = "Microsoft Office [+$50.00]";
 		String totalPrice = "$1,310.00";
 		String fullProductDetail = "Processor: "+processor+"\n"+"RAM: "+ram+"\n"+"HDD: "+hdd+"\n"+"OS: "+os+"\n"+"Software: "+software;
 		//ExtentTestManager.startTest(method.getName(), "Test Case 1: Add to Wishlist");
@@ -135,7 +122,7 @@ public class TC_Order extends BaseTest {
 		assertTrue(productCartPage.getProductDetailByProductName(searchValue).equals(fullProductDetail));
 	}
 	
-	//@Test(dependsOnMethods = "TC_01_Add_Product_To_Cart")
+	@Test
 	public void TC_03_Remove_Product(Method method) {
 		searchValue = "Build your own computer";
 		productCartPage.clickRemoveButtonByProductName(searchValue);
@@ -143,14 +130,14 @@ public class TC_Order extends BaseTest {
 		assertEquals(productCartPage.getNoDataText(),"Your Shopping Cart is empty!");
 	}
 	
-	//@Test
+	@Test
 	public void TC_04_Update_Product_Quantity(Method method) {
 		searchValue = "Build your own computer";
-		String processor="2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]";
-		String ram = "4GB [+$20.00]";
-		String hdd = "400 GB [+$100.00]";
-		String os = "Vista Home [+$50.00]";
-		String software = "Microsoft Office [+$50.00]";
+		processor="2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]";
+		ram = "4GB [+$20.00]";
+		hdd = "400 GB [+$100.00]";
+		os = "Vista Home [+$50.00]";
+		software = "Microsoft Office [+$50.00]";
 		float price = 1435;
 		String quantity = "5";
 		//ExtentTestManager.startTest(method.getName(), "Test Case 1: Add to Wishlist");
@@ -179,24 +166,19 @@ public class TC_Order extends BaseTest {
 	}
 	
 	@Test
-	public void TC_05_Update_Product_Quantity(Method method) {
+	public void TC_05_Checkout_With_Credit_Card(Method method) {
 		searchValue = "Apple MacBook Pro 13-inch";
-		String giftWrapping = "Yes [+$10.00]";
-		String country = "United States";
-		String state = "Hawaii";
-		String zipCode = "5000";
-		String methodName = "Next Day Air";
-		
 		firstName = "Automation"; 
 		lastName= "FC"; 
 		company ="NEO Livegroup"; 
-		String city = "Ho Chi Minh";
-		String address_1 = "220 NTL";
-		String address_2 = "440 THD";
-		String phone ="0123456789";
-		String fax = "123511";
-		String paymentMethod = "Credit Card";
-		String creditCardType = "Master card";
+		city = "Ho Chi Minh";
+		address_1 = "220 NTL";
+		address_2 = "440 THD";
+		phone ="0123456789";
+		fax = "123511";
+		paymentMethod = "Credit Card";
+		
+		String giftWrapping = "Yes [+$10.00]";
 		String cardholderName = "Testing";
 		String cardNumber = "000011112222333";
 		String expireMonth = "12";
@@ -251,14 +233,70 @@ public class TC_Order extends BaseTest {
 		checkoutPage.inputCardCodeTextbox(cardCode);
 		checkoutPage.clickPaymentInfoContinueButton();
 		assertEquals(checkoutPage.getBillingDetailText(), billingDetail);
+		assertEquals(checkoutPage.getPaymentMethodText(), "Payment Method: "+paymentMethod);
 		checkoutPage.clickConfirmButton();
 		assertTrue(checkoutPage.isSuccessOrderTextDisplayed());
 		assertTrue(checkoutPage.isOrderNumberDisplayed());
+		orderNumber = checkoutPage.getOrderNumberText();
+	}
+	
+	@Test
+	public void TC_06_Reorder(Method method) {		
+		searchValue = "Apple MacBook Pro 13-inch";		
+		firstName = "Testing"; 
+		lastName= "Framework"; 
+		company ="ONE Livegroup"; 
+		city = "Ha Noi";
+		address_1 = "221 NTL";
+		address_2 = "441 THD";
+		phone ="0123456780";
+		fax = "123512";
+		methodName = "Ground";
+		paymentMethod = "Check / Money Order";
+		
+		String quantity = "10";
+		float price = 1800;
+		String newAddress = "New Address";
+		String billingDetail =firstName+" "+lastName+"\n"+"Email: "+emailAddress+"\n"+"Phone: "+phone+"\n"+"Fax: "+fax+"\n"+company+"\n"+address_1+"\n"+address_2
+				+"\n"+city+","+state+","+zipCode+"\n"+country;
+		
+		customerInfoPage = checkoutPage.clickMyAccountLink(driver);
+		orderPage = customerInfoPage.openOrderPage(driver) ;
+		orderDetailsPage = orderPage.clickDetailsLinkByOrderNumber(orderNumber);
+		productCartPage=orderDetailsPage.clickReOrderButton();
+		productCartPage.inputQtyByProductName(searchValue, quantity);
+		productCartPage.clickUpdateShoppingCart();
+		productCartPage.checkTermOfServiceCheckbox();
+		checkoutPage = productCartPage.clickCheckOutButton();
+		checkoutPage.selectNewAddressDropdown(newAddress);
+		checkoutPage.inputFirstNameTextbox(firstName);
+		checkoutPage.inputLastNameTextbox(lastName);
+		checkoutPage.inputEmailTextbox(emailAddress);
+		checkoutPage.inputCompanyTextbox(company);
+		checkoutPage.selectCountryDropdown(country);
+		checkoutPage.selectStateDropdown(state);
+		checkoutPage.inputCityTextbox(city);
+		checkoutPage.inputAddress1Textbox(address_1);
+		checkoutPage.inputAddress2Textbox(address_2);
+		checkoutPage.inputZipTexbox(zipCode);
+		checkoutPage.inputPhoneTextbox(phone);
+		checkoutPage.inputFaxTextbox(fax);
+		checkoutPage.clickBillingContinueButton();
+		checkoutPage.clickShippingMethodRadioButtonByMethodName(methodName);
+		checkoutPage.clickShippingContinueButton();
+		checkoutPage.clickPaymentMethodRadioButtonByMethodName(paymentMethod);
+		checkoutPage.clickPaymentContinueButton();
+		assertTrue(checkoutPage.isPaymentInfoForCheckDisplayed());
+		checkoutPage.clickPaymentInfoContinueButton();
+		assertEquals(checkoutPage.getBillingDetailText(), billingDetail);
+		assertEquals(checkoutPage.getPaymentMethodText(), "Payment Method: "+paymentMethod);
+		assertTrue(checkoutPage.isQtyDisplayedCorrectlyByProductName(searchValue, quantity));
+		assertTrue(checkoutPage.isTotalPriceDisplayedCorrectlyByProductName(searchValue,price*productCartPage.convertStringToFloat(quantity)));
 	}
 	
 	@AfterClass
 	public void afterClass() {
 		log.info("Post-condition: Close browser chrome");
-		//closeBrowserAndDriver();
+		closeBrowserAndDriver();
 	}	
 }

@@ -9,7 +9,8 @@
           <include name="cleanExecutableDriver"/>
           <include name="beforeSuit"/>
           <include name="afterClass"/>
-          <include name="TC_05_Update_Product_Quantity" invocation-numbers="0"/>
+          <include name="TC_06_Checkout_With_Check" invocation-numbers="0"/>
+          <include name="TC_06_Reorder" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.nopcommerce.user.TC_Order -->
     </classes>

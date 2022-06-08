@@ -1153,69 +1153,105 @@ public class BasePage {
 	}
 	
 	/**
-	 * click items on Header using name
+	 * click My Account Link
 	 * @param driver driver of web driver
-	 * @param menuHeader the name of the header
 	 */	
-	public UserCustomerInfoPageObject openCustomerInfoPage(WebDriver driver) {
-		waitForElementClickable(driver, UserBasePageUI.CUSTOMER_INFO_LINK);
-		clickElement(driver, UserBasePageUI.CUSTOMER_INFO_LINK);
-		return PageGeneratorManager.getPageGenerator().getUserCustomerInfoPage(driver);
-	}
-	
-	public UserAddressPageObject openAddressPage(WebDriver driver) {
-		waitForElementClickable(driver, UserBasePageUI.ADDRESS_LINK);
-		clickElement(driver, UserBasePageUI.ADDRESS_LINK);
-		return PageGeneratorManager.getPageGenerator().getUserAddressPage(driver);
-	}
-	
-	public UserOrderPageObject openOrderPage(WebDriver driver) {
-		waitForElementClickable(driver, UserBasePageUI.ORDER_LINK);
-		clickElement(driver, UserBasePageUI.ORDER_LINK);
-		return PageGeneratorManager.getPageGenerator().getUserOrderPage(driver);
-	}
-	
-	public UserDownloadableProductPageObject openDownloadableProductPage(WebDriver driver) {
-		waitForElementClickable(driver, UserBasePageUI.DOWNLOADABLE_PRODUCTS_LINK);
-		clickElement(driver, UserBasePageUI.DOWNLOADABLE_PRODUCTS_LINK);
-		return PageGeneratorManager.getPageGenerator().getUserDownloadableProductPage(driver);
-	}
-	
-	public UserBackInStockSubscriptionPageObject openBackInStockSubscriptionPage(WebDriver driver) {
-		waitForElementClickable(driver, UserBasePageUI.BACK_IN_STOCK_SUBSCRIPTION_LINK);
-		clickElement(driver, UserBasePageUI.BACK_IN_STOCK_SUBSCRIPTION_LINK);
-		return PageGeneratorManager.getPageGenerator().getUserBackInStockSubscriptionPage(driver);
-	}
-	
-	public UserRewardPointPageObject openRewardPointPage(WebDriver driver) {
-		waitForElementClickable(driver, UserBasePageUI.REWARD_POINT_LINK);
-		clickElement(driver, UserBasePageUI.REWARD_POINT_LINK);
-		return PageGeneratorManager.getPageGenerator().getUserRewardPointPage(driver);
-	}
-	
-	public UserChangePasswordPageObject openChangePasswordPage(WebDriver driver) {
-		waitForElementClickable(driver, UserBasePageUI.CHANGE_PASSWORD_LINK);
-		clickElement(driver, UserBasePageUI.CHANGE_PASSWORD_LINK);
-		return PageGeneratorManager.getPageGenerator().getUserChangePasswordPage(driver);
-	}
-	
-	public UserMyProductReviewPageObject openMyReviewPage(WebDriver driver) {
-		waitForElementClickable(driver, UserBasePageUI.MY_PRODUCT_REVIEW_LINK);
-		clickElement(driver, UserBasePageUI.MY_PRODUCT_REVIEW_LINK);
-		return PageGeneratorManager.getPageGenerator().getUserMyProductReviewPage(driver);
-	}
-	
 	public UserCustomerInfoPageObject clickMyAccountLink(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.MY_ACCOUNT_LINK);
 		clickElement(driver, UserBasePageUI.MY_ACCOUNT_LINK);
 		return PageGeneratorManager.getPageGenerator().getUserCustomerInfoPage(driver);
 	}
 	
+	/**
+	 * click Logout Link
+	 * @param driver driver of web driver
+	 */
 	public UserHomePageObject clickUserLogOutLink(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.LOGOUT_LINK_AT_USER);
 		clickElement(driver, UserBasePageUI.LOGOUT_LINK_AT_USER);
 		return PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
 	}
+	
+	/**
+	 * click Customer Info link on My Web left menu
+	 * @param driver driver of web driver
+	 */
+	public UserCustomerInfoPageObject openCustomerInfoPage(WebDriver driver) {
+		waitForElementClickable(driver, UserBasePageUI.CUSTOMER_INFO_LINK);
+		clickElement(driver, UserBasePageUI.CUSTOMER_INFO_LINK);
+		return PageGeneratorManager.getPageGenerator().getUserCustomerInfoPage(driver);
+	}
+	
+	/**
+	 * click Address link on My Web left menu
+	 * @param driver driver of web driver
+	 */
+	public UserAddressPageObject openAddressPage(WebDriver driver) {
+		waitForElementClickable(driver, UserBasePageUI.ADDRESS_LINK);
+		clickElement(driver, UserBasePageUI.ADDRESS_LINK);
+		return PageGeneratorManager.getPageGenerator().getUserAddressPage(driver);
+	}
+	
+	/**
+	 * click Order link on My Web left menu
+	 * @param driver driver of web driver
+	 */
+	public UserOrderPageObject openOrderPage(WebDriver driver) {
+		waitForElementClickable(driver, UserBasePageUI.ORDER_LINK);
+		clickElement(driver, UserBasePageUI.ORDER_LINK);
+		return PageGeneratorManager.getPageGenerator().getUserOrderPage(driver);
+	}
+	
+	/**
+	 * click Downloadable Product link on My Web left menu
+	 * @param driver driver of web driver
+	 */
+	public UserDownloadableProductPageObject openDownloadableProductPage(WebDriver driver) {
+		waitForElementClickable(driver, UserBasePageUI.DOWNLOADABLE_PRODUCTS_LINK);
+		clickElement(driver, UserBasePageUI.DOWNLOADABLE_PRODUCTS_LINK);
+		return PageGeneratorManager.getPageGenerator().getUserDownloadableProductPage(driver);
+	}
+	
+	/**
+	 * click Back In Stock Subscription link on My Web left menu
+	 * @param driver driver of web driver
+	 */
+	public UserBackInStockSubscriptionPageObject openBackInStockSubscriptionPage(WebDriver driver) {
+		waitForElementClickable(driver, UserBasePageUI.BACK_IN_STOCK_SUBSCRIPTION_LINK);
+		clickElement(driver, UserBasePageUI.BACK_IN_STOCK_SUBSCRIPTION_LINK);
+		return PageGeneratorManager.getPageGenerator().getUserBackInStockSubscriptionPage(driver);
+	}
+	
+	/**
+	 * click Reward Point link on My Web left menu
+	 * @param driver driver of web driver
+	 */
+	public UserRewardPointPageObject openRewardPointPage(WebDriver driver) {
+		waitForElementClickable(driver, UserBasePageUI.REWARD_POINT_LINK);
+		clickElement(driver, UserBasePageUI.REWARD_POINT_LINK);
+		return PageGeneratorManager.getPageGenerator().getUserRewardPointPage(driver);
+	}
+	
+	/**
+	 * click Change Password link on My Web left menu
+	 * @param driver driver of web driver
+	 */
+	public UserChangePasswordPageObject openChangePasswordPage(WebDriver driver) {
+		waitForElementClickable(driver, UserBasePageUI.CHANGE_PASSWORD_LINK);
+		clickElement(driver, UserBasePageUI.CHANGE_PASSWORD_LINK);
+		return PageGeneratorManager.getPageGenerator().getUserChangePasswordPage(driver);
+	}
+	
+	/**
+	 * click Product Review link on My Web left menu
+	 * @param driver driver of web driver
+	 */
+	public UserMyProductReviewPageObject openMyReviewPage(WebDriver driver) {
+		waitForElementClickable(driver, UserBasePageUI.MY_PRODUCT_REVIEW_LINK);
+		clickElement(driver, UserBasePageUI.MY_PRODUCT_REVIEW_LINK);
+		return PageGeneratorManager.getPageGenerator().getUserMyProductReviewPage(driver);
+	}
+	
 	
 	/**
 	 * click items on Header using name

@@ -134,4 +134,35 @@ public class UserCheckoutPageObject extends BasePage {
 	public boolean isOrderNumberDisplayed() {
 		return isElementDisplayed(driver, UserCheckoutPageUI.ORDER_NUMBER_TEXT);
 	}
+
+	public boolean isPaymentInfoForCheckDisplayed() {
+		return isElementDisplayed(driver, UserCheckoutPageUI.PAYMENT_INFO_FOR_CHECK_TEXT);
+	}
+
+	public String getPaymentMethodText() {
+		return getElementText(driver, UserCheckoutPageUI.PAYMENT_METHOD_TEXT);
+	}
+
+	public String getOrderNumberText() {
+		String str = getElementText(driver, UserCheckoutPageUI.ORDER_NUMBER_TEXT);
+		return str.replace("ORDER NUMBER: ","");
+	}
+
+	public void selectNewAddressDropdown(String newAddress) {
+		selectDropdownListByName(driver, "billing_address_id", newAddress);
+	}
+	
+	public String getProductInfoByHeaderAndProductName(String headerName,String productName) {
+		int columnIndex = getElementSize(driver, UserCheckoutPageUI.HEADER_NAME_INDEX, headerName)+1;
+		waitForElementVisible(driver, UserCheckoutPageUI.DYNAMIC_TABLE_ITEM_BY_PRODUCT_NAME,productName,String.valueOf(columnIndex));
+		return getElementText(driver, UserCheckoutPageUI.DYNAMIC_TABLE_ITEM_BY_PRODUCT_NAME,productName,String.valueOf(columnIndex));
+	}
+	
+	public boolean isTotalPriceDisplayedCorrectlyByProductName(String productName,float totalPrice) {
+		return convertStringToFloat(getProductInfoByHeaderAndProductName("Total",productName))==totalPrice;
+	}
+	
+	public boolean isQtyDisplayedCorrectlyByProductName(String productName,String quantity) {
+		return getProductInfoByHeaderAndProductName("Qty.",productName).equals(quantity);
+	}
 }
