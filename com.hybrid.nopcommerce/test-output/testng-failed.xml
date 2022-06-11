@@ -3,16 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.nopcommerce.user.TC_Order">
+      <class name="com.zippopotam.api.TC_Check_Response_Value">
         <methods>
-          <include name="beforeClass"/>
-          <include name="cleanExecutableDriver"/>
-          <include name="beforeSuit"/>
-          <include name="afterClass"/>
-          <include name="TC_06_Checkout_With_Check" invocation-numbers="0"/>
-          <include name="TC_06_Reorder" invocation-numbers="0"/>
+          <include name="TC_01_Check_Status_Code_200"/>
         </methods>
-      </class> <!-- com.nopcommerce.user.TC_Order -->
+      </class> <!-- com.zippopotam.api.TC_Check_Response_Value -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

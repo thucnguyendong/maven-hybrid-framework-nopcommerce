@@ -13,7 +13,6 @@ public class RegisterData {
 		try {
 			ObjectMapper mapper = new ObjectMapper();
 			mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-			System.out.println(GlobalConstants.TEST_DATA_PATH+ "RegisterData.json");
 			return mapper.readValue(new File(GlobalConstants.TEST_DATA_DRIVEN_PATH+ "RegisterData.json"), RegisterData.class);
 		}
 		catch (Exception ex) {
