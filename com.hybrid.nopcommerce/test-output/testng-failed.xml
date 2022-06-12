@@ -3,11 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.zippopotam.api.TC_Check_Response_Value">
+      <class name="com.wordpress.portal.TC_Login">
         <methods>
-          <include name="TC_01_Check_Status_Code_200"/>
+          <include name="TC_02_Login_Not_Exist_Username"/>
+          <include name="afterClass"/>
+          <include name="cleanExecutableDriver"/>
+          <include name="beforeSuit"/>
+          <include name="beforeClass"/>
         </methods>
-      </class> <!-- com.zippopotam.api.TC_Check_Response_Value -->
+      </class> <!-- com.wordpress.portal.TC_Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

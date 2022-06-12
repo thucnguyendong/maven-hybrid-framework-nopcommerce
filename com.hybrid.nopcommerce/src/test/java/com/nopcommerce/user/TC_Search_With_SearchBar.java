@@ -12,7 +12,7 @@ import com.aventstack.extentreports.Status;
 
 import commons.BaseTest;
 import commons.GlobalConstants;
-import commons.PageGeneratorManager;
+import commons.PageGeneratorManagerNopCommerce;
 import pageObjects.nopcommerce.portal.UserHomePageObject;
 import pageObjects.nopcommerce.portal.UserSearchBarPageObject;
 import pageObjects.nopcommerce.portal.UserSearchPageObject;
@@ -29,15 +29,15 @@ public class TC_Search_With_SearchBar extends BaseTest {
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		ExtentTestManager.startTest("Search with Search Bar testcases on " + browserName, "Search Bar Testcase");
-		driver = getBrowserDriver(browserName,GlobalConstants.USER_PORTAL_PAGE_URL);
-		homePage = PageGeneratorManager.getPageGenerator().getUserHomePage(driver);		
+		driver = getBrowserDriver(browserName,GlobalConstants.NOPCOMMERCE_USER_PORTAL_PAGE_URL);
+		homePage = PageGeneratorManagerNopCommerce.getPageGenerator().getUserHomePage(driver);		
 	}
 	
 	@Test
 	public void TC_01_Search_Empty_Data(Method method) {
 		ExtentTestManager.startTest(method.getName(), "Test Case 1: Search empty data");
 		ExtentTestManager.getTest().log(Status.INFO, "Step 1: Click Search button");
-		searchBar = PageGeneratorManager.getPageGenerator().getUserSearchBar(driver);
+		searchBar = PageGeneratorManagerNopCommerce.getPageGenerator().getUserSearchBar(driver);
 		searchPage = searchBar.clickSearchButton();
 		ExtentTestManager.getTest().log(Status.INFO, "Step 2: Check error");
 		verifyEquals(searchBar.getAlertText(driver), "Please enter some search keyword");

@@ -3,7 +3,7 @@ package pageObjects.nopcommerce.portal;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import commons.PageGeneratorManager;
+import commons.PageGeneratorManagerNopCommerce;
 import pageUI.nopcommerce.portal.UserSearchBarPageUI;
 
 public class UserSearchBarPageObject extends BasePage {
@@ -21,6 +21,6 @@ public class UserSearchBarPageObject extends BasePage {
 	public UserSearchPageObject clickSearchButton() {
 		waitForElementClickable(driver, UserSearchBarPageUI.SEARCH_BUTTON);
 		clickElement(driver, UserSearchBarPageUI.SEARCH_BUTTON);
-		return PageGeneratorManager.getPageGenerator().getUserSearchPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserSearchPage(driver);
 	}
 }

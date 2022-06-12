@@ -12,7 +12,7 @@ import com.aventstack.extentreports.Status;
 
 import commons.BaseTest;
 import commons.GlobalConstants;
-import commons.PageGeneratorManager;
+import commons.PageGeneratorManagerNopCommerce;
 import pageObjects.nopcommerce.portal.UserHomePageObject;
 import pageObjects.nopcommerce.portal.UserLoginPageObject;
 import reportConfig.ExtentTestManager;
@@ -25,8 +25,8 @@ public class TC_Login extends BaseTest {
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
-		driver = getBrowserDriver(browserName,GlobalConstants.USER_PORTAL_PAGE_URL);
-		homePage = PageGeneratorManager.getPageGenerator().getUserHomePage(driver);		
+		driver = getBrowserDriver(browserName,GlobalConstants.NOPCOMMERCE_USER_PORTAL_PAGE_URL);
+		homePage = PageGeneratorManagerNopCommerce.getPageGenerator().getUserHomePage(driver);		
 	}
 	
 	@Test

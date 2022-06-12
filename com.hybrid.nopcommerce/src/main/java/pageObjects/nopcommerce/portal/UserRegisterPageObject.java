@@ -3,7 +3,7 @@ package pageObjects.nopcommerce.portal;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import commons.PageGeneratorManager;
+import commons.PageGeneratorManagerNopCommerce;
 import pageUI.nopcommerce.portal.UserRegisterPageUI;
 
 public class UserRegisterPageObject extends BasePage {
@@ -81,7 +81,7 @@ public class UserRegisterPageObject extends BasePage {
 	public UserHomePageObject clickRegisterButton() {
 		waitForElementVisible(driver, UserRegisterPageUI.REGISTER_BUTTON);
 		clickElement(driver, UserRegisterPageUI.REGISTER_BUTTON);
-		return PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserHomePage(driver);
 	}
 	
 	public String getFirstNameErrorMessage() {
@@ -123,6 +123,6 @@ public class UserRegisterPageObject extends BasePage {
 	public UserHomePageObject clickLogOutLink() {
 		waitForElementClickable(driver, UserRegisterPageUI.LOGOUT_LINK);
 		clickElement(driver, UserRegisterPageUI.LOGOUT_LINK);
-		return PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserHomePage(driver);
 	}
 }

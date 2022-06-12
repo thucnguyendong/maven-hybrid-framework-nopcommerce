@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import commons.BaseTest;
 import commons.GlobalConstants;
-import commons.PageGeneratorManager;
+import commons.PageGeneratorManagerNopCommerce;
 import io.qameta.allure.Description;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
@@ -28,9 +28,9 @@ public class TC_Register_Allure extends BaseTest {
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
-		log.info("Pre-condition: Open browser "+browserName+" and navigate to "+ GlobalConstants.USER_PORTAL_PAGE_URL);
-		driver = getBrowserDriver(browserName,GlobalConstants.USER_PORTAL_PAGE_URL);
-		homePage = PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
+		log.info("Pre-condition: Open browser "+browserName+" and navigate to "+ GlobalConstants.NOPCOMMERCE_USER_PORTAL_PAGE_URL);
+		driver = getBrowserDriver(browserName,GlobalConstants.NOPCOMMERCE_USER_PORTAL_PAGE_URL);
+		homePage = PageGeneratorManagerNopCommerce.getPageGenerator().getUserHomePage(driver);
 	}
 	
 	@Story("")

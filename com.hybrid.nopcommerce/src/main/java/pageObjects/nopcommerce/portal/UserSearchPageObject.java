@@ -3,7 +3,7 @@ package pageObjects.nopcommerce.portal;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import commons.PageGeneratorManager;
+import commons.PageGeneratorManagerNopCommerce;
 import pageUI.nopcommerce.portal.UserSearchPageUI;
 
 public class UserSearchPageObject extends BasePage {
@@ -27,7 +27,7 @@ public class UserSearchPageObject extends BasePage {
 	public UserProductPageObject clickProductLink(String searchValue) {
 		waitForElementClickable(driver, UserSearchPageUI.DYNAMIC_PRODUCT_LINK ,searchValue);
 		clickElement(driver, UserSearchPageUI.DYNAMIC_PRODUCT_LINK ,searchValue);
-		return PageGeneratorManager.getPageGenerator().getUserProductPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserProductPage(driver);
 	}
 
 	public String getSearchErrorText() {

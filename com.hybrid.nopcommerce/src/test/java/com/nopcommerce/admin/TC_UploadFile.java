@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import commons.BaseTest;
-import commons.PageGeneratorManager;
+import commons.PageGeneratorManagerNopCommerce;
 import pageObjects.nopcommerce.admin.AdminDashboardPageObject;
 import pageObjects.nopcommerce.admin.AdminLoginPageObject;
 import pageObjects.nopcommerce.admin.AdminProductDetailPageObject;
@@ -28,7 +28,7 @@ public class TC_UploadFile extends BaseTest {
 	public void beforeTest() {
 		setEnvironmentURL("DEV");
 		driver = getBrowserDriver("chrome",adminUrl);
-		adminLoginPage = PageGeneratorManager.getPageGenerator().getPageGenerator().getAdminLoginPage(driver);
+		adminLoginPage = PageGeneratorManagerNopCommerce.getPageGenerator().getAdminLoginPage(driver);
 		adminDashboardPage = adminLoginPage.loginAsAdmin(adminEmailAddress, adminPassword);
 	}
 	
@@ -40,7 +40,7 @@ public class TC_UploadFile extends BaseTest {
 		String picture = "Test_01.jpg";
 		adminDashboardPage.clickAdminSideMenuItem(driver, "Catalog");
 		adminDashboardPage.clickAdminSideMenuSubItem(driver, "Products");
-		adminProductPage = PageGeneratorManager.getPageGenerator().getAdminProductsPage(driver);
+		adminProductPage = PageGeneratorManagerNopCommerce.getPageGenerator().getAdminProductsPage(driver);
 		adminProductPage.inputProductName(productName);
 		adminProductPage.clickSearchButton();
 		adminProductDetailPage = adminProductPage.clickEditByValueOfColumn(headerName,productName);
@@ -57,7 +57,7 @@ public class TC_UploadFile extends BaseTest {
 		
 		adminDashboardPage.clickAdminSideMenuItem(driver, "Catalog");
 		adminDashboardPage.clickAdminSideMenuSubItem(driver, "Products");
-		adminProductPage = PageGeneratorManager.getPageGenerator().getAdminProductsPage(driver);
+		adminProductPage = PageGeneratorManagerNopCommerce.getPageGenerator().getAdminProductsPage(driver);
 		adminProductPage.inputProductName(productName);
 		adminProductPage.clickSearchButton();
 		adminProductDetailPage = adminProductPage.clickEditByValueOfColumn(headerName,productName);

@@ -10,7 +10,7 @@
   	<parameter name = "browser" value ="chrome"></parameter>
     <classes>
       <class name="com.nopcommerce.commons.Common_RegisterToSystem"/>
-      <class name="com.nopcommerce.user.TC_Wishlist_Compare_Recent_View"/>
+      <class name="com.nopcommerce.user.TC_Order"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -12,7 +12,7 @@ import com.aventstack.extentreports.Status;
 
 import commons.BaseTest;
 import commons.GlobalConstants;
-import commons.PageGeneratorManager;
+import commons.PageGeneratorManagerNopCommerce;
 import pageObjects.nopcommerce.portal.UserHomePageObject;
 import pageObjects.nopcommerce.portal.UserRegisterPageObject;
 import pageObjects.nopcommerce.portal.UserSearchBarPageObject;
@@ -35,8 +35,8 @@ public class TC_Search_Advanced extends BaseTest {
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		ExtentTestManager.startTest("Search Advanced testcases on " + browserName, "Search Advanced Testcase");
-		driver = getBrowserDriver(browserName,GlobalConstants.USER_PORTAL_PAGE_URL);
-		homePage = PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
+		driver = getBrowserDriver(browserName,GlobalConstants.NOPCOMMERCE_USER_PORTAL_PAGE_URL);
+		homePage = PageGeneratorManagerNopCommerce.getPageGenerator().getUserHomePage(driver);
 		homePage.openFooterPageByName(driver, "Search");
 	}
 	
@@ -44,7 +44,7 @@ public class TC_Search_Advanced extends BaseTest {
 	public void TC_01_Search_Empty_Data(Method method) {
 		ExtentTestManager.startTest(method.getName(), "Test Case 1: Search empty data");
 		ExtentTestManager.getTest().log(Status.INFO, "Step 1: Click Search button");
-		searchPage = PageGeneratorManager.getPageGenerator().getUserSearchPage(driver);
+		searchPage = PageGeneratorManagerNopCommerce.getPageGenerator().getUserSearchPage(driver);
 		searchPage.clickSearchButton();
 		ExtentTestManager.getTest().log(Status.INFO, "Step 2: Check error");
 		verifyEquals(searchPage.getSearchErrorText(), "Search term minimum length is 3 characters");

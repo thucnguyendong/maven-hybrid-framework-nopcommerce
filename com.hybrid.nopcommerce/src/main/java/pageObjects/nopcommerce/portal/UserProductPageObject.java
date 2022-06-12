@@ -3,7 +3,7 @@ package pageObjects.nopcommerce.portal;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import commons.PageGeneratorManager;
+import commons.PageGeneratorManagerNopCommerce;
 import pageUI.nopcommerce.portal.UserProductPageUI;
 
 public class UserProductPageObject extends BasePage {
@@ -15,7 +15,7 @@ public class UserProductPageObject extends BasePage {
 	public UserProductReviewPageObject clickAddReviewLink() {
 		waitForElementClickable(driver, UserProductPageUI.ADD_REVIEW_LINK);
 		clickElement(driver, UserProductPageUI.ADD_REVIEW_LINK);
-		return PageGeneratorManager.getPageGenerator().getUserProductReviewPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserProductReviewPage(driver);
 	}
 	
 	public void clickAddToWishListButton() {
@@ -48,13 +48,13 @@ public class UserProductPageObject extends BasePage {
 	public UserWishlistPageObject clickWishlistLinkOnSuccessMessage() {
 		waitForElementClickable(driver, UserProductPageUI.WISHLIST_LINK_SUCCESS_MESSAGE);
 		clickElement(driver, UserProductPageUI.WISHLIST_LINK_SUCCESS_MESSAGE);
-		return PageGeneratorManager.getPageGenerator().getUserWishlistPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserWishlistPage(driver);
 	}
 
 	public UserProductComparisonPageObject clickProductComparisonLinkOnSuccessMessage() {
 		waitForElementClickable(driver, UserProductPageUI.PRODUCT_COMPARISON_LINK_SUCCESS_MESSAGE);
 		clickElement(driver, UserProductPageUI.PRODUCT_COMPARISON_LINK_SUCCESS_MESSAGE);
-		return PageGeneratorManager.getPageGenerator().getUserProductComparisonPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserProductComparisonPage(driver);
 	}
 	public void selectProcessorDropdown(String processor) {
 		selectItemInDefaultDropdown(driver, UserProductPageUI.PROCESSOR_DROPDOWN, processor);
@@ -82,6 +82,6 @@ public class UserProductPageObject extends BasePage {
 	public UserProductCartPageObject clickProductCartLinkOnSuccessMessage() {
 		waitForElementClickable(driver, UserProductPageUI.PRODUCT_CART_LINK_SUCCESS_MESSAGE);
 		clickElement(driver, UserProductPageUI.PRODUCT_CART_LINK_SUCCESS_MESSAGE);
-		return PageGeneratorManager.getPageGenerator().getUserProductCartPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserProductCartPage(driver);
 	}
 }

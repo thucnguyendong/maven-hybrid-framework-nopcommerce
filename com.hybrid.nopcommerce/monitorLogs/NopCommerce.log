@@ -3909,3 +3909,117 @@ Driver info: driver.version: RemoteWebDriver
 [INFO ] [2022-06-08 23:51:33,565] OS name = windows 10
 [INFO ] [2022-06-08 23:51:33,565] Driver instance name = chromedriver: chrome on windows (54bbd774b36380dded9b570a785b30c4)
 [INFO ] [2022-06-08 23:51:34,249] Close all drivers after suite
+[INFO ] [2022-06-12 19:59:11,465] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-06-12 19:59:15,898] Step 1: Click Register Link
+[INFO ] [2022-06-12 19:59:16,377] Step 2: Select radio button Male
+[INFO ] [2022-06-12 19:59:16,428] Step 3: Input First Name
+[INFO ] [2022-06-12 19:59:16,491] Step 4: Input Last Name
+[INFO ] [2022-06-12 19:59:16,553] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-12 19:59:17,923] Step 5: Input company name
+[INFO ] [2022-06-12 19:59:17,984] Step 6: Input email address
+[INFO ] [2022-06-12 19:59:18,043] Step 7: Input password
+[INFO ] [2022-06-12 19:59:18,102] Step 8: Input confirm password
+[INFO ] [2022-06-12 19:59:18,161] Step 9: Click Register button
+[INFO ] [2022-06-12 19:59:18,945] Step 10: Verify register's success message
+[INFO ] [2022-06-12 19:59:18,972]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-12 19:59:18,975] OS name = windows 10
+[INFO ] [2022-06-12 19:59:18,976] Driver instance name = chromedriver: chrome on windows (ebb7e2cf24d2b0a00da471e56cc600c3)
+[INFO ] [2022-06-12 20:01:11,254] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-06-12 20:01:14,522] Step 1: Click Register Link
+[INFO ] [2022-06-12 20:01:15,007] Step 2: Select radio button Male
+[INFO ] [2022-06-12 20:01:15,058] Step 3: Input First Name
+[INFO ] [2022-06-12 20:01:15,124] Step 4: Input Last Name
+[INFO ] [2022-06-12 20:01:15,189] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-12 20:01:16,693] Step 5: Input company name
+[INFO ] [2022-06-12 20:01:16,756] Step 6: Input email address
+[INFO ] [2022-06-12 20:01:16,817] Step 7: Input password
+[INFO ] [2022-06-12 20:01:16,875] Step 8: Input confirm password
+[INFO ] [2022-06-12 20:01:16,934] Step 9: Click Register button
+[INFO ] [2022-06-12 20:01:17,713] Step 10: Verify register's success message
+[INFO ] [2022-06-12 20:01:17,741]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-12 20:01:17,744] OS name = windows 10
+[INFO ] [2022-06-12 20:01:17,745] Driver instance name = chromedriver: chrome on windows (23cd6099c8cb483091da6f5d1ad4eb13)
+[INFO ] [2022-06-12 20:02:30,844] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-06-12 20:02:34,090] Step 1: Click Register Link
+[INFO ] [2022-06-12 20:02:34,601] Step 2: Select radio button Male
+[INFO ] [2022-06-12 20:02:34,652] Step 3: Input First Name
+[INFO ] [2022-06-12 20:02:34,719] Step 4: Input Last Name
+[INFO ] [2022-06-12 20:02:34,836] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-12 20:02:36,301] Step 5: Input company name
+[INFO ] [2022-06-12 20:02:36,365] Step 6: Input email address
+[INFO ] [2022-06-12 20:02:36,427] Step 7: Input password
+[INFO ] [2022-06-12 20:02:36,489] Step 8: Input confirm password
+[INFO ] [2022-06-12 20:02:36,548] Step 9: Click Register button
+[INFO ] [2022-06-12 20:02:38,926] Step 10: Verify register's success message
+[INFO ] [2022-06-12 20:02:38,955]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-12 20:02:38,959] OS name = windows 10
+[INFO ] [2022-06-12 20:02:38,959] Driver instance name = chromedriver: chrome on windows (b55103d27d8ead6ee5b8a9edb5bfed91)
+[INFO ] [2022-06-12 20:04:17,658] OS name = windows 10
+[INFO ] [2022-06-12 20:04:17,658] Driver instance name = chromedriver: chrome on windows (f4d0ebae57d8a68de7fcbb90118be944)
+[INFO ] [2022-06-12 20:04:18,616] Close all drivers after suite
+[INFO ] [2022-06-12 20:05:39,268] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-06-12 20:05:42,425] Step 1: Click Register Link
+[INFO ] [2022-06-12 20:05:42,887] Step 2: Select radio button Male
+[INFO ] [2022-06-12 20:05:42,936] Step 3: Input First Name
+[INFO ] [2022-06-12 20:05:43,001] Step 4: Input Last Name
+[INFO ] [2022-06-12 20:05:43,065] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-12 20:05:44,437] Step 5: Input company name
+[INFO ] [2022-06-12 20:05:44,498] Step 6: Input email address
+[INFO ] [2022-06-12 20:05:44,558] Step 7: Input password
+[INFO ] [2022-06-12 20:05:44,617] Step 8: Input confirm password
+[INFO ] [2022-06-12 20:05:44,676] Step 9: Click Register button
+[INFO ] [2022-06-12 20:05:45,412] Step 10: Verify register's success message
+[INFO ] [2022-06-12 20:05:45,438]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-12 20:05:45,442] OS name = windows 10
+[INFO ] [2022-06-12 20:05:45,442] Driver instance name = chromedriver: chrome on windows (b0d1b287746c7533015553f66877a740)
+[INFO ] [2022-06-12 20:06:37,459] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-06-12 20:06:39,746] Step 1: Click Register Link
+[INFO ] [2022-06-12 20:06:40,196] Step 2: Select radio button Male
+[INFO ] [2022-06-12 20:06:40,247] Step 3: Input First Name
+[INFO ] [2022-06-12 20:06:40,313] Step 4: Input Last Name
+[INFO ] [2022-06-12 20:06:40,376] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-12 20:06:41,721] Step 5: Input company name
+[INFO ] [2022-06-12 20:06:41,782] Step 6: Input email address
+[INFO ] [2022-06-12 20:06:41,842] Step 7: Input password
+[INFO ] [2022-06-12 20:06:41,899] Step 8: Input confirm password
+[INFO ] [2022-06-12 20:06:41,955] Step 9: Click Register button
+[INFO ] [2022-06-12 20:06:42,670] Step 10: Verify register's success message
+[INFO ] [2022-06-12 20:06:42,697]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-12 20:06:42,701] OS name = windows 10
+[INFO ] [2022-06-12 20:06:42,701] Driver instance name = chromedriver: chrome on windows (8bbe457a570b7a5b080ad1f80b2ff1db)
+[INFO ] [2022-06-12 20:07:52,927] OS name = windows 10
+[INFO ] [2022-06-12 20:07:52,927] Driver instance name = chromedriver: chrome on windows (7b34f75c07f3a78f984acc0260359104)
+[INFO ] [2022-06-12 20:07:53,800] Close all drivers after suite
+[INFO ] [2022-06-12 20:09:51,382] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-06-12 20:09:54,439] Step 1: Click Register Link
+[INFO ] [2022-06-12 20:09:54,909] Step 2: Select radio button Male
+[INFO ] [2022-06-12 20:09:54,959] Step 3: Input First Name
+[INFO ] [2022-06-12 20:09:55,024] Step 4: Input Last Name
+[INFO ] [2022-06-12 20:09:55,085] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-12 20:09:56,434] Step 5: Input company name
+[INFO ] [2022-06-12 20:09:56,492] Step 6: Input email address
+[INFO ] [2022-06-12 20:09:56,550] Step 7: Input password
+[INFO ] [2022-06-12 20:09:56,605] Step 8: Input confirm password
+[INFO ] [2022-06-12 20:09:56,663] Step 9: Click Register button
+[INFO ] [2022-06-12 20:09:57,396] Step 10: Verify register's success message
+[INFO ] [2022-06-12 20:09:57,424]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-12 20:09:57,427] OS name = windows 10
+[INFO ] [2022-06-12 20:09:57,428] Driver instance name = chromedriver: chrome on windows (111fb63ebff2106ace9b2de028ba0bb9)
+[INFO ] [2022-06-12 20:10:36,253] Pre-condition: Open browser chrome and navigate to https://demo.nopcommerce.com
+[INFO ] [2022-06-12 20:10:39,315] Step 1: Click Register Link
+[INFO ] [2022-06-12 20:10:39,776] Step 2: Select radio button Male
+[INFO ] [2022-06-12 20:10:39,827] Step 3: Input First Name
+[INFO ] [2022-06-12 20:10:39,891] Step 4: Input Last Name
+[INFO ] [2022-06-12 20:10:39,955] Step 5: Select Birthday Date: day, month, year
+[INFO ] [2022-06-12 20:10:41,309] Step 5: Input company name
+[INFO ] [2022-06-12 20:10:41,370] Step 6: Input email address
+[INFO ] [2022-06-12 20:10:41,428] Step 7: Input password
+[INFO ] [2022-06-12 20:10:41,485] Step 8: Input confirm password
+[INFO ] [2022-06-12 20:10:41,541] Step 9: Click Register button
+[INFO ] [2022-06-12 20:10:42,299] Step 10: Verify register's success message
+[INFO ] [2022-06-12 20:10:42,325]  -------------------------- PASSED -------------------------- 
+[INFO ] [2022-06-12 20:10:42,329] OS name = windows 10
+[INFO ] [2022-06-12 20:10:42,329] Driver instance name = chromedriver: chrome on windows (8791063cfa89ddc6de8dd7f7907423f8)
+[INFO ] [2022-06-12 20:11:51,855] OS name = windows 10
+[INFO ] [2022-06-12 20:11:51,855] Driver instance name = chromedriver: chrome on windows (2f5621d7d9642b0f2d381405006c5519)
+[INFO ] [2022-06-12 20:11:52,732] Close all drivers after suite

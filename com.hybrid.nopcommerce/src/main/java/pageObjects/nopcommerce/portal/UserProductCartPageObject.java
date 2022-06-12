@@ -3,7 +3,7 @@ package pageObjects.nopcommerce.portal;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import commons.PageGeneratorManager;
+import commons.PageGeneratorManagerNopCommerce;
 import pageUI.nopcommerce.portal.UserProductCartPageUI;
 
 public class UserProductCartPageObject extends BasePage {
@@ -28,7 +28,7 @@ public class UserProductCartPageObject extends BasePage {
 	public UserProductPageObject clickEditLinkByProductName(String productName) {
 		waitForElementClickable(driver, UserProductCartPageUI.DYNAMIC_EDIT_LINK_BY_PRODUCT_NAME, productName);
 		clickElement(driver, UserProductCartPageUI.DYNAMIC_EDIT_LINK_BY_PRODUCT_NAME, productName);
-		return PageGeneratorManager.getPageGenerator().getUserProductPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserProductPage(driver);
 	}
 
 	public void clickRemoveButtonByProductName(String productName) {
@@ -99,7 +99,7 @@ public class UserProductCartPageObject extends BasePage {
 
 	public UserCheckoutPageObject clickCheckOutButton() {
 		clickButtonByText(driver, "Checkout");
-		return PageGeneratorManager.getPageGenerator().getUserCheckoutPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserCheckoutPage(driver);
 	}
 
 	public void checkTermOfServiceCheckbox() {

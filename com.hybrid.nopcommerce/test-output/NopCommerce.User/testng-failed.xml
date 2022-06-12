@@ -10,15 +10,16 @@
   <test thread-count="3" parallel="tests" name="Run on chrome(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.nopcommerce.user.TC_Search_Advanced">
+      <class name="com.nopcommerce.user.TC_Order">
         <methods>
+          <include name="TC_05_Checkout_With_Credit_Card" invocation-numbers="0"/>
           <include name="beforeClass"/>
-          <include name="TC_04_Relative_Search_With_Product_Name" invocation-numbers="0"/>
           <include name="cleanExecutableDriver"/>
-          <include name="afterClass"/>
           <include name="beforeSuit"/>
+          <include name="afterClass"/>
+          <include name="TC_06_Reorder" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.nopcommerce.user.TC_Search_Advanced -->
+      </class> <!-- com.nopcommerce.user.TC_Order -->
     </classes>
   </test> <!-- Run on chrome(failed) -->
 </suite> <!-- Failed suite [NopCommerce.User] -->

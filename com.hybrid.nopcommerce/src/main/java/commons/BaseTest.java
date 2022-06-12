@@ -204,8 +204,8 @@ public class BaseTest {
 	protected void setEnvironmentURL(String environment) {
 		switch (environment) {
 			case "DEV":
-				userUrl = GlobalConstants.USER_PORTAL_PAGE_URL;
-				adminUrl = GlobalConstants.ADMIN_PAGE_URL;
+				userUrl = GlobalConstants.NOPCOMMERCE_USER_PORTAL_PAGE_URL;
+				adminUrl = GlobalConstants.NOPCOMMERCE_ADMIN_PAGE_URL;
 				break;
 			default:
 				System.out.println("Wrong environment name");

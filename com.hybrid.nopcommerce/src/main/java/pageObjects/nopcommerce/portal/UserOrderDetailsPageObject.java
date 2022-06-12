@@ -3,7 +3,7 @@ package pageObjects.nopcommerce.portal;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import commons.PageGeneratorManager;
+import commons.PageGeneratorManagerNopCommerce;
 
 public class UserOrderDetailsPageObject extends BasePage {
 	private WebDriver driver;	
@@ -12,6 +12,6 @@ public class UserOrderDetailsPageObject extends BasePage {
 	}
 	public UserProductCartPageObject clickReOrderButton() {
 		clickButtonByText(driver, "Re-order");
-		return PageGeneratorManager.getPageGenerator().getUserProductCartPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserProductCartPage(driver);
 	}
 }

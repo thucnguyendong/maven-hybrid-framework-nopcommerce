@@ -15,7 +15,7 @@ import com.aventstack.extentreports.Status;
 
 import commons.BaseTest;
 import commons.GlobalConstants;
-import commons.PageGeneratorManager;
+import commons.PageGeneratorManagerNopCommerce;
 import pageObjects.nopcommerce.portal.UserHomePageObject;
 import pageObjects.nopcommerce.portal.UserProductCatgoryPageObject;
 import reportConfig.ExtentTestManager;
@@ -33,10 +33,10 @@ public class TC_Sort_Display_Paging extends BaseTest {
 	@BeforeClass
 	public void beforeClass(String browserName) {
 		ExtentTestManager.startTest("Search Advanced testcases on " + browserName, "Search Advanced Testcase");
-		driver = getBrowserDriver("chrome",GlobalConstants.USER_PORTAL_PAGE_URL);
-		homePage = PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
+		driver = getBrowserDriver("chrome",GlobalConstants.NOPCOMMERCE_USER_PORTAL_PAGE_URL);
+		homePage = PageGeneratorManagerNopCommerce.getPageGenerator().getUserHomePage(driver);
 		homePage.openHeaderMenuByName(driver, "Computers");
-		productCatogoryPage = PageGeneratorManager.getPageGenerator().getUserProductCategoryPage(driver);
+		productCatogoryPage = PageGeneratorManagerNopCommerce.getPageGenerator().getUserProductCategoryPage(driver);
 		productCatogoryPage.clickProductCategoryLinkItem(category);
 		assertEquals(productCatogoryPage.getCategoryHeader(),category);
 	}

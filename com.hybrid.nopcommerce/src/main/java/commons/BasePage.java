@@ -1116,7 +1116,7 @@ public class BasePage {
 	
 	public UserHomePageObject openPortalPage(WebDriver driver,String url) {
 		openBrowser(driver, url);
-		return PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserHomePage(driver);
 	}
 	
 	/**
@@ -1159,7 +1159,7 @@ public class BasePage {
 	public UserCustomerInfoPageObject clickMyAccountLink(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.MY_ACCOUNT_LINK);
 		clickElement(driver, UserBasePageUI.MY_ACCOUNT_LINK);
-		return PageGeneratorManager.getPageGenerator().getUserCustomerInfoPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserCustomerInfoPage(driver);
 	}
 	
 	/**
@@ -1169,7 +1169,7 @@ public class BasePage {
 	public UserHomePageObject clickUserLogOutLink(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.LOGOUT_LINK_AT_USER);
 		clickElement(driver, UserBasePageUI.LOGOUT_LINK_AT_USER);
-		return PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserHomePage(driver);
 	}
 	
 	/**
@@ -1179,7 +1179,7 @@ public class BasePage {
 	public UserCustomerInfoPageObject openCustomerInfoPage(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.CUSTOMER_INFO_LINK);
 		clickElement(driver, UserBasePageUI.CUSTOMER_INFO_LINK);
-		return PageGeneratorManager.getPageGenerator().getUserCustomerInfoPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserCustomerInfoPage(driver);
 	}
 	
 	/**
@@ -1189,7 +1189,7 @@ public class BasePage {
 	public UserAddressPageObject openAddressPage(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.ADDRESS_LINK);
 		clickElement(driver, UserBasePageUI.ADDRESS_LINK);
-		return PageGeneratorManager.getPageGenerator().getUserAddressPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserAddressPage(driver);
 	}
 	
 	/**
@@ -1199,7 +1199,7 @@ public class BasePage {
 	public UserOrderPageObject openOrderPage(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.ORDER_LINK);
 		clickElement(driver, UserBasePageUI.ORDER_LINK);
-		return PageGeneratorManager.getPageGenerator().getUserOrderPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserOrderPage(driver);
 	}
 	
 	/**
@@ -1209,7 +1209,7 @@ public class BasePage {
 	public UserDownloadableProductPageObject openDownloadableProductPage(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.DOWNLOADABLE_PRODUCTS_LINK);
 		clickElement(driver, UserBasePageUI.DOWNLOADABLE_PRODUCTS_LINK);
-		return PageGeneratorManager.getPageGenerator().getUserDownloadableProductPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserDownloadableProductPage(driver);
 	}
 	
 	/**
@@ -1219,7 +1219,7 @@ public class BasePage {
 	public UserBackInStockSubscriptionPageObject openBackInStockSubscriptionPage(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.BACK_IN_STOCK_SUBSCRIPTION_LINK);
 		clickElement(driver, UserBasePageUI.BACK_IN_STOCK_SUBSCRIPTION_LINK);
-		return PageGeneratorManager.getPageGenerator().getUserBackInStockSubscriptionPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserBackInStockSubscriptionPage(driver);
 	}
 	
 	/**
@@ -1229,7 +1229,7 @@ public class BasePage {
 	public UserRewardPointPageObject openRewardPointPage(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.REWARD_POINT_LINK);
 		clickElement(driver, UserBasePageUI.REWARD_POINT_LINK);
-		return PageGeneratorManager.getPageGenerator().getUserRewardPointPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserRewardPointPage(driver);
 	}
 	
 	/**
@@ -1239,7 +1239,7 @@ public class BasePage {
 	public UserChangePasswordPageObject openChangePasswordPage(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.CHANGE_PASSWORD_LINK);
 		clickElement(driver, UserBasePageUI.CHANGE_PASSWORD_LINK);
-		return PageGeneratorManager.getPageGenerator().getUserChangePasswordPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserChangePasswordPage(driver);
 	}
 	
 	/**
@@ -1249,7 +1249,7 @@ public class BasePage {
 	public UserMyProductReviewPageObject openMyReviewPage(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.MY_PRODUCT_REVIEW_LINK);
 		clickElement(driver, UserBasePageUI.MY_PRODUCT_REVIEW_LINK);
-		return PageGeneratorManager.getPageGenerator().getUserMyProductReviewPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserMyProductReviewPage(driver);
 	}
 	
 	
@@ -1261,12 +1261,12 @@ public class BasePage {
 	public AdminLoginPageObject clickAdminLogOutLink(WebDriver driver) {
 		waitForElementClickable(driver, UserBasePageUI.LOGOUT_LINK_AT_ADMIN);
 		clickElement(driver, UserBasePageUI.LOGOUT_LINK_AT_ADMIN);
-		return PageGeneratorManager.getPageGenerator().getAdminLoginPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getAdminLoginPage(driver);
 	}
 	
 	public AdminLoginPageObject openAdminPage(WebDriver driver,String url) {
 		openBrowser(driver, url);
-		return PageGeneratorManager.getPageGenerator().getAdminLoginPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getAdminLoginPage(driver);
 	}
 	
 	public void clickAdminSideMenuItem(WebDriver driver, String item) {

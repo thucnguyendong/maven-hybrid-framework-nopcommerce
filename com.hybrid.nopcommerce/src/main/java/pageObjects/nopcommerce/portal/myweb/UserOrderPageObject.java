@@ -3,7 +3,7 @@ package pageObjects.nopcommerce.portal.myweb;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import commons.PageGeneratorManager;
+import commons.PageGeneratorManagerNopCommerce;
 import pageObjects.nopcommerce.portal.UserOrderDetailsPageObject;
 import pageUI.nopcommerce.portal.UserOrderPageUI;
 
@@ -15,6 +15,6 @@ public class UserOrderPageObject extends BasePage {
 	public UserOrderDetailsPageObject clickDetailsLinkByOrderNumber(String orderNumber) {
 		waitForElementClickable(driver,UserOrderPageUI.DETAILS_LINK_BY_ORDER_NUMBER,"Order Number: "+orderNumber);
 		clickElement(driver, UserOrderPageUI.DETAILS_LINK_BY_ORDER_NUMBER,"Order Number: "+orderNumber);
-		return PageGeneratorManager.getPageGenerator().getUserOrderDetailsPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserOrderDetailsPage(driver);
 	}
 }

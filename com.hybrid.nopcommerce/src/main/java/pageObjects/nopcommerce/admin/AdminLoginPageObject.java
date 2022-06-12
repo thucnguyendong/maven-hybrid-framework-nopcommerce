@@ -3,7 +3,7 @@ package pageObjects.nopcommerce.admin;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import commons.PageGeneratorManager;
+import commons.PageGeneratorManagerNopCommerce;
 import pageUI.nopcommerce.admin.AdminLoginPageUI;
 
 public class AdminLoginPageObject extends BasePage {
@@ -26,7 +26,7 @@ public class AdminLoginPageObject extends BasePage {
 	public AdminDashboardPageObject clickLoginButton() {
 		waitForElementClickable(driver, AdminLoginPageUI.LOGIN_BUTTON);
 		clickElement(driver, AdminLoginPageUI.LOGIN_BUTTON);
-		return PageGeneratorManager.getPageGenerator().getAdminDashboardPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getAdminDashboardPage(driver);
 	}
 
 	public AdminDashboardPageObject loginAsAdmin(String email, String password) {

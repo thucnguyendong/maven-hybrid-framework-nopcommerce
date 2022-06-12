@@ -6,7 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import commons.BasePage;
-import commons.PageGeneratorManager;
+import commons.PageGeneratorManagerNopCommerce;
 import pageUI.nopcommerce.portal.UserWishlistPageUI;
 
 public class UserWishlistPageObject extends BasePage {
@@ -43,7 +43,7 @@ public class UserWishlistPageObject extends BasePage {
 	public UserProductCartPageObject clickAddToCartButton() {
 		waitForElementClickable(driver, UserWishlistPageUI.ADD_TO_CART_BUTTON);
 		clickElement(driver, UserWishlistPageUI.ADD_TO_CART_BUTTON);
-		return PageGeneratorManager.getPageGenerator().getUserProductCartPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserProductCartPage(driver);
 	}
 
 	public void removeAllProducts() {

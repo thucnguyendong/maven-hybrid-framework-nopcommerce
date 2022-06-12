@@ -15,7 +15,7 @@ import com.aventstack.extentreports.Status;
 
 import commons.BaseTest;
 import commons.GlobalConstants;
-import commons.PageGeneratorManager;
+import commons.PageGeneratorManagerNopCommerce;
 import pageObjects.nopcommerce.portal.UserHomePageObject;
 import pageObjects.nopcommerce.portal.UserLoginPageObject;
 import pageObjects.nopcommerce.portal.UserProductCartPageObject;
@@ -43,8 +43,8 @@ public class TC_Wishlist_Compare_Recent_View extends BaseTest {
 	@Parameters("browser")	
 	@BeforeClass
 	public void beforeClass(String browserName) {
-		driver = getBrowserDriver(browserName,GlobalConstants.USER_PORTAL_PAGE_URL);
-		homePage = PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
+		driver = getBrowserDriver(browserName,GlobalConstants.NOPCOMMERCE_USER_PORTAL_PAGE_URL);
+		homePage = PageGeneratorManagerNopCommerce.getPageGenerator().getUserHomePage(driver);
 		loginPage = homePage.clickLogInLink();
 		homePage=loginPage.loginAsUser(GlobalConstants.nopcommerce_Email, GlobalConstants.nopcommerce_Password);
 	}
@@ -54,7 +54,7 @@ public class TC_Wishlist_Compare_Recent_View extends BaseTest {
 		searchValue = "Asus N551JK-XO076H Laptop";
 		ExtentTestManager.startTest(method.getName(), "Test Case 1: Add to Wishlist");
 		ExtentTestManager.getTest().log(Status.INFO, "Step 1: Input Search value");
-		searchBar = PageGeneratorManager.getPageGenerator().getUserSearchBar(driver);
+		searchBar = PageGeneratorManagerNopCommerce.getPageGenerator().getUserSearchBar(driver);
 		searchBar.inputSearchTextbox(searchValue);
 		ExtentTestManager.getTest().log(Status.INFO, "Step 2: Click Search button");
 		searchPage = searchBar.clickSearchButton();
@@ -66,7 +66,7 @@ public class TC_Wishlist_Compare_Recent_View extends BaseTest {
 		assertEquals(productPage.getSuccessMessage(),"The product has been added to your wishlist");
 		ExtentTestManager.getTest().log(Status.INFO, "Step 6: Navigate to Wishlist page");
 		wishlistPage = productPage.clickWishlistLinkOnSuccessMessage();
-		wishlistPage = PageGeneratorManager.getPageGenerator().getUserWishlistPage(driver);
+		wishlistPage = PageGeneratorManagerNopCommerce.getPageGenerator().getUserWishlistPage(driver);
 		ExtentTestManager.getTest().log(Status.INFO, "Step 7: Check that product displays on Wishlist");
 		assertTrue(wishlistPage.isProductDisplayedByProductName(searchValue));
 		ExtentTestManager.getTest().log(Status.INFO, "Step 8: Remove product from Wishlist page");
@@ -80,7 +80,7 @@ public class TC_Wishlist_Compare_Recent_View extends BaseTest {
 		searchValue = "Asus N551JK-XO076H Laptop";
 		ExtentTestManager.startTest(method.getName(), "Test Case 2: Add product to cart");
 		ExtentTestManager.getTest().log(Status.INFO, "Step 1: Input Search Value");
-		searchBar = PageGeneratorManager.getPageGenerator().getUserSearchBar(driver);
+		searchBar = PageGeneratorManagerNopCommerce.getPageGenerator().getUserSearchBar(driver);
 		searchBar.inputSearchTextbox(searchValue);
 		ExtentTestManager.getTest().log(Status.INFO, "Step 2: Click Search button");
 		searchPage = searchBar.clickSearchButton();
@@ -98,7 +98,7 @@ public class TC_Wishlist_Compare_Recent_View extends BaseTest {
 		assertTrue(productCart.isProductDisplayedByProductName(searchValue));
 		ExtentTestManager.getTest().log(Status.INFO, "Step 9: Navigate to Wishlist again");
 		productPage.openUserHeaderLinkByName(driver, "Wishlist");		
-		wishlistPage = PageGeneratorManager.getPageGenerator().getUserWishlistPage(driver);
+		wishlistPage = PageGeneratorManagerNopCommerce.getPageGenerator().getUserWishlistPage(driver);
 		ExtentTestManager.getTest().log(Status.INFO, "Step 10: Check that product is removed from Wishlist");
 		assertTrue(wishlistPage.isProductRemovedByProductName(searchValue));
 	}
@@ -108,7 +108,7 @@ public class TC_Wishlist_Compare_Recent_View extends BaseTest {
 		searchValue = "Asus N551JK-XO076H Laptop";
 		ExtentTestManager.startTest(method.getName(), "Test Case 3: Check wishlist is empty after removing all products");
 		ExtentTestManager.getTest().log(Status.INFO, "Step 1: Input Search value");
-		searchBar = PageGeneratorManager.getPageGenerator().getUserSearchBar(driver);
+		searchBar = PageGeneratorManagerNopCommerce.getPageGenerator().getUserSearchBar(driver);
 		searchBar.inputSearchTextbox(searchValue);
 		ExtentTestManager.getTest().log(Status.INFO, "Step 2: Click Search button");
 		searchPage = searchBar.clickSearchButton();
@@ -133,7 +133,7 @@ public class TC_Wishlist_Compare_Recent_View extends BaseTest {
 		
 		ExtentTestManager.startTest(method.getName(), "Test Case 4: Add product to Product Comparison page");
 		ExtentTestManager.getTest().log(Status.INFO, "Step 1: Input search value");
-		searchBar = PageGeneratorManager.getPageGenerator().getUserSearchBar(driver);
+		searchBar = PageGeneratorManagerNopCommerce.getPageGenerator().getUserSearchBar(driver);
 		searchBar.inputSearchTextbox(searchValue);
 		ExtentTestManager.getTest().log(Status.INFO, "Step 2: Click Search button");
 		searchPage = searchBar.clickSearchButton();
@@ -150,7 +150,7 @@ public class TC_Wishlist_Compare_Recent_View extends BaseTest {
 		ExtentTestManager.getTest().log(Status.INFO, "Step 8: Check that first column displays correctly for 1 product on Product Comparison");
 		assertTrue(productComparison.isFirstColumnDisplayedCorrectlyForOneItem());
 		ExtentTestManager.getTest().log(Status.INFO, "Step 9: Add another product on product Comparison page");
-		searchBar = PageGeneratorManager.getPageGenerator().getUserSearchBar(driver);
+		searchBar = PageGeneratorManagerNopCommerce.getPageGenerator().getUserSearchBar(driver);
 		searchBar.inputSearchTextbox(searchValue2);
 		searchPage = searchBar.clickSearchButton();
 		productPage =searchPage.clickProductLink(searchValue2);
@@ -173,20 +173,20 @@ public class TC_Wishlist_Compare_Recent_View extends BaseTest {
 		
 		ExtentTestManager.startTest(method.getName(), "Test Case 5: Check that products display on Recently View Product after viewing product page");
 		ExtentTestManager.getTest().log(Status.INFO, "Step 1: Input search value");
-		searchBar = PageGeneratorManager.getPageGenerator().getUserSearchBar(driver);
+		searchBar = PageGeneratorManagerNopCommerce.getPageGenerator().getUserSearchBar(driver);
 		searchBar.inputSearchTextbox(searchValue);
 		ExtentTestManager.getTest().log(Status.INFO, "Step 2: Click Search button");
 		searchPage = searchBar.clickSearchButton();
 		ExtentTestManager.getTest().log(Status.INFO, "Step 3: Open Product page");
 		productPage =searchPage.clickProductLink(searchValue);
 		ExtentTestManager.getTest().log(Status.INFO, "Step 4: Search and open another product page");
-		searchBar = PageGeneratorManager.getPageGenerator().getUserSearchBar(driver);
+		searchBar = PageGeneratorManagerNopCommerce.getPageGenerator().getUserSearchBar(driver);
 		searchBar.inputSearchTextbox(searchValue2);
 		searchPage = searchBar.clickSearchButton();
 		productPage =searchPage.clickProductLink(searchValue2);
 		ExtentTestManager.getTest().log(Status.INFO, "Step 5: Open Recently View Product");
 		productPage.openFooterPageByName(driver, "Recently viewed products");
-		recentlyViewProduct = PageGeneratorManager.getPageGenerator().getUserRecentlyViewProductPage(driver);
+		recentlyViewProduct = PageGeneratorManagerNopCommerce.getPageGenerator().getUserRecentlyViewProductPage(driver);
 		ExtentTestManager.getTest().log(Status.INFO, "Step 6: Check that all viewed products display on Recently View Product");
 		assertTrue(recentlyViewProduct.isProductDisplayedByProductName(searchValue));
 		assertTrue(recentlyViewProduct.isProductDisplayedByProductName(searchValue2));

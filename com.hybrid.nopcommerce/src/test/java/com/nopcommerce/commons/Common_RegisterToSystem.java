@@ -9,7 +9,7 @@ import org.testng.annotations.Parameters;
 
 import commons.BaseTest;
 import commons.GlobalConstants;
-import commons.PageGeneratorManager;
+import commons.PageGeneratorManagerNopCommerce;
 import pageObjects.nopcommerce.portal.UserHomePageObject;
 import pageObjects.nopcommerce.portal.UserRegisterPageObject;
 import utilities.DataHelper;
@@ -32,9 +32,9 @@ public class Common_RegisterToSystem extends BaseTest {
 	@Parameters("browser")
 	@BeforeTest
 	public void beforeClass(String browserName) {
-		log.info("Pre-condition: Open browser "+browserName+" and navigate to "+ GlobalConstants.USER_PORTAL_PAGE_URL);
-		driver = getBrowserDriver(browserName,GlobalConstants.USER_PORTAL_PAGE_URL);
-		homePage = PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
+		log.info("Pre-condition: Open browser "+browserName+" and navigate to "+ GlobalConstants.NOPCOMMERCE_USER_PORTAL_PAGE_URL);
+		driver = getBrowserDriver(browserName,GlobalConstants.NOPCOMMERCE_USER_PORTAL_PAGE_URL);
+		homePage = PageGeneratorManagerNopCommerce.getPageGenerator().getUserHomePage(driver);
 		emailAddress = "test"+ DataHelper.getData().getRandomNumber()+"@gmail.com";
 		
 		log.info("Step 1: Click Register Link");

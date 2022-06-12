@@ -14,7 +14,7 @@ import com.aventstack.extentreports.Status;
 
 import commons.BaseTest;
 import commons.GlobalConstants;
-import commons.PageGeneratorManager;
+import commons.PageGeneratorManagerNopCommerce;
 import pageObjects.nopcommerce.portal.UserHomePageObject;
 import pageObjects.nopcommerce.portal.UserLoginPageObject;
 import pageObjects.nopcommerce.portal.UserProductPageObject;
@@ -48,11 +48,11 @@ public class TC_Review_Product extends BaseTest {
 	@Parameters("browser")
 	@BeforeClass
 	public void beforeClass(String browserName) {
-		driver = getBrowserDriver(browserName,GlobalConstants.USER_PORTAL_PAGE_URL);
-		homePage = PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
+		driver = getBrowserDriver(browserName,GlobalConstants.NOPCOMMERCE_USER_PORTAL_PAGE_URL);
+		homePage = PageGeneratorManagerNopCommerce.getPageGenerator().getUserHomePage(driver);
 		loginPage = homePage.clickLogInLink();
 		homePage= loginPage.loginAsUser(GlobalConstants.nopcommerce_Email, GlobalConstants.nopcommerce_Password);
-		searchBar = PageGeneratorManager.getPageGenerator().getUserSearchBar(driver);
+		searchBar = PageGeneratorManagerNopCommerce.getPageGenerator().getUserSearchBar(driver);
 
 		
 		searchValue = "Build your own computer";

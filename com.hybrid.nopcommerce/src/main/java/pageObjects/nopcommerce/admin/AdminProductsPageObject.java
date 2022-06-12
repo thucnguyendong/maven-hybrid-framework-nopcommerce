@@ -3,7 +3,7 @@ package pageObjects.nopcommerce.admin;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
-import commons.PageGeneratorManager;
+import commons.PageGeneratorManagerNopCommerce;
 import pageUI.nopcommerce.admin.AdminProductsPageUI;
 
 public class AdminProductsPageObject extends BasePage {
@@ -27,7 +27,7 @@ public class AdminProductsPageObject extends BasePage {
 		int columnIndex = getElementSize(driver, AdminProductsPageUI.HEADER_NAME_INDEX, headerName)+1;
 		waitForElementVisible(driver, AdminProductsPageUI.DYNAMIC_EDIT_BUTTON_BY_VALUE,String.valueOf(columnIndex),value);
 		clickElement(driver, AdminProductsPageUI.DYNAMIC_EDIT_BUTTON_BY_VALUE, String.valueOf(columnIndex),value);
-		return PageGeneratorManager.getPageGenerator().getAdminProductDetailPage(driver);
+		return PageGeneratorManagerNopCommerce.getPageGenerator().getAdminProductDetailPage(driver);
 	}
 
 	public String getSuccessMessage() {

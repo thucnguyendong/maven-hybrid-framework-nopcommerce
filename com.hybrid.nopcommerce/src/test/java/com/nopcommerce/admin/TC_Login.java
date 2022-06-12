@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 
 import commons.BaseTest;
 import commons.GlobalConstants;
-import commons.PageGeneratorManager;
+import commons.PageGeneratorManagerNopCommerce;
 import pageObjects.nopcommerce.admin.AdminDashboardPageObject;
 import pageObjects.nopcommerce.admin.AdminLoginPageObject;
 import pageObjects.nopcommerce.portal.UserHomePageObject;
@@ -32,8 +32,8 @@ public class TC_Login extends BaseTest {
 	@BeforeTest
 	public void beforeTest() {
 		setEnvironmentURL("DEV");
-		driver = getBrowserDriver("chrome",GlobalConstants.USER_PORTAL_PAGE_URL);
-		userHomePage = PageGeneratorManager.getPageGenerator().getUserHomePage(driver);
+		driver = getBrowserDriver("chrome",GlobalConstants.NOPCOMMERCE_USER_PORTAL_PAGE_URL);
+		userHomePage = PageGeneratorManagerNopCommerce.getPageGenerator().getUserHomePage(driver);
 	}
 	
 	@BeforeClass
