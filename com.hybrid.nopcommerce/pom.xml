@@ -5,19 +5,14 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>mvn-hybrid-framework-nopcommerce</name>
    
-  <!-- Khai báo biến - Global Variable -->
 	<properties>
-		<!-- Encoding for Build/ Console -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-		<!-- Encoding for Report -->
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-
-		<!-- Compiler Code with Java 8 -->
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<maven.compiler.source>1.8</maven.compiler.source>
 
 		<!-- Global variable for dependencies -->
+		<cucumber.version> 1.2.5 </cucumber.version>
 		<webdriver.version>3.141.59</webdriver.version>
 		<testng.version>6.14.3</testng.version>
 		<jackson.version>2.9.4</jackson.version>
@@ -25,15 +20,12 @@
 		<aspectj.version>1.9.4</aspectj.version>
 	</properties>
 
-	<!-- Quản lí thư viện -->
 	<dependencies>
-		<!-- TestNG -->
 		<dependency>
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>${testng.version}</version>
 		</dependency>
-		<!-- Selenium Java -->
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
@@ -169,6 +161,39 @@
 		    <groupId>io.rest-assured</groupId>
 		    <artifactId>rest-assured</artifactId>
 		    <version>4.4.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-core</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-junit</artifactId>
+			<version>${cucumber.version}</version>
+			<scope>test</scope>
+		</dependency>
+		
+		<dependency>
+			<groupId>info.cukes</groupId>
+			<artifactId>cucumber-testng</artifactId>
+			<version>${cucumber.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>3.20.0</version>
 		</dependency>
 				
 	</dependencies>
