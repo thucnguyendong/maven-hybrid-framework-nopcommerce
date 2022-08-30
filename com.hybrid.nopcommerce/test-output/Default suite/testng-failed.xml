@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.wordpress.portal.TC_Login">
+      <class name="com.sytner.TC_HomePage_MenuItems">
         <methods>
-          <include name="TC_02_Login_Not_Exist_Username"/>
-          <include name="afterClass"/>
+          <include name="TC_02_Verify_News"/>
+          <include name="beforeClass"/>
           <include name="cleanExecutableDriver"/>
           <include name="beforeSuit"/>
-          <include name="beforeClass"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.wordpress.portal.TC_Login -->
+      </class> <!-- com.sytner.TC_HomePage_MenuItems -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -29,12 +29,12 @@ public class DataHelper {
 	
 	public String getDateToString() {
 		Date date = Calendar.getInstance().getTime();  
-		DateFormat dateFormat = new SimpleDateFormat("yyyymmdd");  
+		DateFormat dateFormat = new SimpleDateFormat("yyyymmddhhmmss");  
 		return dateFormat.format(date);
 	}
 	
 	public String getRandomEmail(String prefix, String domain) {
-		return prefix+getRandomNumber()+"@"+domain+".com";
+		return prefix+getDateToString()+"@"+domain+".com";
 	}
 	
 	public String getFirstname() {

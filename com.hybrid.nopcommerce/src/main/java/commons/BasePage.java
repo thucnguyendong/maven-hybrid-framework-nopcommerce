@@ -1251,8 +1251,7 @@ public class BasePage {
 		clickElement(driver, UserBasePageUI.MY_PRODUCT_REVIEW_LINK);
 		return PageGeneratorManagerNopCommerce.getPageGenerator().getUserMyProductReviewPage(driver);
 	}
-	
-	
+		
 	/**
 	 * click items on Header using name
 	 * @param driver driver of web driver
@@ -1264,18 +1263,34 @@ public class BasePage {
 		return PageGeneratorManagerNopCommerce.getPageGenerator().getAdminLoginPage(driver);
 	}
 	
+	/**
+	 * open admin page
+	 * @param driver driver of web driver
+	 * @param url the name of the header
+	 */
 	public AdminLoginPageObject openAdminPage(WebDriver driver,String url) {
 		openBrowser(driver, url);
 		return PageGeneratorManagerNopCommerce.getPageGenerator().getAdminLoginPage(driver);
 	}
 	
+	/**
+	 * click side menu on Admin page
+	 * @param driver driver of web driver
+	 * @param item of the header
+	 */
 	public void clickAdminSideMenuItem(WebDriver driver, String item) {
 		waitForElementClickable(driver, AdminBasePageUI.DYNAMIC_SIDE_MENU_ITEM, item);
 		clickElement(driver, AdminBasePageUI.DYNAMIC_SIDE_MENU_ITEM, item);
 	}
 	
+	/**
+	 * click sub side menu on Admin page
+	 * @param driver driver of web driver
+	 * @param item of the header
+	 */
 	public void clickAdminSideMenuSubItem(WebDriver driver, String item) {
 		waitForElementClickable(driver, AdminBasePageUI.DYNAMIC_SIDE_SUB_MENU_ITEM, item);
 		clickElement(driver, AdminBasePageUI.DYNAMIC_SIDE_SUB_MENU_ITEM, item);
 	}
+	
 }
