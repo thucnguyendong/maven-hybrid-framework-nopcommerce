@@ -3,15 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.sytner.TC_HomePage_MenuItems">
+      <class name="com.bankguru.TC_Login">
         <methods>
-          <include name="TC_02_Verify_News"/>
-          <include name="beforeClass"/>
+          <include name="TC_01_Login_Empty_Username_Password"/>
           <include name="cleanExecutableDriver"/>
+          <include name="beforeClass"/>
+          <include name="TC_02_Login_Incorrect_Username_Password"/>
           <include name="beforeSuit"/>
           <include name="afterClass"/>
+          <include name="TC_03_Login_Successfully"/>
         </methods>
-      </class> <!-- com.sytner.TC_HomePage_MenuItems -->
+      </class> <!-- com.bankguru.TC_Login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

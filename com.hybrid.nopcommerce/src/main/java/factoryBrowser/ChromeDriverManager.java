@@ -1,5 +1,6 @@
 package factoryBrowser;
 
+import java.io.File;
 import java.util.Collections;
 import java.util.HashMap;
 
@@ -25,6 +26,8 @@ public class ChromeDriverManager implements BrowserFactory {
 		HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
 		chromePrefs.put("profile.default_content_settings.popups", 0);
 		chromePrefs.put("download.default_directory", GlobalConstants.DOWNLOAD_FOLDER_PATH);
+		
+		options.addExtensions(new File(GlobalConstants.EXTENSION_FOLDER_PATH+"AdblockPlus.crx"));
 		return new ChromeDriver(options);
 	}
 
