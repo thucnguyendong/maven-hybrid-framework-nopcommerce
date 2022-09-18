@@ -1,41 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-11T17:00:56Z" name="Default suite" finished-at="2022-09-11T17:01:14Z" duration-ms="18020">
+  <suite started-at="2022-09-18T18:14:45Z" name="Default suite" finished-at="2022-09-18T18:15:02Z" duration-ms="17122">
     <groups>
     </groups>
-    <test started-at="2022-09-11T17:00:56Z" name="Default test" finished-at="2022-09-11T17:01:14Z" duration-ms="18020">
-      <class name="com.bankguru.TC_Login">
-        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:com.bankguru.TC_Login@6fd77352]" started-at="2022-09-11T17:00:56Z" name="beforeSuit" finished-at="2022-09-11T17:00:56Z" duration-ms="20" status="PASS">
+    <test started-at="2022-09-18T18:14:45Z" name="Default test" finished-at="2022-09-18T18:15:02Z" duration-ms="17122">
+      <class name="com.bankguru.TC_AddNewCustomer">
+        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:com.bankguru.TC_AddNewCustomer@4c4f4365]" started-at="2022-09-18T18:14:45Z" name="beforeSuit" finished-at="2022-09-18T18:14:45Z" duration-ms="21" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuit -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.bankguru.TC_Login@6fd77352]" started-at="2022-09-11T17:00:56Z" name="beforeClass" finished-at="2022-09-11T17:01:10Z" duration-ms="13344" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.bankguru.TC_AddNewCustomer@4c4f4365]" started-at="2022-09-18T18:14:45Z" name="beforeClass" finished-at="2022-09-18T18:15:00Z" duration-ms="14487" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TC_01_Login_Empty_Username_Password()[pri:0, instance:com.bankguru.TC_Login@6fd77352]" started-at="2022-09-11T17:01:10Z" name="TC_01_Login_Empty_Username_Password" finished-at="2022-09-11T17:01:10Z" duration-ms="439" status="PASS">
+        <test-method signature="TC_01_Create_New_Customer()[pri:0, instance:com.bankguru.TC_AddNewCustomer@4c4f4365]" started-at="2022-09-18T18:15:00Z" name="TC_01_Create_New_Customer" finished-at="2022-09-18T18:15:02Z" duration-ms="2571" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01_Login_Empty_Username_Password -->
-        <test-method signature="TC_02_Login_Incorrect_Username_Password()[pri:0, instance:com.bankguru.TC_Login@6fd77352]" started-at="2022-09-11T17:01:10Z" name="TC_02_Login_Incorrect_Username_Password" finished-at="2022-09-11T17:01:12Z" duration-ms="1392" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_02_Login_Incorrect_Username_Password -->
-        <test-method signature="TC_03_Login_Successfully()[pri:0, instance:com.bankguru.TC_Login@6fd77352]" started-at="2022-09-11T17:01:12Z" name="TC_03_Login_Successfully" finished-at="2022-09-11T17:01:14Z" duration-ms="2091" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_03_Login_Successfully -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.bankguru.TC_Login@6fd77352]" started-at="2022-09-11T17:01:14Z" name="afterClass" finished-at="2022-09-11T17:01:14Z" duration-ms="691" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="cleanExecutableDriver()[pri:0, instance:com.bankguru.TC_Login@6fd77352]" started-at="2022-09-11T17:01:14Z" name="cleanExecutableDriver" finished-at="2022-09-11T17:01:14Z" duration-ms="0" status="PASS">
+        </test-method> <!-- TC_01_Create_New_Customer -->
+        <test-method is-config="true" signature="cleanExecutableDriver()[pri:0, instance:com.bankguru.TC_AddNewCustomer@4c4f4365]" started-at="2022-09-18T18:15:02Z" name="cleanExecutableDriver" finished-at="2022-09-18T18:15:02Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanExecutableDriver -->
-      </class> <!-- com.bankguru.TC_Login -->
+      </class> <!-- com.bankguru.TC_AddNewCustomer -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

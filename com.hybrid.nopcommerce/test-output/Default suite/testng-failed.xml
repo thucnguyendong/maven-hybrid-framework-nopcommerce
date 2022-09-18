@@ -3,17 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bankguru.TC_Login">
+      <class name="com.bankguru.TC_AddNewCustomer">
         <methods>
-          <include name="TC_01_Login_Empty_Username_Password"/>
+          <include name="TC_01_Create_New_Customer"/>
           <include name="cleanExecutableDriver"/>
           <include name="beforeClass"/>
-          <include name="TC_02_Login_Incorrect_Username_Password"/>
           <include name="beforeSuit"/>
-          <include name="afterClass"/>
-          <include name="TC_03_Login_Successfully"/>
         </methods>
-      </class> <!-- com.bankguru.TC_Login -->
+      </class> <!-- com.bankguru.TC_AddNewCustomer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

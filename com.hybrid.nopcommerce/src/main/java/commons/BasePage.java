@@ -34,6 +34,7 @@ import pageObjects.nopcommerce.portal.myweb.UserDownloadableProductPageObject;
 import pageObjects.nopcommerce.portal.myweb.UserMyProductReviewPageObject;
 import pageObjects.nopcommerce.portal.myweb.UserOrderPageObject;
 import pageObjects.nopcommerce.portal.myweb.UserRewardPointPageObject;
+import pageUI.bankguru.BankGuruBasePageUI;
 import pageUI.nopcommerce.admin.AdminBasePageUI;
 import pageUI.nopcommerce.portal.UserBasePageUI;
 
@@ -1066,10 +1067,14 @@ public class BasePage {
 	 * @param value the inputted value in textbox
 	 */	
 	public void inputToTextboxByID(WebDriver driver, String textbox_id, String value) {
-		waitForElementVisible(driver, UserBasePageUI.DYNAMIC_TEXTBOX_BY_ID,textbox_id);
-		inputIntoElement(driver, UserBasePageUI.DYNAMIC_TEXTBOX_BY_ID, value, textbox_id);
+		waitForElementVisible(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_ID,textbox_id);
+		inputIntoElement(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_ID, value, textbox_id);
 	}
 	
+	public void inputToTextboxByName(WebDriver driver, String textbox_name, String value) {
+		waitForElementVisible(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME,textbox_name);
+		inputIntoElement(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, value, textbox_name);
+	}
 	/**
 	 * Select dropdown using html name tag
 	 * @param driver driver of web driver
@@ -1077,7 +1082,7 @@ public class BasePage {
 	 * @param value the displayed value in dropdown list
 	 */	
 	public void selectDropdownListByName(WebDriver driver, String dropdown_name, String value) {
-		selectItemInDefaultDropdown(driver, UserBasePageUI.DYNAMIC_DROPDOWN_LIST_BY_NAME, value, dropdown_name);
+		selectItemInDefaultDropdown(driver, BasePageUI.DYNAMIC_DROPDOWN_LIST_BY_NAME, value, dropdown_name);
 	}
 	
 	/**
@@ -1086,8 +1091,8 @@ public class BasePage {
 	 * @param button_text the text tag of the button
 	 */	
 	public void clickButtonByText(WebDriver driver, String button_text) {
-		waitForElementVisible(driver, UserBasePageUI.DYNAMIC_BUTTON_BY_TEXT,button_text);
-		clickElement(driver, UserBasePageUI.DYNAMIC_BUTTON_BY_TEXT, button_text);
+		waitForElementVisible(driver, BasePageUI.DYNAMIC_BUTTON_BY_TEXT,button_text);
+		clickElement(driver, BasePageUI.DYNAMIC_BUTTON_BY_TEXT, button_text);
 	}
 	
 	/**
@@ -1096,7 +1101,7 @@ public class BasePage {
 	 * @param button_text the text tag of the button
 	 */	
 	public void checkCheckboxByID(WebDriver driver, String checkbox_ID) {
-		checkToDefaultCheckboxRadio(driver,UserBasePageUI.DYNAMIC_CHECKBOX_BY_ID,checkbox_ID);
+		checkToDefaultCheckboxRadio(driver,BasePageUI.DYNAMIC_CHECKBOX_BY_ID,checkbox_ID);
 	}
 	
 	/**
@@ -1105,7 +1110,7 @@ public class BasePage {
 	 * @param button_text the text tag of the button
 	 */	
 	public void uncheckCheckboxByID(WebDriver driver, String checkbox_ID) {
-		uncheckToDefaultCheckboxRadio(driver,UserBasePageUI.DYNAMIC_CHECKBOX_BY_ID,checkbox_ID);
+		uncheckToDefaultCheckboxRadio(driver,BasePageUI.DYNAMIC_CHECKBOX_BY_ID,checkbox_ID);
 	}
 	
 	/**
@@ -1120,7 +1125,7 @@ public class BasePage {
 	}
 	
 	/**
-	 * click items on Footer using name
+	 * click items on Footer using name of User NopCommerce page
 	 * @param driver driver of web driver
 	 * @param pageName the name of the page
 	 */	
@@ -1131,7 +1136,7 @@ public class BasePage {
 	}
 	
 	/**
-	 * click items on Header using name
+	 * click items on Header using name of User NopCommerce page
 	 * @param driver driver of web driver
 	 * @param menuHeader the name of the header
 	 */	
@@ -1142,7 +1147,7 @@ public class BasePage {
 	}
 	
 	/**
-	 * click items on Header using name
+	 * click items on Header using name of User NopCommerce page
 	 * @param driver driver of web driver
 	 * @param menuHeader the name of the header
 	 */	
@@ -1153,7 +1158,7 @@ public class BasePage {
 	}
 	
 	/**
-	 * click My Account Link
+	 * click My Account Link of User NopCommerce page
 	 * @param driver driver of web driver
 	 */	
 	public UserCustomerInfoPageObject clickMyAccountLink(WebDriver driver) {
@@ -1163,7 +1168,7 @@ public class BasePage {
 	}
 	
 	/**
-	 * click Logout Link
+	 * click Logout Link of User NopCommerce page
 	 * @param driver driver of web driver
 	 */
 	public UserHomePageObject clickUserLogOutLink(WebDriver driver) {
@@ -1173,7 +1178,7 @@ public class BasePage {
 	}
 	
 	/**
-	 * click Customer Info link on My Web left menu
+	 * click Customer Info link on My Web left menu of User NopCommerce page
 	 * @param driver driver of web driver
 	 */
 	public UserCustomerInfoPageObject openCustomerInfoPage(WebDriver driver) {
@@ -1183,7 +1188,7 @@ public class BasePage {
 	}
 	
 	/**
-	 * click Address link on My Web left menu
+	 * click Address link on My Web left menu of User NopCommerce page
 	 * @param driver driver of web driver
 	 */
 	public UserAddressPageObject openAddressPage(WebDriver driver) {
@@ -1193,7 +1198,7 @@ public class BasePage {
 	}
 	
 	/**
-	 * click Order link on My Web left menu
+	 * click Order link on My Web left menu of User NopCommerce page
 	 * @param driver driver of web driver
 	 */
 	public UserOrderPageObject openOrderPage(WebDriver driver) {
@@ -1203,7 +1208,7 @@ public class BasePage {
 	}
 	
 	/**
-	 * click Downloadable Product link on My Web left menu
+	 * click Downloadable Product link on My Web left menu of User NopCommerce page
 	 * @param driver driver of web driver
 	 */
 	public UserDownloadableProductPageObject openDownloadableProductPage(WebDriver driver) {
@@ -1213,7 +1218,7 @@ public class BasePage {
 	}
 	
 	/**
-	 * click Back In Stock Subscription link on My Web left menu
+	 * click Back In Stock Subscription link on My Web left menu of User NopCommerce page
 	 * @param driver driver of web driver
 	 */
 	public UserBackInStockSubscriptionPageObject openBackInStockSubscriptionPage(WebDriver driver) {
@@ -1223,7 +1228,7 @@ public class BasePage {
 	}
 	
 	/**
-	 * click Reward Point link on My Web left menu
+	 * click Reward Point link on My Web left menu of User NopCommerce page
 	 * @param driver driver of web driver
 	 */
 	public UserRewardPointPageObject openRewardPointPage(WebDriver driver) {
@@ -1233,7 +1238,7 @@ public class BasePage {
 	}
 	
 	/**
-	 * click Change Password link on My Web left menu
+	 * click Change Password link on My Web left menu of User NopCommerce page
 	 * @param driver driver of web driver
 	 */
 	public UserChangePasswordPageObject openChangePasswordPage(WebDriver driver) {
@@ -1243,7 +1248,7 @@ public class BasePage {
 	}
 	
 	/**
-	 * click Product Review link on My Web left menu
+	 * click Product Review link on My Web left menu of User NopCommerce page
 	 * @param driver driver of web driver
 	 */
 	public UserMyProductReviewPageObject openMyReviewPage(WebDriver driver) {
@@ -1253,7 +1258,7 @@ public class BasePage {
 	}
 		
 	/**
-	 * click items on Header using name
+	 * click items on Header using name of Admin NopCommerce page
 	 * @param driver driver of web driver
 	 * @param menuHeader the name of the header
 	 */	
@@ -1264,7 +1269,7 @@ public class BasePage {
 	}
 	
 	/**
-	 * open admin page
+	 * open Admin NopCommerce page
 	 * @param driver driver of web driver
 	 * @param url the name of the header
 	 */
@@ -1274,7 +1279,7 @@ public class BasePage {
 	}
 	
 	/**
-	 * click side menu on Admin page
+	 * click side menu on Admin NopCommerce page
 	 * @param driver driver of web driver
 	 * @param item of the header
 	 */
@@ -1284,13 +1289,23 @@ public class BasePage {
 	}
 	
 	/**
-	 * click sub side menu on Admin page
+	 * click sub side menu on Admin NopCommerce page
 	 * @param driver driver of web driver
 	 * @param item of the header
 	 */
 	public void clickAdminSideMenuSubItem(WebDriver driver, String item) {
 		waitForElementClickable(driver, AdminBasePageUI.DYNAMIC_SIDE_SUB_MENU_ITEM, item);
 		clickElement(driver, AdminBasePageUI.DYNAMIC_SIDE_SUB_MENU_ITEM, item);
+	}
+	
+	/**
+	 * click menu item on BankGuru page
+	 * @param driver driver of web driver
+	 * @param item of the header
+	 */
+	public void clickBankGuruMenuItemByText(WebDriver driver, String item) {
+		waitForElementClickable(driver, BankGuruBasePageUI.DYNAMIC_MENU_ITEM, item);
+		clickElement(driver, BankGuruBasePageUI.DYNAMIC_MENU_ITEM, item);
 	}
 	
 }

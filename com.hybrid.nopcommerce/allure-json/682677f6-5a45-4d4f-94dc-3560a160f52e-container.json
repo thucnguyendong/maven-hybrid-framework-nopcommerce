@@ -1,0 +1,1 @@
+{"uuid":"682677f6-5a45-4d4f-94dc-3560a160f52e","name":"com.bankguru.TC_AddNewCustomer","children":["9367d2d0-8ba1-448f-bd6d-ce9e2e0cc411"],"befores":[{"name":"beforeClass","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1663524885764,"stop":1663524900251}],"afters":[],"links":[],"start":1663524885754,"stop":1663524902882}
