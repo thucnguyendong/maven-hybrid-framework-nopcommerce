@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-18T18:14:45Z" name="Default suite" finished-at="2022-09-18T18:15:02Z" duration-ms="17122">
+  <suite started-at="2022-09-24T17:01:24Z" name="Default suite" finished-at="2022-09-24T17:01:49Z" duration-ms="24852">
     <groups>
     </groups>
-    <test started-at="2022-09-18T18:14:45Z" name="Default test" finished-at="2022-09-18T18:15:02Z" duration-ms="17122">
-      <class name="com.bankguru.TC_AddNewCustomer">
-        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:com.bankguru.TC_AddNewCustomer@4c4f4365]" started-at="2022-09-18T18:14:45Z" name="beforeSuit" finished-at="2022-09-18T18:14:45Z" duration-ms="21" status="PASS">
+    <test started-at="2022-09-24T17:01:24Z" name="Default test" finished-at="2022-09-24T17:01:49Z" duration-ms="24852">
+      <class name="com.bankguru.TC_AddAndEditNewCustomer">
+        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:com.bankguru.TC_AddAndEditNewCustomer@460510aa]" started-at="2022-09-24T17:01:24Z" name="beforeSuit" finished-at="2022-09-24T17:01:24Z" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuit -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.bankguru.TC_AddNewCustomer@4c4f4365]" started-at="2022-09-18T18:14:45Z" name="beforeClass" finished-at="2022-09-18T18:15:00Z" duration-ms="14487" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.bankguru.TC_AddAndEditNewCustomer@460510aa]" started-at="2022-09-24T17:01:24Z" name="beforeClass" finished-at="2022-09-24T17:01:39Z" duration-ms="15036" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TC_01_Create_New_Customer()[pri:0, instance:com.bankguru.TC_AddNewCustomer@4c4f4365]" started-at="2022-09-18T18:15:00Z" name="TC_01_Create_New_Customer" finished-at="2022-09-18T18:15:02Z" duration-ms="2571" status="PASS">
+        <test-method signature="TC_01_Create_New_Customer()[pri:0, instance:com.bankguru.TC_AddAndEditNewCustomer@460510aa]" started-at="2022-09-24T17:01:39Z" name="TC_01_Create_New_Customer" finished-at="2022-09-24T17:01:42Z" duration-ms="2354" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01_Create_New_Customer -->
-        <test-method is-config="true" signature="cleanExecutableDriver()[pri:0, instance:com.bankguru.TC_AddNewCustomer@4c4f4365]" started-at="2022-09-18T18:15:02Z" name="cleanExecutableDriver" finished-at="2022-09-18T18:15:02Z" duration-ms="0" status="PASS">
+        <test-method signature="TC_01_Edit_New_Customer()[pri:0, instance:com.bankguru.TC_AddAndEditNewCustomer@460510aa]" started-at="2022-09-24T17:01:42Z" name="TC_01_Edit_New_Customer" finished-at="2022-09-24T17:01:48Z" duration-ms="6677" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_Edit_New_Customer -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.bankguru.TC_AddAndEditNewCustomer@460510aa]" started-at="2022-09-24T17:01:48Z" name="afterClass" finished-at="2022-09-24T17:01:49Z" duration-ms="720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="cleanExecutableDriver()[pri:0, instance:com.bankguru.TC_AddAndEditNewCustomer@460510aa]" started-at="2022-09-24T17:01:49Z" name="cleanExecutableDriver" finished-at="2022-09-24T17:01:49Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanExecutableDriver -->
-      </class> <!-- com.bankguru.TC_AddNewCustomer -->
+      </class> <!-- com.bankguru.TC_AddAndEditNewCustomer -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
