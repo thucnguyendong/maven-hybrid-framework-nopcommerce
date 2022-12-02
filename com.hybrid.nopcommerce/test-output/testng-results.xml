@@ -2,36 +2,36 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-24T17:01:24Z" name="Default suite" finished-at="2022-09-24T17:01:49Z" duration-ms="24852">
+  <suite started-at="2022-12-02T16:35:08Z" name="Default suite" finished-at="2022-12-02T16:35:24Z" duration-ms="15789">
     <groups>
     </groups>
-    <test started-at="2022-09-24T17:01:24Z" name="Default test" finished-at="2022-09-24T17:01:49Z" duration-ms="24852">
-      <class name="com.bankguru.TC_AddAndEditNewCustomer">
-        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:com.bankguru.TC_AddAndEditNewCustomer@460510aa]" started-at="2022-09-24T17:01:24Z" name="beforeSuit" finished-at="2022-09-24T17:01:24Z" duration-ms="16" status="PASS">
+    <test started-at="2022-12-02T16:35:08Z" name="Default test" finished-at="2022-12-02T16:35:24Z" duration-ms="15789">
+      <class name="com.bankguru.TC_ValidateCustomer">
+        <test-method is-config="true" signature="beforeSuit()[pri:0, instance:com.bankguru.TC_ValidateCustomer@3910fe11]" started-at="2022-12-02T16:35:08Z" name="beforeSuit" finished-at="2022-12-02T16:35:08Z" duration-ms="18" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuit -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.bankguru.TC_AddAndEditNewCustomer@460510aa]" started-at="2022-09-24T17:01:24Z" name="beforeClass" finished-at="2022-09-24T17:01:39Z" duration-ms="15036" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.bankguru.TC_ValidateCustomer@3910fe11]" started-at="2022-12-02T16:35:08Z" name="beforeClass" finished-at="2022-12-02T16:35:22Z" duration-ms="14154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method signature="TC_01_Create_New_Customer()[pri:0, instance:com.bankguru.TC_AddAndEditNewCustomer@460510aa]" started-at="2022-09-24T17:01:39Z" name="TC_01_Create_New_Customer" finished-at="2022-09-24T17:01:42Z" duration-ms="2354" status="PASS">
+        <test-method signature="TC_01_Empty_Customer()[pri:0, instance:com.bankguru.TC_ValidateCustomer@3910fe11]" started-at="2022-12-02T16:35:22Z" name="TC_01_Empty_Customer" finished-at="2022-12-02T16:35:23Z" duration-ms="547" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01_Create_New_Customer -->
-        <test-method signature="TC_01_Edit_New_Customer()[pri:0, instance:com.bankguru.TC_AddAndEditNewCustomer@460510aa]" started-at="2022-09-24T17:01:42Z" name="TC_01_Edit_New_Customer" finished-at="2022-09-24T17:01:48Z" duration-ms="6677" status="PASS">
+        </test-method> <!-- TC_01_Empty_Customer -->
+        <test-method signature="TC_02_Verify_Blank_Error()[pri:0, instance:com.bankguru.TC_ValidateCustomer@3910fe11]" started-at="2022-12-02T16:35:23Z" name="TC_02_Verify_Blank_Error" finished-at="2022-12-02T16:35:23Z" duration-ms="341" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01_Edit_New_Customer -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.bankguru.TC_AddAndEditNewCustomer@460510aa]" started-at="2022-09-24T17:01:48Z" name="afterClass" finished-at="2022-09-24T17:01:49Z" duration-ms="720" status="PASS">
+        </test-method> <!-- TC_02_Verify_Blank_Error -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.bankguru.TC_ValidateCustomer@3910fe11]" started-at="2022-12-02T16:35:23Z" name="afterClass" finished-at="2022-12-02T16:35:24Z" duration-ms="676" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="cleanExecutableDriver()[pri:0, instance:com.bankguru.TC_AddAndEditNewCustomer@460510aa]" started-at="2022-09-24T17:01:49Z" name="cleanExecutableDriver" finished-at="2022-09-24T17:01:49Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="cleanExecutableDriver()[pri:0, instance:com.bankguru.TC_ValidateCustomer@3910fe11]" started-at="2022-12-02T16:35:24Z" name="cleanExecutableDriver" finished-at="2022-12-02T16:35:24Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanExecutableDriver -->
-      </class> <!-- com.bankguru.TC_AddAndEditNewCustomer -->
+      </class> <!-- com.bankguru.TC_ValidateCustomer -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

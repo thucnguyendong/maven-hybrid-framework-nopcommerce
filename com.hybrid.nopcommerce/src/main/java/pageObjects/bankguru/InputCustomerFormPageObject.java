@@ -1,5 +1,6 @@
 package pageObjects.bankguru;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 
 import commons.BasePage;
@@ -70,5 +71,18 @@ public class InputCustomerFormPageObject extends BasePage {
 	
 	public String getCustomerValueByLabel(String label) {
 		return getElementAttribute(driver, InputCustomerFormPageUI.DYNAMIC_CUSTOMER_INFORMATION_BY_LABEL,"value",label);
+	}
+
+	public String getFillAllFieldPopup() {
+		return getAlertText(driver);
+	}
+	
+	public void tabCustomerInformationByLabel(String label){
+		clickElement(driver,InputCustomerFormPageUI.DYNAMIC_CUSTOMER_INFORMATION_BY_LABEL, label);
+		sendKeyboard(driver,Keys.TAB);
+	}
+
+	public String getCustomerNameErrorByLabel(String label) {
+		return getElementText(driver, InputCustomerFormPageUI.DYNAMIC_ERROR_BY_LABEL,label);
 	}
 }

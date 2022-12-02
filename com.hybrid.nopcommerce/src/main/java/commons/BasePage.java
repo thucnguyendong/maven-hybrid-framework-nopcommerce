@@ -548,6 +548,16 @@ public class BasePage {
 		action.sendKeys(getElement(driver, xpathLocator),key).perform();
 	}
 	
+	public void sendKeyboardToElement(WebDriver driver, String xpathLocator, Keys key,String...params) {
+		Actions action = new Actions(driver);
+		action.sendKeys(getElement(driver, getDynamicLocator(xpathLocator, params)),key).perform();
+	}
+	
+	public void sendKeyboard(WebDriver driver, Keys key) {
+		Actions action = new Actions(driver);
+		action.sendKeys(key).perform();
+	}
+	
 	/**
 	 * Inject a java script to web driver
 	 * @param driver
@@ -1075,6 +1085,7 @@ public class BasePage {
 		waitForElementVisible(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME,textbox_name);
 		inputIntoElement(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_NAME, value, textbox_name);
 	}
+	
 	/**
 	 * Select dropdown using html name tag
 	 * @param driver driver of web driver

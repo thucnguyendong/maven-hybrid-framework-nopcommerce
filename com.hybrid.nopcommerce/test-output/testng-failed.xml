@@ -3,14 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.bankguru.TC_AddAndEditNewCustomer">
+      <class name="com.bankguru.TC_ValidateCustomer">
         <methods>
+          <include name="afterClass"/>
           <include name="cleanExecutableDriver"/>
+          <include name="TC_02_Verify_Blank_Error"/>
           <include name="beforeSuit"/>
           <include name="beforeClass"/>
-          <include name="TC_01_Edit_New_Customer"/>
+          <include name="TC_01_Empty_Customer"/>
         </methods>
-      </class> <!-- com.bankguru.TC_AddAndEditNewCustomer -->
+      </class> <!-- com.bankguru.TC_ValidateCustomer -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
